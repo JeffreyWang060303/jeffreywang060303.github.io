@@ -45,7 +45,7 @@ profile:
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi! I'm <strong>Jeffrey Wang</strong>, currently a <em>Visiting Undergraduate Student at Harvard</em> 
+    Hi! I'm <strong>Jeffrey Wang</strong>, currently a Visiting Undergraduate Student at <em>Harvard College</em> 
     passionate about <em>Robotics learning, control, and Artificial Intelligence in general</em>. 
     Currently, I work as a <em>Research Assistant</em> at the <em>CogAI Lab under Stanford Aritficial 
     Intelligence Laboratory, fortunately advised by Raven Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li,

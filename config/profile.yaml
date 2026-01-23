@@ -12,10 +12,10 @@
 # =====================================================
 
 profile:
-  name: "[Your Name]"
-  headline: "Student @ [Your University]"
-  email: "your-email@gmail.com"
-  location: null
+  name: "Jeffrey Wang"
+  headline: "Student @ Harvard College"
+  email: "jeffrey_wang@college.harvard.edu"
+  location: Cambridge, MA
   profileImage: "https://github.com/pm25.png"
 
   links:

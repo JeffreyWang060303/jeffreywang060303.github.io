@@ -20,7 +20,7 @@ profile:
 
   links:
     - name: "LinkedIn"
-      url: "www.linkedin.com/in/youhuiwang"
+      url: "https://www.linkedin.com/in/youhuiwang/"
       icon:
         name: "FaLinkedin"
         package: "react-icons/fa6"
@@ -45,11 +45,17 @@ profile:
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi! I'm <strong>[Your Name]</strong>, a <em>[Your Title]</em> passionate about <em>[field or topic]</em>. Currently, I work as <em>[current role]</em> at <em>[organization]</em>, where I <em>[briefly describe your work or mission]</em>. 
-    With a background in <em>[academic or professional background]</em>, I've developed strong interests in <em>[key interests or specialties]</em> and have contributed to projects like <i>[example project]</i> and <i>[another example]</i>, all focused on <em>[broader goal or impact]</em>.
+    Hi! I'm <strong>Jeffrey Wang</strong>, currently a <em>Visiting Undergraduate Student at Harvard</em> 
+    passionate about <em>Robotics learning, control, and Artificial Intelligence in general</em>. 
+    Currently, I work as a <em>Research Assistant</em> at the <em>CogAI Lab under Stanford Aritficial 
+    Intelligence Laboratory, fortunately advised by Raven Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li,
+    and Harvard Edge Computing Lab</em>, fortunately advised by Jason Jabbour and Prof. Vijay Janapa Reddi.
+    With a background in <em>Information Science at Cornell University</em>, I've developed strong interests in 
+    <em>Robotics, Machine Learning, and AI</em> and have contributed to projects like <i>Sim2RealGen</i> and <i>GLUSTICK</i>, 
+    all focused on <em>enhancing robotic safety and real-world manipulation</em>.
     <div class="my-2"></div>
-    Outside of work, I enjoy <em>[hobbies or personal interests]</em>, which inspire creativity and keep me energized. Thanks for visiting! Feel free to <a href="mailto:[your-email@example.com]" target="_blank" rel="noopener noreferrer">reach out</a> to connect.
-
+    Outside of work, I enjoy <em>Ice Hockey, Squash, and Traveling</em>, which inspire creativity 
+    and keep me energized. Feel free to connect to me for any potential opportunities or chatting!
 # # =====================================================
 # # 🎓 Education Section
 # # =====================================================
@@ -58,12 +64,12 @@ education:
   - degree: "Visiting Undergraduate Student"
     school: "Harvard College"
     years: "2025 - 2026"
-    logo: "https://en.wikipedia.org/wiki/Harvard_College#/media/File:Shield_of_Harvard_College.png"
+    logo: "https://en.wikipedia.org/wiki/Harvard_College#/media/File:Shield_of_Harvard_College.svg"
 
   - degree: "B.S. in Information Science (Minors in Robotics and AI)"
     school: "Cornell University"
     years: "2023 - 2027"
-    logo: "https://en.wikipedia.org/wiki/Cornell_University#/media/File:Cornell_University_seal.png"
+    logo: "https://en.wikipedia.org/wiki/Cornell_University#/media/File:Cornell_University_seal.svg"
 
 # # =====================================================
 # # 💼 Work Experience Section
@@ -73,12 +79,12 @@ workExperience:
   - title: "Research Intern"
     company: "Stanford Vision and Learning Lab, Stanford University"
     years: "Nov 2025 - Present"
-    logo: "https://en.wikipedia.org/wiki/Stanford_Cardinal#/media/File:Stanford_Cardinal_logo.png"
+    logo: "https://en.wikipedia.org/wiki/Stanford_Cardinal#/media/File:Stanford_Cardinal_logo.svg"
 
   - title: "Research Intern"
     company: "Institute for AI Industry Research (AIR), Tsinghua University"
     years: "May 2025 - August 2025"
-    logo: "https://en.wikipedia.org/wiki/Tsinghua_University#/media/File:Tsinghua_University_Logo.png"
+    logo: "https://en.wikipedia.org/wiki/Tsinghua_University#/media/File:Tsinghua_University_Logo.svg"
 
 # # =====================================================
 # # 🎤 Presentations / Talks Section

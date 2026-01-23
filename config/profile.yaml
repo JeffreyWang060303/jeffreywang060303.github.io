@@ -16,7 +16,7 @@ profile:
   headline: "Student @ Harvard College"
   email: "jeffrey_wang@college.harvard.edu"
   location: Cambridge, MA
-  profileImage: "/Users/jeff/Documents/Cornell Undergraduate/Resume/Jeffrey-Personal-Website/public/images/self.png"
+  profileImage: "/images/self.png"
 
   links:
     - name: "LinkedIn"
@@ -67,7 +67,8 @@ education:
     years: "2025 - 2026"
     logo: "/images/ntu_logo.svg"
 
-  - degree: "B.S. in Information Science, Minors in Robotics and AI"
+  - degree: "B.S. in Information Science"
+    minor: Robotics, AI
     school: "Cornell University"
     years: "2023 - 2027"
     logo: "/images/nccu_logo.svg"

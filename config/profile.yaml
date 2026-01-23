@@ -16,7 +16,7 @@ profile:
   headline: "Student @ Harvard College | Cornell University"
   email: "jeffrey underline wang at college dot harvard dot edu"
   location: Cambridge, MA
-  profileImage: "public/images/self.png"
+  profileImage: "images/self.png"
 
   links:
     - name: "LinkedIn"
@@ -58,32 +58,27 @@ education:
   - degree: "Visiting Undergraduate Student"
     school: "Harvard College"
     years: "2025 - 2026"
-    logo: "https://en.wikipedia.org/wiki/Harvard_College#/media/File:Shield_of_Harvard_College.svg"
+    logo: "https://en.wikipedia.org/wiki/Harvard_College#/media/File:Shield_of_Harvard_College.png"
 
   - degree: "B.S. in Information Science (Minors in Robotics and AI)"
     school: "Cornell University"
     years: "2023 - 2027"
-    logo: "https://en.wikipedia.org/wiki/Cornell_University#/media/File:Cornell_University_seal.svg"
+    logo: "https://en.wikipedia.org/wiki/Cornell_University#/media/File:Cornell_University_seal.png"
 
 # # =====================================================
 # # 💼 Work Experience Section
 # # =====================================================
 
 workExperience:
-  - title: "[Job Title]"
-    company: "[Company Name]"
-    years: "20XX - Present"
-    logo: "/images/nvidia_logo.webp"
+  - title: "Research Intern"
+    company: "Stanford Vision and Learning Lab, Stanford University"
+    years: "Nov 2025 - Present"
+    logo: "https://en.wikipedia.org/wiki/Stanford_Cardinal#/media/File:Stanford_Cardinal_logo.png"
 
-  - title: "Software Engineering Intern"
-    company: "Google"
-    years: "Jul 2022 - Sep 2022"
-    logo: "/images/google_logo.svg"
-
-  - title: "Research Assistant"
-    company: "University of Illinois Urbana-Champaign"
-    years: "Jul 2019 - Sep 2019"
-    logo: "/images/uiuc_logo.png"
+  - title: "Research Intern"
+    company: "Institute for AI Industry Research (AIR), Tsinghua University"
+    years: "May 2025 - August 2025"
+    logo: "https://en.wikipedia.org/wiki/Tsinghua_University#/media/File:Tsinghua_University_Logo.png"
 
 # # =====================================================
 # # 🎤 Presentations / Talks Section

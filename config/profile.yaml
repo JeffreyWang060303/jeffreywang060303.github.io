@@ -46,14 +46,14 @@ biography: |
 
 education:
   - degree: "Visiting Undergraduate Scholar"
-    school: "Harvard University & MIT"
+    school: "Harvard College"
     years: "2025 - 2026"
-    logo: "https://upload.wikimedia.org/wikipedia/en/b/b9/Harvard_University_coat_of_arms.svg"
+    logo: "https://en.wikipedia.org/wiki/Harvard_College#/media/File:Shield_of_Harvard_College.svg"
 
   - degree: "B.S. in Information Science (Minors in Robotics & AI)"
     school: "Cornell University"
     years: "2023 - 2027"
-    logo: "https://upload.wikimedia.org/wikipedia/commons/4/47/Cornell_University_seal.svg"
+    logo: "https://en.wikipedia.org/wiki/Cornell_University#/media/File:Cornell_University_seal.svg"
 
 # # =====================================================
 # # 💼 Work Experience Section

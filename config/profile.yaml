@@ -16,7 +16,7 @@ profile:
   headline: "Student @ Harvard College"
   email: "jeffrey_wang@college.harvard.edu"
   location: Cambridge, MA
-  profileImage: "https://github.com/pm25.png"
+  profileImage: "/Users/jeff/Documents/Cornell Undergraduate/Resume/Jeffrey-Personal-Website/public/images/self.png"
 
   links:
     - name: "LinkedIn"
@@ -61,19 +61,15 @@ profile:
 # # =====================================================
 
 education:
-  - degree: "Ph.D. in [Field]"
-    school: "[University Name]"
-    years: "20XX - Present"
-    logo: "https://upload.wikimedia.org/wikipedia/en/a/a1/Arizona_State_University_seal.svg"
 
-  - degree: "M.S. in Computer Science"
-    school: "National Taiwan University"
-    years: "2020 - 2022"
+  - degree: "Visiting Undergraduate Student"
+    school: "Harvard College"
+    years: "2025 - 2026"
     logo: "/images/ntu_logo.svg"
 
-  - degree: "B.S. in Computer Science"
-    school: "National Chengchi University"
-    years: "2018 - 2020"
+  - degree: "B.S. in Information Science, Minors in Robotics and AI"
+    school: "Cornell University"
+    years: "2023 - 2027"
     logo: "/images/nccu_logo.svg"
 
 # # =====================================================

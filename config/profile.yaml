@@ -34,7 +34,7 @@ profile:
         name: "FaGithub"
         package: "react-icons/fa6"
 
-  biography: |
+biography: |
     Hi! I'm <strong>Jeffrey Wang</strong>, a <em>Visiting Undergraduate Scholar at Harvard and MIT</em> passionate about <strong>Robotics and Artificial Intelligence</strong>. Currently, I am a researcher at the <em>Stanford CogAI Lab</em> and the <em>Harvard Microrobotics Lab</em>, where I focus on <em>Sim2Real learning</em> and <em>bio-inspired control pipelines</em>. 
     With a background in <em>Information Science from Cornell University</em>, I've developed strong interests in <em>Embodied AI, Offline RL, and Edge Computing</em>. My work has contributed to projects like <i>Sim2RealGen</i> and <i>GLUSTICK</i>, and I am honored to be a recipient of the <em>U.S. Department of Energy’s In DEEP Prize</em>.
     <div class="my-2"></div>

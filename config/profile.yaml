@@ -1,26 +1,17 @@
 # =====================================================
-# Data displayed on the Home (About Me) page.
-#
-# 💡 Tip for Images / Logo:
-# You can use either:
-# 1. A full URL (e.g., https://example.com/logo.png)
-# 2. A local file placed under /public/images/ and referenced with "/" (e.g., "/images/logo.png")
-# =====================================================
-
-# =====================================================
 # 👤 Personal Information
 # =====================================================
 
 profile:
-  name: "Jeffrey Wang"
-  headline: "Student @ Harvard College"
+  name: "Youhui (Jeffrey) Wang"
+  headline: "Visiting Undergraduate Scholar @ Harvard & MIT | Cornell University"
   email: "jeffrey_wang@college.harvard.edu"
-  location: Cambridge, MA
-  profileImage: "/images/self.png"
+  location: "Cambridge, MA"
+  profileImage: "/images/selfie.png"
 
   links:
     - name: "LinkedIn"
-      url: "https://www.linkedin.com/in/[your-linkedin]"
+      url: "https://www.linkedin.com/in/youhuiwang"
       icon:
         name: "FaLinkedin"
         package: "react-icons/fa6"
@@ -32,7 +23,7 @@ profile:
         package: "react-icons/fa6"
 
     - name: "Résumé"
-      url: "/pdf/sample-resume.pdf"
+      url: "/pdf/Resume_Recent.pdf"
       icon:
         name: "FaRegIdBadge"
         package: "react-icons/fa6"
@@ -43,113 +34,68 @@ profile:
         name: "FaGithub"
         package: "react-icons/fa6"
 
-    - name: "Facebook"
-      url: "https://www.facebook.com/[your-facebook]"
-      icon:
-        name: "FaSquareFacebook"
-        package: "react-icons/fa6"
-
-  # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi! I'm <strong>[Your Name]</strong>, a <em>[Your Title]</em> passionate about <em>[field or topic]</em>. Currently, I work as <em>[current role]</em> at <em>[organization]</em>, where I <em>[briefly describe your work or mission]</em>. 
-    With a background in <em>[academic or professional background]</em>, I've developed strong interests in <em>[key interests or specialties]</em> and have contributed to projects like <i>[example project]</i> and <i>[another example]</i>, all focused on <em>[broader goal or impact]</em>.
+    Hi! I'm <strong>Jeffrey Wang</strong>, a <em>Visiting Undergraduate Scholar at Harvard and MIT</em> passionate about <strong>Robotics and Artificial Intelligence</strong>. Currently, I am a researcher at the <em>Stanford CogAI Lab</em> and the <em>Harvard Microrobotics Lab</em>, where I focus on <em>Sim2Real learning</em> and <em>bio-inspired control pipelines</em>. 
+    With a background in <em>Information Science from Cornell University</em>, I've developed strong interests in <em>Embodied AI, Offline RL, and Edge Computing</em>. My work has contributed to projects like <i>Sim2RealGen</i> and <i>GLUSTICK</i>, and I am honored to be a recipient of the <em>U.S. Department of Energy’s In DEEP Prize</em>.
     <div class="my-2"></div>
-    Outside of work, I enjoy <em>[hobbies or personal interests]</em>, which inspire creativity and keep me energized. Thanks for visiting! Feel free to <a href="mailto:[your-email@example.com]" target="_blank" rel="noopener noreferrer">reach out</a> to connect.
+    Outside of research, I enjoy <em>Ice Hockey, Squash, and Traveling</em>, which inspire my creativity and keep me energized. Feel free to <a href="mailto:jeffrey_wang@college.harvard.edu" target="_blank" rel="noopener noreferrer">reach out</a> to connect!
 
 # # =====================================================
 # # 🎓 Education Section
 # # =====================================================
 
 education:
-
-  - degree: "Visiting Undergraduate Student"
-    school: "Harvard College"
+  - degree: "Visiting Undergraduate Scholar"
+    school: "Harvard University & MIT"
     years: "2025 - 2026"
-    logo: "/images/ntu_logo.svg"
+    logo: "https://upload.wikimedia.org/wikipedia/en/b/b9/Harvard_University_coat_of_arms.svg"
 
-  - degree: "B.S. in Information Science"
-    minor: Robotics, AI
+  - degree: "B.S. in Information Science (Minors in Robotics & AI)"
     school: "Cornell University"
     years: "2023 - 2027"
-    logo: "/images/nccu_logo.svg"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/47/Cornell_University_seal.svg"
 
 # # =====================================================
 # # 💼 Work Experience Section
 # # =====================================================
 
 workExperience:
-  - title: "[Job Title]"
-    company: "[Company Name]"
-    years: "20XX - Present"
-    logo: "/images/nvidia_logo.webp"
+  - title: "Research Assistant"
+    company: "CogAI Lab (Stanford SVL)"
+    years: "Nov 2025 - Present"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Seal_of_Leland_Stanford_Junior_University.svg"
 
-  - title: "Software Engineering Intern"
-    company: "Google"
-    years: "Jul 2022 - Sep 2022"
-    logo: "/images/google_logo.svg"
+  - title: "Research Intern"
+    company: "AIR-DREAM Lab (Tsinghua University)"
+    years: "May 2025 - Aug 2025"
+    logo: "https://upload.wikimedia.org/wikipedia/en/b/b7/Tsinghua_University_Logo.svg"
 
   - title: "Research Assistant"
-    company: "University of Illinois Urbana-Champaign"
-    years: "Jul 2019 - Sep 2019"
-    logo: "/images/uiuc_logo.png"
-
-# # =====================================================
-# # 🎤 Presentations / Talks Section
-# # =====================================================
-
-talks:
-  - category: "Misc"
-    title: "[Your Talk Title Here]"
-    organization: "[Your Talk Location Here]"
-    date: "[Month Day, Year]"
-    link: "https://example.com/your-talk-link"
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg"
-
-  - category: "Workshop"
-    title: "Deep Learning with Keras"
-    organization: "University of Illinois Urbana-Champaign (UIUC)"
-    date: "Sep 4, 2019"
-    link: null
-    image: "https://pm25.github.io/images/uiuc-workshop.webp"
-
-  - category: "Workshop"
-    title: "Practical Guide to PyTorch"
-    organization: "ABC University"
-    date: "Dec 5, 2022"
-    link: "https://example.com/workshop-talk"
-    image: null
+    company: "Harvard Microrobotics Lab"
+    years: "Nov 2025 - Present"
+    logo: "https://upload.wikimedia.org/wikipedia/en/b/b9/Harvard_University_coat_of_arms.svg"
 
 # # =====================================================
 # # 🛡️ Professional Services
 # # =====================================================
 
 services:
-  - category: "Misc"
-    role: "[Role]"
-    organization: "[Organization]"
-    date: "[Year]"
-    link: "https://example.com/workshop-talk"
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg"
-
-  - category: "Research"
-    role: "Reviewer"
-    organization: "TPAMI 2024, NeurIPS 2025"
-    date: "2024-2025"
-    link: null
-    image: null
-
-  - category: "Research"
-    role: "Program Committee Member"
-    organization: "CVPR 2022"
-    date: "2022"
-    link: null
-    image: null
-
   - category: "Teaching"
-    role: "Teaching Assistant"
-    organization: "National Taiwan University - Data Structures & Algorithms"
-    date: "2021"
-    link: null
+    role: "Teaching Assistant (CS 1340)"
+    organization: "Cornell University"
+    date: "2024 - 2025"
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/47/Cornell_University_seal.svg"
+
+  - category: "Leadership"
+    role: "Executive Board Member"
+    organization: "Engineering Student Organization"
+    date: "2024 - 2025"
+    image: null
+
+  - category: "Research"
+    role: "Student Assistant"
+    organization: "Cornell CHEM 2070, CS 1112, MATH 1910/1920"
+    date: "2023 - 2025"
     image: null
 
 # # =====================================================
@@ -158,76 +104,50 @@ services:
 
 skills:
   Programming:
-    - name: "[Name]"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
-      proficiency: "[Proficiency]"
-      description: "[Description]"
-
     - name: "Python"
       logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-      proficiency: Experienced
-      description: null
+      proficiency: Proficient
+      description: "Primary language for ML and Robotics."
 
-    - name: "JavaScript"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
-      proficiency: Fluent
-      description: null
+    - name: "C/C++"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+      proficiency: Proficient
+      description: "Used for ROS-based control and edge hardware."
 
-  Web:
-    - name: "React"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg"
-      proficiency: Advanced
-      description: null
-
-    - name: "Typescript"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg"
-      proficiency: Fluent
-      description: null
-
-    - name: "TailwindCSS"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-      proficiency: Fluent
-      description: null
-
-    - name: "Next.js"
-      logo: "https://logo.svgcdn.com/devicon/nextjs-original.png"
-      proficiency: Fluent
+    - name: "Julia"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg"
+      proficiency: Proficient
       description: null
 
   Machine Learning:
     - name: "PyTorch"
       logo: "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg"
       proficiency: Experienced
-      description: null
+      description: "Development of RL and VLA models."
 
-    - name: "TensorFlow"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
-      proficiency: Fluent
-      description: null
-
-    - name: "Keras"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg"
-      proficiency: Fluent
-      description: null
+    - name: "PyDrake"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2a/OOjs_UI_icon_academic-progressive.svg"
+      proficiency: Experienced
+      description: "Robotic manipulation and simulation."
 
   Research:
-    - name: "Machine Learning"
+    - name: "Robotics"
       logo: "https://upload.wikimedia.org/wikipedia/commons/2/2a/OOjs_UI_icon_academic-progressive.svg"
-      proficiency: 2020 - Current
-      description: "General machine learning methods and applied research."
+      proficiency: 2024 - Current
+      description: "Bio-inspired robots, ROS control pipelines, and Sim2Real."
 
-    - name: "Representation Learning"
+    - name: "Deep Learning"
       logo: "https://upload.wikimedia.org/wikipedia/commons/2/2a/OOjs_UI_icon_academic-progressive.svg"
-      proficiency: 2024 - 2025
-      description: "Learning meaningful embeddings and feature representations from data."
+      proficiency: 2023 - Current
+      description: "Specialized in Offline RL and representation learning."
 
   Language:
     - name: "English"
       logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
-      proficiency: Fluent
-      description: "Professional working proficiency."
+      proficiency: Professional
+      description: "Work proficiency."
 
-    - name: "Taiwanese Hokkien"
+    - name: "Mandarin"
       logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
       proficiency: Native
       description: "Native fluency."

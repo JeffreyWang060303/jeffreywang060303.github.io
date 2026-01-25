@@ -90,78 +90,104 @@ workExperience:
 # # 🛠️ Skills Section
 # # =====================================================
 
+# # =====================================================
+# # 🛠️ Skills Section
+# # =====================================================
+
 skills:
   Programming:
-    - name: "[Name]"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
-      proficiency: "[Proficiency]"
-      description: "[Description]"
-
     - name: "Python"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-      proficiency: Experienced
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/200px-Python-logo-notext.svg.png"
+      proficiency: Proficient
       description: null
 
-    - name: "JavaScript"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
-      proficiency: Fluent
+    - name: "Java"
+      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/200px-Java_programming_language_logo.svg.png"
+      proficiency: Proficient
       description: null
 
-  Web:
-    - name: "React"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg"
+    - name: "C/C++"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/200px-ISO_C%2B%2B_Logo.svg.png"
+      proficiency: Proficient
+      description: null
+
+    - name: "R"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/200px-Matlab_Logo.png"
+      proficiency: Proficient
+      description: null
+
+    - name: "MATLAB"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/200px-Matlab_Logo.png"
       proficiency: Advanced
       description: null
 
-    - name: "Typescript"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg"
-      proficiency: Fluent
+    - name: "Julia"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Julia_Programming_Language_Logo.svg/200px-Julia_Programming_Language_Logo.svg.png"
+      proficiency: Advanced
       description: null
 
-    - name: "TailwindCSS"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-      proficiency: Fluent
+    - name: "SQL"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/200px-Matlab_Logo.png"
+      proficiency: Advanced
       description: null
 
-    - name: "Next.js"
-      logo: "https://logo.svgcdn.com/devicon/nextjs-original.png"
-      proficiency: Fluent
-      description: null
-
-  Machine Learning:
+  Robotics/ML:
     - name: "PyTorch"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg"
-      proficiency: Experienced
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/200px-PyTorch_logo_icon.svg.png"
+      proficiency: Proficient
       description: null
 
-    - name: "TensorFlow"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
-      proficiency: Fluent
+    - name: "Tensorflow"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
+      proficiency: proficient
       description: null
 
-    - name: "Keras"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg"
-      proficiency: Fluent
+    - name: "PyDrake"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
+      proficiency: Advanced
+      description: "MIT 6.4212: Robotic Manipulation"
+
+    - name: "SOLIDWORKS"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
+      proficiency: Advanced
+      description: "MIT 6.4212: Robotic Manipulation"
+
+
+  Online Course Certificates:
+    - name: "Robotics"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
+      proficiency: 2024 - Now
+      description: "Bio-inspired robots, aerial microrobotics, and compliant manipulation."
+
+    - name: "Deep Learning"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
+      proficiency: 2023 - Now
+      description: "Offline RL, VLA models, and representation learning."
+
+
+  Web:
+    - name: "HTML"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/200px-React-icon.svg.png"
+      proficiency: Proficient
       description: null
 
-  Research:
-    - name: "Machine Learning"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2a/OOjs_UI_icon_academic-progressive.svg"
-      proficiency: 2020 - Current
-      description: "General machine learning methods and applied research."
+    - name: "JavaScript"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/200px-React-icon.svg.png"
+      proficiency: Proficient
+      description: null
 
-    - name: "Representation Learning"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2a/OOjs_UI_icon_academic-progressive.svg"
-      proficiency: 2024 - 2025
-      description: "Learning meaningful embeddings and feature representations from data."
+    - name: "CSS"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/200px-React-icon.svg.png"
+      proficiency: Proficient
+      description: null
 
   Language:
     - name: "English"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
-      proficiency: Fluent
-      description: "Professional working proficiency."
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/OOjs_UI_icon_language-ltr-progressive.svg/200px-OOjs_UI_icon_language-ltr-progressive.svg.png"
+      proficiency: Work Proficiency
+      description: null
 
-    - name: "Taiwanese Hokkien"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
+    - name: "Mandarin"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/OOjs_UI_icon_language-ltr-progressive.svg/200px-OOjs_UI_icon_language-ltr-progressive.svg.png"
       proficiency: Native
-      description: "Native fluency."
+      description: null

@@ -7,7 +7,7 @@
 
 sidebar:
   userName: "Youhui (Jeffrey) Wang" # Name displayed at the top of the sidebar
-  profileImage: images/self.png # Profile image URL
+  profileImage: images/self2.jpeg # Profile image URL
   sections:
     - title: About Me
       url: ""

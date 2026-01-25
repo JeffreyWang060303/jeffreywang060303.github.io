@@ -45,23 +45,20 @@ profile:
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi! I'm <strong>Jeffrey Wang</strong>, currently a Visiting Undergraduate Student at <em>Harvard College</em> 
-    passionate about <em>Robotics learning, control, and Artificial Intelligence in general</em>. 
-    Currently, I work as a <em>Research Assistant</em> at the <em>CogAI Lab under Stanford Aritficial 
-    Intelligence Laboratory, fortunately advised by Raven Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li,
-    and Harvard Edge Computing Lab</em>, fortunately advised by Jason Jabbour and Prof. Vijay Janapa Reddi.
-    With a background in <em>Information Science at Cornell University</em>, I've developed strong interests in 
-    <em>Robotics, Machine Learning, and AI</em> and have contributed to projects like <i>Sim2RealGen</i> and <i>GLUSTICK</i>, 
-    all focused on <em>enhancing robotic safety and real-world manipulation</em>.
+    Hi! I'm <strong>Jeffrey Wang</strong>, currently a Visiting Undergraduate Student at <strong>Harvard College</strong> 
+    passionate about <strong>Robotics learning, control, and Artificial Intelligence in general</strong>. 
+    Currently, I work as a <em>Research Intern</em> at the <strong>CogAI Lab under Stanford Aritficial 
+    Intelligence Laboratory</strong>, fortunately advised by <strong>Raven Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li</strong>,
+    and <strong>Harvard Edge Computing Lab</strong>, fortunately advised by <strong>Jason Jabbour and Prof. Vijay Janapa Reddi</strong>.
     <div class="my-2"></div>
-    Outside of work, I enjoy <em>Ice Hockey, Squash, and Traveling</em>, which inspire creativity 
+    Outside of work, I enjoy <em>playing basketball, ice hockey, squash, and traveling</em>, which inspire creativity 
     and keep me energized. Feel free to connect to me for any potential opportunities or chatting!
 # # =====================================================
 # # 🎓 Education Section
 # # =====================================================
 
 education:
-  - degree: "Visiting Undergraduate Student"
+  - degree: "Computer Science, Visiting Undergraduate Student"
     school: "Harvard College"
     years: "2025 - 2026"
     logo: "images/harvard.png"

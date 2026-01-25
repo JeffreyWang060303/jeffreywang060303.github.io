@@ -64,12 +64,12 @@ education:
   - degree: "Visiting Undergraduate Student"
     school: "Harvard College"
     years: "2025 - 2026"
-    logo: "https://en.wikipedia.org/wiki/Harvard_College#/media/File:Shield_of_Harvard_College.svg"
+    logo: "images/harvard.png"
 
   - degree: "B.S. in Information Science (Minors in Robotics and AI)"
     school: "Cornell University"
     years: "2023 - 2027"
-    logo: "https://en.wikipedia.org/wiki/Cornell_University#/media/File:Cornell_University_seal.svg"
+    logo: "images/Cornell.png"
 
 # # =====================================================
 # # 💼 Work Experience Section
@@ -79,71 +79,12 @@ workExperience:
   - title: "Research Intern"
     company: "Stanford Vision and Learning Lab, Stanford University"
     years: "Nov 2025 - Present"
-    logo: "https://en.wikipedia.org/wiki/Stanford_Cardinal#/media/File:Stanford_Cardinal_logo.svg"
+    logo: "images/stanford.png"
 
   - title: "Research Intern"
     company: "Institute for AI Industry Research (AIR), Tsinghua University"
     years: "May 2025 - August 2025"
-    logo: "https://en.wikipedia.org/wiki/Tsinghua_University#/media/File:Tsinghua_University_Logo.svg"
-
-# # =====================================================
-# # 🎤 Presentations / Talks Section
-# # =====================================================
-
-talks:
-  - category: "Misc"
-    title: "[Your Talk Title Here]"
-    organization: "[Your Talk Location Here]"
-    date: "[Month Day, Year]"
-    link: "https://example.com/your-talk-link"
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg"
-
-  - category: "Workshop"
-    title: "Deep Learning with Keras"
-    organization: "University of Illinois Urbana-Champaign (UIUC)"
-    date: "Sep 4, 2019"
-    link: null
-    image: "https://pm25.github.io/images/uiuc-workshop.webp"
-
-  - category: "Workshop"
-    title: "Practical Guide to PyTorch"
-    organization: "ABC University"
-    date: "Dec 5, 2022"
-    link: "https://example.com/workshop-talk"
-    image: null
-
-# # =====================================================
-# # 🛡️ Professional Services
-# # =====================================================
-
-services:
-  - category: "Misc"
-    role: "[Role]"
-    organization: "[Organization]"
-    date: "[Year]"
-    link: "https://example.com/workshop-talk"
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg"
-
-  - category: "Research"
-    role: "Reviewer"
-    organization: "TPAMI 2024, NeurIPS 2025"
-    date: "2024-2025"
-    link: null
-    image: null
-
-  - category: "Research"
-    role: "Program Committee Member"
-    organization: "CVPR 2022"
-    date: "2022"
-    link: null
-    image: null
-
-  - category: "Teaching"
-    role: "Teaching Assistant"
-    organization: "National Taiwan University - Data Structures & Algorithms"
-    date: "2021"
-    link: null
-    image: null
+    logo: "images/THU.png"
 
 # # =====================================================
 # # 🛠️ Skills Section

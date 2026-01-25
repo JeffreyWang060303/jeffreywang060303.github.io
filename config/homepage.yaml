@@ -28,10 +28,3 @@ homepage:
       variant: default
       enabled: true
 
-    - name: Talks
-      variant: default # default | card
-      enabled: true
-
-    - name: Services
-      variant: default # default | card
-      enabled: true

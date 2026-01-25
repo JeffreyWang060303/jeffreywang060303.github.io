@@ -6,8 +6,8 @@
 # =====================================================
 
 sidebar:
-  userName: "[Your Name]" # Name displayed at the top of the sidebar
-  profileImage: https://github.com/shadcn.png # Profile image URL
+  userName: "Youhui (Jeffrey) Wang" # Name displayed at the top of the sidebar
+  profileImage: images/self.png # Profile image URL
   sections:
     - title: About Me
       url: ""
@@ -26,21 +26,11 @@ sidebar:
       icon:
         name: LuLibraryBig
         package: "react-icons/lu"
-
-    - title: Articles
-      url: "articles"
+    
+    - title: Skills
+      url: "publications"
       icon:
-        name: LuNewspaper
+        name: LuLibraryBig
         package: "react-icons/lu"
 
-    - title: Movies
-      url: "movies"
-      icon:
-        name: LuClapperboard
-        package: "react-icons/lu"
-
-    - title: Music
-      url: "music"
-      icon:
-        name: LuMusic
-        package: "react-icons/lu"
+  

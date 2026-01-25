@@ -45,9 +45,9 @@ profile:
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi! I'm <strong>Jeffrey Wang</strong>, currently a Visiting Undergraduate Student at <strong>Harvard College</strong> 
-    passionate about <strong>Robotics learning, control, and Artificial Intelligence in general</strong>. 
-    Currently, I work as a <em>Research Intern</em> at the <strong>CogAI Lab under Stanford Aritficial 
+    Hi! I'm <strong>Jeffrey Wang</strong>, currently a Visiting Undergraduate Student at <strong>Harvard College</strong>, originally from
+    <strong>Cornell University</strong>, passionate about <em>Robotics learning, control, and Artificial Intelligence in general</em>. 
+    Currently, I work as a <em>Research Intern</em> at the <strong>CogAI Lab</strong> under <strong>Stanford Aritficial 
     Intelligence Laboratory</strong>, fortunately advised by <strong>Raven Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li</strong>,
     and <strong>Harvard Edge Computing Lab</strong>, fortunately advised by <strong>Jason Jabbour and Prof. Vijay Janapa Reddi</strong>.
     <div class="my-2"></div>
@@ -74,7 +74,7 @@ education:
 
 workExperience:
   - title: "Research Intern"
-    company: "Stanford Vision and Learning Lab, Stanford University"
+    company: "Stanford Artificial Intelligence Laboratory, Stanford University"
     years: "Nov 2025 - Present"
     logo: "images/Stanford_Cardinal_logo.png"
 
@@ -147,7 +147,7 @@ skills:
     - name: "SOLIDWORKS"
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
       proficiency: Advanced
-      description: "MIT 6.4212: Robotic Manipulation"
+      description: null
 
 
   Online Course Certificates:
@@ -187,4 +187,9 @@ skills:
     - name: "Mandarin"
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/OOjs_UI_icon_language-ltr-progressive.svg/200px-OOjs_UI_icon_language-ltr-progressive.svg.png"
       proficiency: Native
+      description: null
+
+    - name: "French"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/OOjs_UI_icon_language-ltr-progressive.svg/200px-OOjs_UI_icon_language-ltr-progressive.svg.png"
+      proficiency: Advanced
       description: null

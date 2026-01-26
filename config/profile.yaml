@@ -26,7 +26,7 @@ profile:
         package: "react-icons/fa6"
 
     - name: "Google Scholar"
-      url: ""
+      url: "https://scholar.google.com/citations?user=AtHsy-EAAAAJ&hl=zh-CN"
       icon:
         name: "FaGoogleScholar"
         package: "react-icons/fa6"

@@ -109,7 +109,7 @@ skills:
       description: null
 
     - name: "R"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/200px-Matlab_Logo.png"
+      logo: "images/R.png"
       proficiency: Proficient
       description: null
 
@@ -124,7 +124,7 @@ skills:
       description: null
 
     - name: "SQL"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/200px-Matlab_Logo.png"
+      logo: "images/sql.png"
       proficiency: Advanced
       description: null
 
@@ -135,46 +135,51 @@ skills:
       description: null
 
     - name: "Tensorflow"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
+      logo: "images/tensorflow.jpg"
       proficiency: proficient
       description: null
 
     - name: "PyDrake"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
+      logo: "images/pydrake.png"
       proficiency: Advanced
       description: "MIT 6.4212: Robotic Manipulation"
 
     - name: "SOLIDWORKS"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
+      logo: "images/solidworks.png"
       proficiency: Advanced
       description: null
 
 
   Online Course Certificates:
-    - name: "Robotics"
+    - name: "Deep Learning Specialization"
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
-      proficiency: 2024 - Now
-      description: "Bio-inspired robots, aerial microrobotics, and compliant manipulation."
+      proficiency: Certified by DeepLearning.AI
+      description: "December 2023"
 
-    - name: "Deep Learning"
+    - name: "Machine Learning Specialization"
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
-      proficiency: 2023 - Now
-      description: "Offline RL, VLA models, and representation learning."
+      proficiency: Certified by DeepLearning.AI
+      description: "September 2023"
+
+    - name: "Python for Data Science, AI & Development"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
+      proficiency: Certified by IBM
+      description: "July 2023"
 
 
   Web:
     - name: "HTML"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/200px-React-icon.svg.png"
+      logo: "images/html.png"
       proficiency: Proficient
       description: null
 
     - name: "JavaScript"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/200px-React-icon.svg.png"
+      logo: "images/javascript.png"
       proficiency: Proficient
       description: null
 
     - name: "CSS"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/200px-React-icon.svg.png"
+      logo: "images/css.png"
       proficiency: Proficient
       description: null
 

@@ -24,7 +24,7 @@ publications:
     - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"
       authors: "Jason Jabbour, Dong-Ki Kim, Max Smith, Jay Patrikar, Radhika Ghosal, Youhui Wang, Ali Agha, Vijay Janapa Reddi, Shayegan Omidshafiei"
       year: "2026"
-      venue: "ICLR (Under Review)"
+      venue: "ICML (Under Review)"
       link: "https://arxiv.org/abs/2510.08464"
       featured: true
 

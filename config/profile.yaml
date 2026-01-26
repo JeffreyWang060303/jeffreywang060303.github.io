@@ -84,8 +84,11 @@ workExperience:
     logo: "images/Tsinghua_University_Logo.png"
 
 # # =====================================================
-# # 🛠️ Skills Section
+# # 🛠️ Courses Section
 # # =====================================================
+
+Relevant Courses:
+  - name: "MIT 6.4212 Robotic Manipulation"
 
 # # =====================================================
 # # 🛠️ Skills Section
@@ -123,6 +126,11 @@ skills:
       proficiency: Advanced
       description: null
 
+    - name: "Arduino"
+      logo: "images/arduino.png"
+      proficiency: Advanced
+      description: null
+
     - name: "SQL"
       logo: "images/sql.png"
       proficiency: Advanced
@@ -136,6 +144,11 @@ skills:
 
     - name: "Tensorflow"
       logo: "images/tensorflow.jpg"
+      proficiency: proficient
+      description: null
+
+    - name: "ROS2"
+      logo: "images/ros.png"
       proficiency: proficient
       description: null
 

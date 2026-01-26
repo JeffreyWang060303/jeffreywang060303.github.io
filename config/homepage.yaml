@@ -15,11 +15,7 @@ homepage:
     - name: Experience
       variant: default
       enabled: true
-
-    - name: Relevant Courses
-      variant: default
-      enabled: true
-
+      
     - name: Publications
       variant: default
       enabled: true

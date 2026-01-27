@@ -1,4 +1,4 @@
-import { FaChalkboardTeacher } from "react-icons/fa6";
+import { FaChalkboardUser } from "react-icons/fa6";
 
 import {
   Table,
@@ -15,7 +15,7 @@ export default function TeachingSection() {
   return (
     <div className="space-y-6">
       <div className="flex flex-row justify-center items-center gap-2 text-plus font-semibold">
-        <FaChalkboardTeacher />
+        <FaChalkboardUser />
         Teaching Experience
       </div>
 

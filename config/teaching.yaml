@@ -14,7 +14,19 @@
 
 teaching:
   items:
+    - courseNumber: "INFO 1260"
+      courseTitle: "Choices and Consequences in Computing"
+      term: "Spring 2025"
+      university: "Cornell University"
+
     - courseNumber: "CS 1112"
-      courseTitle: "Introduction to Computing"
+      courseTitle: "Introduction to Computing: An Engineering and Science Perspective"
       term: "Fall 2024"
       university: "Cornell University"
+
+    - courseNumber: "MATH 1910"
+      courseTitle: "Single Variable Calculus for Engineers"
+      term: "Spring 2024"
+      university: "Cornell University"
+
+

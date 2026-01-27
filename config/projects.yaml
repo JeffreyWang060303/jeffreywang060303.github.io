@@ -58,7 +58,7 @@ projects:
     github: null
     paper: "articles/Wang & Zhang 6.4212 Final Paper.pdf"
     image: "images/6.4212.jpg"
-    featured: false
+    featured: true
 
   - title: "FISOR + TELS"
     role: "AIR-DREAM Lab at the Institute for AI Industry Research (AIR) at Tsinghua University"

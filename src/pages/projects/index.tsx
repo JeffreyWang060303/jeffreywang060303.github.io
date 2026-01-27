@@ -133,7 +133,13 @@ function ProjectCard({
           <div className="flex flex-row items-center justify-end gap-2 text-muted-foreground pt-2">
             {paper && (
               <a
-                href={paper}
+                href={
+                  paper.startsWith("http")
+                    ? paper
+                    : `/${paper.split("/").map((part, i, arr) => 
+                        i === arr.length - 1 ? encodeURIComponent(part) : part
+                      ).join("/")}`
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Paper"

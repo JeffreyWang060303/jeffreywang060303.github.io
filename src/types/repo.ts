@@ -8,4 +8,5 @@ export interface ProjectProps {
   github?: string | null;
   paper?: string | null;
   image?: string | null;
+  featured?: boolean;
 }

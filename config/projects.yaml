@@ -20,6 +20,10 @@
 # ✔ The `paper` field is optional and links to the paper/publication.
 #
 # ✔ The `image` field is the preview image URL for the project.
+#
+# ✔ The `featured` field controls whether the project appears on the homepage.
+#    - featured: true  → shown on the homepage
+#    - featured: false → shown only on the Projects page
 # =====================================================
 
 projects:
@@ -34,6 +38,7 @@ projects:
     github: null
     paper: null
     image: "images/sail.jpg"
+    featured: true
 
   - title: "GLUESTICK (2026 ICML under review)"
     role: "Harvard Edge Computing Lab, Harvard University"
@@ -43,6 +48,7 @@ projects:
     github: "https://gluestick-vla.github.io/"
     paper: "https://arxiv.org/abs/2510.08464"
     image: "images/gluestick.jpg"
+    featured: true
 
   - title: "FISOR + TELS"
     role: "AIR-DREAM Lab at the Institute for AI Industry Research (AIR) at Tsinghua University"
@@ -52,6 +58,9 @@ projects:
      national data center cooling under limited, low-quality data using PyTorch."
     tools: ["Offline RL", "ML"]
     github: null
-    image: null
+    image: "images/fisortels.png"
+    featured: true
 
-    
+  
+
+

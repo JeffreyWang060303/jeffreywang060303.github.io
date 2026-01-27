@@ -7,5 +7,7 @@ export const projects: ProjectProps[] = projectsImport as ProjectProps[];
 // For backward compatibility, we can still export as repos
 export const repos = projects;
 
-// All projects are "featured" in the new format (no featured field)
-export const featuredReposArray: ProjectProps[] = projects;
+// Filter featured projects for homepage display
+export const featuredReposArray: ProjectProps[] = projects.filter(
+  (project) => project.featured !== false,
+);

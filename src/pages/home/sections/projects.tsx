@@ -4,6 +4,7 @@ import { FaWrench, FaGithub, FaArrowRight, FaChevronDown, FaChevronUp, FaFileLin
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ImageViewer } from "@/components/image-viewer";
 
 import { featuredReposArray } from "@/data/repos";
 
@@ -46,6 +47,7 @@ function ProjectCard({
   projectData: (typeof featuredReposArray)[number];
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
 
   if (!projectData) {
     return (
@@ -63,25 +65,24 @@ function ProjectCard({
     projectData;
 
   return (
-    <Card className="rounded-md overflow-hidden gap-0 py-0 w-full flex flex-col h-full">
-      <div className="flex flex-col flex-grow">
-        {image && (
-          <a
-            href={github || "#"}
-            target={github ? "_blank" : undefined}
-            rel={github ? "noopener noreferrer" : undefined}
-            className="block w-full"
-          >
-            <div className="w-full flex items-center justify-center bg-muted/30 overflow-hidden">
-              <img
-                src={image}
-                alt={title || "Project image"}
-                className="w-full h-auto max-h-64 object-contain"
-                loading="lazy"
-              />
+    <>
+      <Card className="rounded-md overflow-hidden gap-0 py-0 w-full flex flex-col h-full">
+        <div className="flex flex-col flex-grow">
+          {image && (
+            <div
+              onClick={() => setIsImageViewerOpen(true)}
+              className="block w-full cursor-pointer hover:opacity-90 transition-opacity"
+            >
+              <div className="w-full flex items-center justify-center bg-muted/30 overflow-hidden">
+                <img
+                  src={image}
+                  alt={title || "Project image"}
+                  className="w-full h-auto max-h-64 object-contain"
+                  loading="lazy"
+                />
+              </div>
             </div>
-          </a>
-        )}
+          )}
 
         {image && <div className="w-full border-t" />}
 
@@ -173,5 +174,14 @@ function ProjectCard({
         </div>
       </div>
     </Card>
+    {image && (
+      <ImageViewer
+        imageUrl={image}
+        alt={title || "Project image"}
+        open={isImageViewerOpen}
+        onOpenChange={setIsImageViewerOpen}
+      />
+    )}
+    </>
   );
 }

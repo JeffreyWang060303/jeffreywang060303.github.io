@@ -11,7 +11,8 @@ import { courseworks } from "@/data/courseworks";
 const TITLE = "Relevant Courseworks";
 
 export default function CourseworksSection() {
-  const [active, setActive] = useState("All");
+  const [activeSubject, setActiveSubject] = useState("All");
+  const [activeInstitution, setActiveInstitution] = useState("All");
 
   // Get all unique subjects from all courseworks
   const allSubjects = useMemo(() => {
@@ -24,23 +25,62 @@ export default function CourseworksSection() {
     return Array.from(subjectsSet).sort();
   }, []);
 
+  // Get all unique institutions from all courseworks
+  const allInstitutions = useMemo(() => {
+    const institutionsSet = new Set<string>();
+    courseworks.forEach((coursework) => {
+      if (coursework.institution) {
+        institutionsSet.add(coursework.institution);
+      }
+    });
+    return Array.from(institutionsSet).sort();
+  }, []);
+
   const SUBJECTS = ["All", ...allSubjects];
+  const INSTITUTIONS = ["All", ...allInstitutions];
 
   const filtered = useMemo(() => {
-    if (active === "All") {
-      return courseworks;
-    }
-    return courseworks.filter(
-      (coursework) =>
-        coursework.subjects && coursework.subjects.includes(active),
-    );
-  }, [active]);
+    return courseworks.filter((coursework) => {
+      // Filter by institution
+      const matchesInstitution =
+        activeInstitution === "All" ||
+        coursework.institution === activeInstitution;
+
+      // Filter by subject
+      const matchesSubject =
+        activeSubject === "All" ||
+        (coursework.subjects && coursework.subjects.includes(activeSubject));
+
+      return matchesInstitution && matchesSubject;
+    });
+  }, [activeSubject, activeInstitution]);
 
   return (
     <div className="space-y-6">
       <div className="flex flex-row justify-center items-center gap-2 text-2xl font-semibold">
         <FaBook className="text-primary" />
         {TITLE}
+      </div>
+
+      {/* Institution filter bar */}
+      <div className="flex flex-row gap-2 flex-wrap justify-center items-center px-4 py-2 bg-muted/50 rounded-md">
+        <span className="text-sm font-medium text-muted-foreground mr-2">
+          Institutions:
+        </span>
+        {INSTITUTIONS.map((institution) => (
+          <button
+            key={institution}
+            onClick={() => setActiveInstitution(institution)}
+            className={cn(
+              "px-3 py-1.5 rounded-sm text-sm cursor-pointer transition-colors",
+              activeInstitution === institution
+                ? "bg-primary text-primary-foreground"
+                : "bg-background hover:bg-muted",
+            )}
+          >
+            {institution}
+          </button>
+        ))}
       </div>
 
       <div className="flex flex-row gap-4">
@@ -52,10 +92,10 @@ export default function CourseworksSection() {
           {SUBJECTS.map((subject) => (
             <button
               key={subject}
-              onClick={() => setActive(subject)}
+              onClick={() => setActiveSubject(subject)}
               className={cn(
                 "px-3 py-2 rounded-sm text-left cursor-pointer",
-                active === subject
+                activeSubject === subject
                   ? "bg-primary text-primary-foreground"
                   : "hover:bg-muted",
               )}
@@ -102,7 +142,10 @@ export default function CourseworksSection() {
 
                     <div className="flex flex-col gap-2">
                       <div className="flex flex-row items-center justify-between flex-wrap gap-2">
-                        <Badge variant="secondary" className="text-xs w-fit">
+                        <Badge
+                          variant="default"
+                          className="text-xs w-fit bg-primary/90 text-primary-foreground hover:bg-primary"
+                        >
                           {coursework.institution}
                         </Badge>
                       </div>

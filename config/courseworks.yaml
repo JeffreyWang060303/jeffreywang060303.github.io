@@ -29,7 +29,7 @@ courseworks:
     institution: "Harvard University"
     description: "Startups: From Idea to Exit"
     term: "Fall 2025"
-    subjects: ["Business", "Entrepreneurship"]
+    subjects: ["Entrepreneurship"]
 
   - title: "CS 3780"
     institution: "Cornell University"
@@ -48,6 +48,12 @@ courseworks:
     description: "Independent Research"
     term: "Spring 2025"
     subjects: ["Research", "Robotics"]
+
+  - title: "BEE 4990"
+    institution: "Cornell University"
+    description: "Independent Research"
+    term: "Spring 2025, Spring 2024, Fall 2023"
+    subjects: ["CS", "Research"]
 
   - title: "MATH 2940"
     institution: "Cornell University"
@@ -77,7 +83,7 @@ courseworks:
     institution: "Cornell University"
     description: "Choices and Consequences in Computing"
     term: "Spring 2024"
-    subjects: ["CS", "Ethics"]
+    subjects: ["CS"]
 
   - title: "MATH 1920"
     institution: "Cornell University"
@@ -89,7 +95,7 @@ courseworks:
     institution: "Cornell University"
     description: "Networks"
     term: "Winter 2024"
-    subjects: ["CS", "Networks"]
+    subjects: ["CS"]
 
   - title: "CS 1112"
     institution: "Cornell University"

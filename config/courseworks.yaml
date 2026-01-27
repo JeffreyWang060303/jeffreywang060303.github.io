@@ -41,7 +41,7 @@ courseworks:
     institution: "Cornell University"
     description: "Introductory Design and Programming for the Web"
     term: "Spring 2025"
-    subjects: ["CS", "Web"]
+    subjects: ["CS"]
 
   - title: "MAE 4900"
     institution: "Cornell University"

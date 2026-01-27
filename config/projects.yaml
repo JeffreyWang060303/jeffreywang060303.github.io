@@ -22,13 +22,15 @@
 
 projects:
   - title: "Sim2RealGen"
-    role: "Research Assistant @ Stanford CogAI Lab"
+    role: "Stanford Vision and Learning Lab, Stanford University"
     duration: "Nov 2025 - Present"
-    description: "Developing a generative framework for sim-to-real transfer to enhance robotic safety and manipulation. Working under PIs Fei-Fei Li and Jiajun Wu."
-    tools: ["Python", "PyTorch", "Generative AI"]
-    advisors: "Fei-Fei Li, Jiajun Wu"
-    github: "https://github.com/your-username/Sim2RealGen"
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
+    description: "Developing Sim2RealGen, a video-based sim-to-real learning 
+    framework that enables robots to imagine and evaluate task-relevant scene 
+    variations offline via generated RGB–depth videos, improving real-world manipulation without physical trial-and-error."
+    tools: ["Python", "PyTorch", "Robotics", "ML"]
+    advisors: "Raven Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
+    github: "https://github.com/JeffreyWang060303/Sim2RealGen_Data_Preprocessing_Final"
+    image: "images/sail.png"
 
   - title: "Showlit"
     role: "Personal Project"

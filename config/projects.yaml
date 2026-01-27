@@ -56,7 +56,7 @@ projects:
     description: "Developed an interpretable square fabric folding system integrating geometric vision, deformable modeling, motion planning, and impedance control, achieving up to 90% success across varying fabric sizes."
     tools: ["Robotics", "Vision", "ML"]
     github: null
-    paper: "articles/Wang & Zhang 6.4212 Final Paper.pdf"
+    paper: "/articles/Wang & Zhang 6.4212 Final Paper.pdf"
     image: "images/6.4212.jpg"
     featured: true
 

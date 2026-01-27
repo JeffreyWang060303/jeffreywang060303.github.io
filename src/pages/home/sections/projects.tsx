@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router";
-import { FaWrench, FaGithub, FaArrowRight } from "react-icons/fa6";
+import { FaWrench, FaGithub, FaArrowRight, FaChevronDown, FaChevronUp } from "react-icons/fa6";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -16,7 +17,7 @@ export default function ProjectsSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {featuredReposArray.map((projectData, index) => (
-          <ProjectCard key={index} projectData={projectData} />
+          <ProjectCard key={index} projectData={projectData} index={index} />
         ))}
       </div>
 
@@ -41,9 +42,13 @@ export default function ProjectsSection() {
 
 function ProjectCard({
   projectData,
+  index,
 }: {
   projectData: (typeof featuredReposArray)[number];
+  index: number;
 }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   if (!projectData) {
     return (
       <Card className="rounded-md overflow-hidden">
@@ -58,6 +63,8 @@ function ProjectCard({
 
   const { title, role, duration, description, tools, advisors, github, image } =
     projectData;
+  
+  const key = `project-${index}`;
 
   return (
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full flex flex-col h-full">
@@ -104,13 +111,30 @@ function ProjectCard({
             <p className="font-medium line-clamp-1">{role}</p>
             <p>{duration}</p>
             {advisors && (
-              <p className="text-xs mt-1">Advisors: {advisors}</p>
+              <p className="text-sm mt-1">Advisors: {advisors}</p>
             )}
           </div>
 
-          <p className="text-sm text-muted-foreground line-clamp-2">
-            {description}
-          </p>
+          {description && (
+            <div className="flex flex-col gap-1">
+              <div className="flex items-start gap-2">
+                <p className={`text-sm text-muted-foreground flex-1 ${!isExpanded ? 'line-clamp-2' : ''}`}>
+                  {description}
+                </p>
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="flex-shrink-0 mt-0.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label={isExpanded ? "Collapse description" : "Expand description"}
+                >
+                  {isExpanded ? (
+                    <FaChevronUp className="w-3 h-3" />
+                  ) : (
+                    <FaChevronDown className="w-3 h-3" />
+                  )}
+                </button>
+              </div>
+            </div>
+          )}
 
           {tools?.length ? (
             <div className="flex flex-wrap gap-1.5">

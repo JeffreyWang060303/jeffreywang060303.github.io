@@ -1,4 +1,5 @@
-import { FaWrench, FaGithub } from "react-icons/fa6";
+import { useState } from "react";
+import { FaWrench, FaGithub, FaChevronDown, FaChevronUp } from "react-icons/fa6";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -22,7 +23,7 @@ export default function ProjectsPage() {
 
         <div className="grid grid-cols-1 w-full gap-4 px-2 sm:px-6">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+            <ProjectCard key={index} project={project} index={index} />
           ))}
         </div>
       </div>
@@ -32,9 +33,12 @@ export default function ProjectsPage() {
 
 function ProjectCard({
   project,
+  index,
 }: {
   project: (typeof projects)[number];
+  index: number;
 }) {
+  const [isExpanded, setIsExpanded] = useState(false);
   const { title, role, duration, description, tools, advisors, github, image } = project;
 
   return (
@@ -85,11 +89,30 @@ function ProjectCard({
                 <p className="font-medium">{role}</p>
                 <p>{duration}</p>
                 {advisors && (
-                  <p className="text-xs mt-1">Advisors: {advisors}</p>
+                  <p className="text-sm mt-1">Advisors: {advisors}</p>
                 )}
               </div>
 
-              <p className="text-sm text-muted-foreground">{description}</p>
+              {description && (
+                <div className="flex flex-col gap-1">
+                  <div className="flex items-start gap-2">
+                    <p className={`text-sm text-muted-foreground flex-1 ${!isExpanded ? 'line-clamp-2' : ''}`}>
+                      {description}
+                    </p>
+                    <button
+                      onClick={() => setIsExpanded(!isExpanded)}
+                      className="flex-shrink-0 mt-0.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={isExpanded ? "Collapse description" : "Expand description"}
+                    >
+                      {isExpanded ? (
+                        <FaChevronUp className="w-3 h-3" />
+                      ) : (
+                        <FaChevronDown className="w-3 h-3" />
+                      )}
+                    </button>
+                  </div>
+                </div>
+              )}
 
               {tools?.length ? (
                 <div className="flex flex-wrap gap-1.5">

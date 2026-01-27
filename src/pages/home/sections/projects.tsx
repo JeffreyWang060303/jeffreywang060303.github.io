@@ -17,7 +17,7 @@ export default function ProjectsSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {featuredReposArray.map((projectData, index) => (
-          <ProjectCard key={index} projectData={projectData} index={index} />
+          <ProjectCard key={index} projectData={projectData} />
         ))}
       </div>
 
@@ -42,10 +42,8 @@ export default function ProjectsSection() {
 
 function ProjectCard({
   projectData,
-  index,
 }: {
   projectData: (typeof featuredReposArray)[number];
-  index: number;
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
 

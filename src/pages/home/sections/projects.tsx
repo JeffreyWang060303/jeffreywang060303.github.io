@@ -63,8 +63,6 @@ function ProjectCard({
 
   const { title, role, duration, description, tools, advisors, github, image } =
     projectData;
-  
-  const key = `project-${index}`;
 
   return (
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full flex flex-col h-full">

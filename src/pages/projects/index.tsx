@@ -23,7 +23,7 @@ export default function ProjectsPage() {
 
         <div className="grid grid-cols-1 w-full gap-4 px-2 sm:px-6">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} index={index} />
+            <ProjectCard key={index} project={project} />
           ))}
         </div>
       </div>
@@ -33,10 +33,8 @@ export default function ProjectsPage() {
 
 function ProjectCard({
   project,
-  index,
 }: {
   project: (typeof projects)[number];
-  index: number;
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const { title, role, duration, description, tools, advisors, github, image } = project;

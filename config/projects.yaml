@@ -32,7 +32,7 @@ projects:
     duration: "Nov 2025 - Present"
     description: "Developing Sim2RealGen, a video-based sim-to-real learning 
     framework that enables robots to imagine and evaluate task-relevant scene 
-    variations offline via generated RGB–depth videos, improving real-world manipulation without physical trial-and-error."
+    variations offline via generated RGB–depth videos, improving real-world manipulation without physical trial-and-error"
     tools: ["Vision", "Robotics", "ML"]
     advisors: "Raven Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
     github: null
@@ -53,7 +53,7 @@ projects:
   - title: "Vision-Guided Robotic Folding of Deformable Garments Using Model-Based Planning and Control"
     role: "MIT 6.4212 Final Project"
     duration: "Sep 2025 - Dec 2025"
-    description: "Developed an interpretable square fabric folding system integrating geometric vision, deformable modeling, motion planning, and impedance control, achieving up to 90% success across varying fabric sizes."
+    description: "Developed an interpretable square fabric folding system integrating geometric vision, deformable modeling, motion planning, and impedance control, achieving up to 90% success across varying fabric sizes"
     tools: ["Robotics", "Vision", "ML"]
     github: null
     paper: "https://github.com/JeffreyWang060303/Jeffrey-Personal-Website/blob/main/public/Wang%20%26%20Zhang%206.4212%20Final%20Paper.pdf"
@@ -65,10 +65,37 @@ projects:
     duration: "May 2025 - Aug 2025"
     description: "Developed an offline RL model combining FISOR (Feasibility-guided Safe Offline RL) 
     and TELS (T-symmetry Enforced Latent State-Stitching) frameworks to enhance safe learning and optimize
-     national data center cooling under limited, low-quality data using PyTorch."
+     national data center cooling under limited, low-quality data using PyTorch"
     tools: ["Offline RL", "ML"]
     github: null
     image: "images/fisortels.png"
+    featured: true
+
+  - title: "Robotic Fish Deploying Wave Energy Harvester (DEEP Prize by U.S. Department of Energy)"
+    role: "Organic Robotics Lab, Cornell University"
+    duration: "Aug 2024 - Sep 2025"
+    description: "Developed energy-aware control strategies for a bio-inspired robotic fish, integrating an origami wave-energy harvester with closed-loop locomotion control to extend mission duration by 70%+"
+    tools: ["Robotics", "Energy", "Design"]
+    github: null
+    image: "images/orl.jpg"
+    featured: false
+
+  - title: "Real-Time Decision-Making Framework for Stormwater Bioreactor Optimization"
+    role: "Reid's Laboratory, Cornell University"
+    duration: "Aug 2024 - Sep 2025"
+    description: "Developed a Markovian decision-making control framework for stormwater bioreactors, modeling system dynamics as state transitions and leveraging real-time redox observations to optimize nutrient removal performance over 30 days"
+    tools: ["Markov Decision Process", "Optimization", "Sustainability"]
+    github: null
+    image: "images/reid.png"
+    featured: false
+
+  - title: "AI-Based Network Analysis and Design of Complex Technological Systems"
+    role: "Charles Research Group, Cornell University"
+    duration: "Aug 2023 - Present"
+    description: "Applied AI-driven network modeling in Python/Julia to simulate 50 ecological and engineered systems, using representation learning–inspired dimensionality reduction (PCA) and objective analysis to optimize system performance and design"
+    tools: ["ML", "Optimization", "Data Science"]
+    github: null
+    image: "images/charles.jpg"
     featured: true
 
   

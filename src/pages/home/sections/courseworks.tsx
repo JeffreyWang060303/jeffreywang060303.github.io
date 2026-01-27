@@ -1,6 +1,6 @@
 import { FaBook } from "react-icons/fa6";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -15,13 +15,8 @@ export default function CourseworksSection() {
       </div>
 
       <Card className="rounded-md md:px-2">
-        <CardHeader>
-          <CardTitle className="flex flex-row justify-center items-center gap-2 text-plus">
-            Courseworks
-          </CardTitle>
-        </CardHeader>
         <ScrollArea className="max-h-96">
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-4 pt-6">
             {courseworks.map((coursework, index) => (
               <div key={index} className="flex items-center justify-between gap-4">
                 <div className="flex-1">

@@ -11,6 +11,8 @@ const MoviesPage = loadLazy(() => import("@/pages/movies"));
 const MusicPage = loadLazy(() => import("@/pages/music"));
 const ProjectsPage = loadLazy(() => import("@/pages/projects"));
 const PublicationsPage = loadLazy(() => import("@/pages/publications"));
+const SkillsPage = loadLazy(() => import("@/pages/skills"));
+const CourseworksPage = loadLazy(() => import("@/pages/courseworks"));
 const ArticlesPage = loadLazy(() => import("@/pages/articles"));
 const ArticlePage = loadLazy(() => import("@/pages/articles/page"));
 const NotFoundPage = loadLazy(() => import("@/pages/notfound"));
@@ -29,6 +31,8 @@ export default function App() {
             <Route path="music" element={<MusicPage />} />
             <Route path="projects" element={<ProjectsPage />} />
             <Route path="publications" element={<PublicationsPage />} />
+            <Route path="skills" element={<SkillsPage />} />
+            <Route path="courseworks" element={<CourseworksPage />} />
             <Route path="articles" element={<ArticlesPage />} />
             <Route path="/articles/:slug" element={<ArticlePage />} />
             <Route path="*" element={<NotFoundPage />} />

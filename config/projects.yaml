@@ -50,6 +50,15 @@ projects:
     image: "images/gluestick.jpg"
     featured: true
 
+  - title: "Vision-Guided Robotic Folding of Deformable Garments Using Model-Based Planning and Control"
+    role: "MIT 6.4212 Final Project"
+    duration: "Sep 2025 - Dec 2025"
+    description: "Developed an interpretable square fabric folding system integrating geometric vision, deformable modeling, motion planning, and impedance control, achieving up to 90% success across varying fabric sizes."
+    tools: ["Robotics", "Vision", "ML"]
+    github: null
+    image: "images/6.4212.jpg"
+    featured: false
+
   - title: "FISOR + TELS"
     role: "AIR-DREAM Lab at the Institute for AI Industry Research (AIR) at Tsinghua University"
     duration: "May 2025 - Aug 2025"

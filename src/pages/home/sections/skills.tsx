@@ -60,13 +60,6 @@ export default function SkillsSection() {
               {cat}
             </button>
           ))}
-
-          <Separator className="my-4" />
-
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            Filter skills by category to explore my technical and research
-            background.
-          </p>
         </div>
 
         <ScrollArea className="w-full max-h-96 px-4">

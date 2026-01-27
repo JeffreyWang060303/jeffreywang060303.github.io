@@ -35,7 +35,7 @@ function ProjectCard({
 }: {
   project: (typeof projects)[number];
 }) {
-  const { title, role, duration, description, tools, github, image } = project;
+  const { title, role, duration, description, tools, advisors, github, image } = project;
 
   return (
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full">
@@ -84,6 +84,9 @@ function ProjectCard({
               <div className="text-sm text-muted-foreground">
                 <p className="font-medium">{role}</p>
                 <p>{duration}</p>
+                {advisors && (
+                  <p className="text-xs mt-1">Advisors: {advisors}</p>
+                )}
               </div>
 
               <p className="text-sm text-muted-foreground">{description}</p>

@@ -56,7 +56,7 @@ function ProjectCard({
     );
   }
 
-  const { title, role, duration, description, tools, github, image } =
+  const { title, role, duration, description, tools, advisors, github, image } =
     projectData;
 
   return (
@@ -103,6 +103,9 @@ function ProjectCard({
           <div className="text-sm text-muted-foreground">
             <p className="font-medium line-clamp-1">{role}</p>
             <p>{duration}</p>
+            {advisors && (
+              <p className="text-xs mt-1">Advisors: {advisors}</p>
+            )}
           </div>
 
           <p className="text-sm text-muted-foreground line-clamp-2">

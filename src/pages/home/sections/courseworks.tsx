@@ -103,12 +103,6 @@ export default function CourseworksSection() {
               {subject}
             </button>
           ))}
-
-          <Separator className="my-4" />
-
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            Filter courseworks by subject to explore my academic background.
-          </p>
         </div>
 
         <ScrollArea className="w-full max-h-96 px-4">

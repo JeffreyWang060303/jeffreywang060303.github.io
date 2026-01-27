@@ -29,7 +29,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 
         <div className="flex flex-col w-full items-center justify-center gap-2 -mt-2 mb-3 group-data-[collapsible=icon]:mb-0">
           <Avatar className="w-24 h-24 group-data-[collapsible=icon]:w-0 group-data-[collapsible=icon]:h-0 transition-all duration-200">
-            <AvatarImage src={sidebar.profileImage} />
+            <AvatarImage src={sidebar.profileImage} className="object-cover" />
             <AvatarFallback>PY</AvatarFallback>
           </Avatar>
           <span className="text-sm font-semibold group-data-[collapsible=icon]:hidden">

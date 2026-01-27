@@ -26,6 +26,11 @@ export default function CourseworksSection() {
                       {coursework.description}
                     </div>
                   )}
+                  {coursework.term && (
+                    <div className="text-sm text-muted-foreground mt-1">
+                      {coursework.term}
+                    </div>
+                  )}
                 </div>
                 <Badge variant="secondary" className="text-xs">
                   {coursework.institution}

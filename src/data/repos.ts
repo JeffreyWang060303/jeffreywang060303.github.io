@@ -1,11 +1,11 @@
-import reposImport from "@/data/generated/repos.json";
-import type { RepoProps } from "@/types/repo";
+import projectsImport from "@/data/generated/repos.json";
+import type { ProjectProps } from "@/types/repo";
 
-type RepoMap = Record<string, RepoProps>;
-export const repos = reposImport as RepoMap;
+// Projects are now stored as an array
+export const projects: ProjectProps[] = projectsImport as ProjectProps[];
 
-export const featuredRepos: RepoMap = Object.fromEntries(
-  Object.entries(repos).filter(([, repo]) => repo.featured === true),
-);
+// For backward compatibility, we can still export as repos
+export const repos = projects;
 
-export const featuredReposArray: RepoProps[] = Object.values(featuredRepos);
+// All projects are "featured" in the new format (no featured field)
+export const featuredReposArray: ProjectProps[] = projects;

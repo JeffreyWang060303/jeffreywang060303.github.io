@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaWrench, FaGithub, FaChevronDown, FaChevronUp } from "react-icons/fa6";
+import { FaWrench, FaGithub, FaChevronDown, FaChevronUp, FaFileLines } from "react-icons/fa6";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -37,7 +37,7 @@ function ProjectCard({
   project: (typeof projects)[number];
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { title, role, duration, description, tools, advisors, github, image } = project;
+  const { title, role, duration, description, tools, advisors, github, paper, image } = project;
 
   return (
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full">
@@ -129,7 +129,18 @@ function ProjectCard({
             </div>
           </ScrollArea>
 
-          <div className="flex flex-row items-center justify-end text-muted-foreground pt-2">
+          <div className="flex flex-row items-center justify-end gap-2 text-muted-foreground pt-2">
+            {paper && (
+              <a
+                href={paper}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Paper"
+                className="hover:text-foreground"
+              >
+                <FaFileLines className="w-6 h-6" />
+              </a>
+            )}
             {github && (
               <a
                 href={github}

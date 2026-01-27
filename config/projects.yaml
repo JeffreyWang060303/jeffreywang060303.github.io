@@ -17,6 +17,8 @@
 #
 # ✔ The `github` field is optional and links to the GitHub repository.
 #
+# ✔ The `paper` field is optional and links to the paper/publication.
+#
 # ✔ The `image` field is the preview image URL for the project.
 # =====================================================
 
@@ -27,18 +29,20 @@ projects:
     description: "Developing Sim2RealGen, a video-based sim-to-real learning 
     framework that enables robots to imagine and evaluate task-relevant scene 
     variations offline via generated RGB–depth videos, improving real-world manipulation without physical trial-and-error."
-    tools: ["Python", "PyTorch", "Robotics", "ML"]
+    tools: ["PyTorch", "Robotics", "ML"]
     advisors: "Raven Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
-    github: "https://github.com/JeffreyWang060303/Sim2RealGen_Data_Preprocessing_Final"
-    image: "images/sail.png"
+    github: null
+    paper: null
+    image: "images/sail.jpg"
 
-  - title: "Showlit"
-    role: "Personal Project"
-    duration: "2023"
-    description: "An interactive visualization tool."
-    tools: ["TypeScript", "React"]
-    github: "https://github.com/your-username/showlit"
-    image: "https://pm25.github.io/showlit/images/full_logo.png"
+  - title: "GLUESTICK (2026 ICML under review)"
+    role: "Harvard Edge Computing Lab, Harvard University"
+    duration: "Aug 2025 - Dec 2025"
+    description: "Developed GLUSTICK, a post-pruning recovery method for VLA models that restores robotic safety and performance without retraining by combining model compression, SVD-based correction, and efficient deployment on edge hardware"
+    tools: ["PyTorch", "VLA", "Robotics", "ML"]
+    github: "https://gluestick-vla.github.io/"
+    paper: "https://arxiv.org/abs/2510.08464"
+    image: "images/gluestick.jpg"
 
   - title: "Custom Project Example"
     role: "Side Project"

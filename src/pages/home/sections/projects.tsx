@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
-import { FaWrench, FaGithub, FaArrowRight, FaChevronDown, FaChevronUp } from "react-icons/fa6";
+import { FaWrench, FaGithub, FaArrowRight, FaChevronDown, FaChevronUp, FaFileLines } from "react-icons/fa6";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -59,7 +59,7 @@ function ProjectCard({
     );
   }
 
-  const { title, role, duration, description, tools, advisors, github, image } =
+  const { title, role, duration, description, tools, advisors, github, paper, image } =
     projectData;
 
   return (
@@ -104,7 +104,7 @@ function ProjectCard({
           </div>
 
           <div className="text-sm text-muted-foreground">
-            <p className="font-medium line-clamp-1">{role}</p>
+            <p className="font-medium">{role}</p>
             <p>{duration}</p>
             {advisors && (
               <p className="text-sm mt-1">Advisors: {advisors}</p>
@@ -147,7 +147,18 @@ function ProjectCard({
             </div>
           ) : null}
 
-          <div className="flex flex-row items-center justify-end text-muted-foreground mt-auto pt-2">
+          <div className="flex flex-row items-center justify-end gap-2 text-muted-foreground mt-auto pt-2">
+            {paper && (
+              <a
+                href={paper}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Paper"
+                className="hover:text-foreground"
+              >
+                <FaFileLines className="w-6 h-6" />
+              </a>
+            )}
             {github && (
               <a
                 href={github}

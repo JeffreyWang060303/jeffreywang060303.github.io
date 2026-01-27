@@ -1,0 +1,14 @@
+# =====================================================
+# Relevant Courseworks data displayed on the Homepage.
+#
+# This section lists relevant coursework taken at various institutions.
+#
+# ✔ The `title` field is the course title/number.
+#
+# ✔ The `institution` field indicates where the course was taught (Cornell, Harvard, MIT).
+# =====================================================
+
+courseworks:
+  - title: "MIT 6.4212"
+    institution: "MIT"
+    description: "Robotic Manipulation"

@@ -33,4 +33,10 @@ sidebar:
         name: LuLibraryBig
         package: "react-icons/lu"
 
+    - title: Courseworks
+      url: "courseworks"
+      icon:
+        name: LuBook
+        package: "react-icons/lu"
+
   

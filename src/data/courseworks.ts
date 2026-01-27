@@ -3,6 +3,7 @@ export interface CourseworkProps {
   institution: string;
   description?: string | null;
   term?: string | null;
+  subjects?: string[];
 }
 
 export const courseworks: CourseworkProps[] = [
@@ -11,5 +12,104 @@ export const courseworks: CourseworkProps[] = [
     institution: "MIT",
     description: "Robotic Manipulation",
     term: "Fall 2025",
+    subjects: ["CS", "Robotics", "ML", "AI"],
+  },
+  {
+    title: "COMPSCI 1820",
+    institution: "Harvard University",
+    description: "Planning and Learning Methods for AI",
+    term: "Fall 2025",
+    subjects: ["CS", "AI", "ML"],
+  },
+  {
+    title: "ES 30",
+    institution: "Harvard University",
+    description: "Startups: From Idea to Exit",
+    term: "Fall 2025",
+    subjects: ["Business", "Entrepreneurship"],
+  },
+  {
+    title: "CS 3780",
+    institution: "Cornell University",
+    description: "Introduction to Machine Learning",
+    term: "Spring 2025",
+    subjects: ["CS", "ML", "AI"],
+  },
+  {
+    title: "INFO 1300",
+    institution: "Cornell University",
+    description: "Introductory Design and Programming for the Web",
+    term: "Spring 2025",
+    subjects: ["CS", "Web"],
+  },
+  {
+    title: "MAE 4900",
+    institution: "Cornell University",
+    description: "Independent Research",
+    term: "Spring 2025",
+    subjects: ["Research", "Robotics"],
+  },
+  {
+    title: "MATH 2940",
+    institution: "Cornell University",
+    description: "Linear Algebra for Engineers",
+    term: "Spring 2025",
+    subjects: ["Math"],
+  },
+  {
+    title: "MATH 2930",
+    institution: "Cornell University",
+    description: "Differential Equations for Engineers",
+    term: "Summer 2024",
+    subjects: ["Math"],
+  },
+  {
+    title: "CS 2110",
+    institution: "Cornell University",
+    description: "Object-Oriented Programming and Data Structures",
+    term: "Summer 2024",
+    subjects: ["CS"],
+  },
+  {
+    title: "CS 2800",
+    institution: "Cornell University",
+    description: "Discrete Structures",
+    term: "Spring 2024",
+    subjects: ["CS", "Math"],
+  },
+  {
+    title: "INFO 1260",
+    institution: "Cornell University",
+    description: "Choices and Consequences in Computing",
+    term: "Spring 2024",
+    subjects: ["CS", "Ethics"],
+  },
+  {
+    title: "MATH 1920",
+    institution: "Cornell University",
+    description: "Multivariable Calculus for Engineers",
+    term: "Spring 2024",
+    subjects: ["Math"],
+  },
+  {
+    title: "INFO 2040",
+    institution: "Cornell University",
+    description: "Networks",
+    term: "Winter 2024",
+    subjects: ["CS", "Networks"],
+  },
+  {
+    title: "CS 1112",
+    institution: "Cornell University",
+    description: "Introduction to Computing: An Engineering and Science Perspective",
+    term: "Fall 2023",
+    subjects: ["CS"],
+  },
+  {
+    title: "MATH 1910",
+    institution: "Cornell University",
+    description: "Single Variable Calculus for Engineers",
+    term: "Fall 2023",
+    subjects: ["Math"],
   },
 ];

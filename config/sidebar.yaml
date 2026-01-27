@@ -28,7 +28,7 @@ sidebar:
         package: "react-icons/lu"
     
     - title: Skills
-      url: "publications"
+      url: "skills"
       icon:
         name: LuLibraryBig
         package: "react-icons/lu"

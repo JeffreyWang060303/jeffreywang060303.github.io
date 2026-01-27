@@ -45,17 +45,17 @@ profile:
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi! I'm <strong>Jeffrey Wang</strong>, currently a Visiting Undergraduate Student at <strong>Harvard College</strong>, originally from
-    <strong>Cornell University</strong>, passionate about <em>Robotics learning, control, and Artificial Intelligence in general</em>. 
-    Currently, I work as a <em>Research Intern</em> at the <strong>CogAI Lab</strong> under <strong>Stanford Aritficial 
-    Intelligence Laboratory</strong>, fortunately advised by <strong>Raven Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li</strong>,
-    and <strong>Harvard Edge Computing Lab</strong>, fortunately advised by <strong>Jason Jabbour and Prof. Vijay Janapa Reddi</strong>.
+    Hi! I'm <strong>Jeffrey Wang</strong>, currently a Visiting Undergraduate Student at <u>Harvard College</u>, originally from
+    <u>Cornell University</u>, passionate about <em>Robotics learning, control, and Artificial Intelligence in general</em>. 
+    Currently, I work as a <em>Research Intern</em> at the <u>CogAI Lab</u> under <u>Stanford Aritficial 
+    Intelligence Laboratory</u>, fortunately advised by <u>Raven Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li</u>,
+    and <u>Harvard Edge Computing Lab</u>, fortunately advised by <u>Jason Jabbour and Prof. Vijay Janapa Reddi</u>.
     <div class="my-2"></div>
     <strong>Research Interests:</strong>
-    <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem; padding-left: 1.5rem;">
-      <li>Robotic learning, manipulation, and control</li>
-      <li>Machine Learning</li>
-      <li>AI-based System Optimization</li>
+    <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem; padding-left: 1.5rem; list-style-color: black;">
+      <li style="color: black;">Robotic learning, manipulation, and control</li>
+      <li style="color: black;">Machine Learning</li>
+      <li style="color: black;">AI-based System Optimization</li>
     </ul>
     Outside of work, I enjoy <em>playing basketball, ice hockey, squash, and traveling</em>, which inspire creativity 
     and keep me energized. Feel free to connect to me for any potential opportunities or chatting!

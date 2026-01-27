@@ -45,6 +45,7 @@ projects:
     duration: "Aug 2025 - Jan 2025"
     description: "Developed GLUSTICK, a post-pruning recovery method for VLA models that restores robotic safety and performance without retraining by combining model compression, SVD-based correction, and efficient deployment on edge hardware"
     tools: ["VLA", "Robotics", "ML"]
+    advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
     github: "https://gluestick-vla.github.io/"
     paper: "https://arxiv.org/abs/2510.08464"
     image: "images/gluestick.jpg"
@@ -55,6 +56,7 @@ projects:
     duration: "Sep 2025 - Dec 2025"
     description: "Developed an interpretable square fabric folding system integrating geometric vision, deformable modeling, motion planning, and impedance control, achieving up to 90% success across varying fabric sizes"
     tools: ["Robotics", "Vision", "ML"]
+    advisors: "Prof. Tomás Lozano-Pérez"
     github: null
     paper: "https://github.com/JeffreyWang060303/Jeffrey-Personal-Website/blob/main/public/Wang%20%26%20Zhang%206.4212%20Final%20Paper.pdf"
     image: "images/6.4212.jpg"
@@ -67,6 +69,7 @@ projects:
     and TELS (T-symmetry Enforced Latent State-Stitching) frameworks to enhance safe learning and optimize
      national data center cooling under limited, low-quality data using PyTorch"
     tools: ["Offline RL", "ML"]
+    advisors: "Peng Cheng, Prof. Xianyuan Zhan"
     github: null
     image: "images/fisortels.png"
     featured: true
@@ -76,6 +79,7 @@ projects:
     duration: "Aug 2024 - Sep 2025"
     description: "Developed energy-aware control strategies for a bio-inspired robotic fish, integrating an origami wave-energy harvester with closed-loop locomotion control to extend mission duration by 70%+"
     tools: ["Robotics", "Energy", "Design"]
+    advisors: "Ofek Peretz, Prof. Robert Shepherd"
     github: null
     image: "images/orl.jpg"
     featured: false
@@ -85,6 +89,7 @@ projects:
     duration: "Aug 2024 - Sep 2025"
     description: "Developed a Markovian decision-making control framework for stormwater bioreactors, modeling system dynamics as state transitions and leveraging real-time redox observations to optimize nutrient removal performance over 30 days"
     tools: ["Markov Decision Process", "Optimization", "Sustainability"]
+    advisors: "Zihao Zhang, Prof. Matthew Reid"
     github: null
     image: "images/reid.png"
     featured: false
@@ -94,9 +99,16 @@ projects:
     duration: "Aug 2023 - Present"
     description: "Applied AI-driven network modeling in Python/Julia to simulate 50 ecological and engineered systems, using representation learning–inspired dimensionality reduction (PCA) and objective analysis to optimize system performance and design"
     tools: ["ML", "Optimization", "Data Science"]
+    advisors: "Prof. Michael Charles"
     github: null
     image: "images/charles.jpg"
     featured: true
+
+    
+
+
+
+
 
   
 

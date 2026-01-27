@@ -82,7 +82,7 @@ function Biography() {
       <div className="text-2xl font-semibold mb-2">About Me</div>
       {profile.biography ? (
         <div
-          className="prose dark:prose-invert text-justify text-base/6"
+          className="prose dark:prose-invert text-justify text-base leading-relaxed"
           dangerouslySetInnerHTML={{ __html: profile.biography }}
           aria-label="User biography"
         />

@@ -30,8 +30,14 @@ sidebar:
     - title: Skills
       url: "skills"
       icon:
-        name: LuSparkles
-        package: "react-icons/lu"
+        name: FaScrewdriverWrench
+        package: "react-icons/fa6"
+
+    - title: Teaching
+      url: "teaching"
+      icon:
+        name: FaChalkboardUser
+        package: "react-icons/fa6"
 
     - title: Courseworks
       url: "courseworks"

@@ -2,7 +2,6 @@ import { useState, useMemo } from "react";
 import { FaScrewdriverWrench } from "react-icons/fa6";
 
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";

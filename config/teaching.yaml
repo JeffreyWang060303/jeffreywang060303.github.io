@@ -1,0 +1,20 @@
+# =====================================================
+# Teaching Experience data displayed on the Homepage.
+#
+# This section lists teaching experience at various institutions.
+#
+# ✔ The `courseNumber` field is the course number/code.
+#
+# ✔ The `courseTitle` field is the full course title/name.
+#
+# ✔ The `term` field indicates when the course was taught (e.g., "Fall 2025").
+#
+# ✔ The `university` field indicates where the course was taught.
+# =====================================================
+
+teaching:
+  items:
+    - courseNumber: "CS 1112"
+      courseTitle: "Introduction to Computing"
+      term: "Fall 2024"
+      university: "Cornell University"

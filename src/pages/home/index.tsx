@@ -7,6 +7,7 @@ import ProjectsSection from "./sections/projects";
 import TalksSection from "./sections/talks";
 import ServicesSection from "./sections/services";
 import SkillsSection from "./sections/skills";
+import TeachingSection from "./sections/teaching";
 import CourseworksSection from "./sections/courseworks";
 
 import { homepage } from "@/data/homepage";
@@ -23,6 +24,7 @@ const sectionComponents: Record<string, React.ComponentType<SectionProps>> = {
   Talks: TalksSection,
   Services: ServicesSection,
   Skills: SkillsSection,
+  Teaching: TeachingSection,
   Courseworks: CourseworksSection,
 };
 

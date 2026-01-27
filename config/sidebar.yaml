@@ -30,7 +30,7 @@ sidebar:
     - title: Skills
       url: "skills"
       icon:
-        name: LuLibraryBig
+        name: LuSparkles
         package: "react-icons/lu"
 
     - title: Courseworks

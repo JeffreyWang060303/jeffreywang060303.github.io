@@ -27,6 +27,7 @@
     "convert:config:music": "node scripts/yaml-to-ts.js config/music.yaml",
     "convert:config:homepage": "node scripts/yaml-to-ts.js config/homepage.yaml",
     "convert:config:courseworks": "node scripts/yaml-to-ts.js config/courseworks.yaml",
+    "convert:config:teaching": "node scripts/yaml-to-ts.js config/teaching.yaml",
     "convert:config": "npm-run-all convert:config:*"
   },
   "dependencies": {

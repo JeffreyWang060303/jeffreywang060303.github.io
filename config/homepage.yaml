@@ -28,6 +28,10 @@ homepage:
       variant: default
       enabled: true
 
+    - name: Teaching
+      variant: default
+      enabled: true
+
     - name: Courseworks
       variant: default
       enabled: true

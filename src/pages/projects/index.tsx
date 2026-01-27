@@ -48,13 +48,13 @@ function ProjectCard({
               href={github || "#"}
               target={github ? "_blank" : undefined}
               rel={github ? "noopener noreferrer" : undefined}
-              className="block"
+              className="block w-full lg:w-auto lg:flex-shrink-0"
             >
-              <div className="aspect-3/2 w-full max-h-72 lg:max-w-75 lg:h-50 overflow-hidden">
+              <div className="w-full lg:w-75 flex items-center justify-center bg-muted/30 overflow-hidden lg:h-50">
                 <img
                   src={image}
                   alt={title || "Project image"}
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto max-h-72 lg:max-h-full lg:h-full object-contain"
                   loading="lazy"
                 />
               </div>

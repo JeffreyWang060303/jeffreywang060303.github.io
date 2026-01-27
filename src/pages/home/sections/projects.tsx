@@ -70,14 +70,13 @@ function ProjectCard({
             href={github || "#"}
             target={github ? "_blank" : undefined}
             rel={github ? "noopener noreferrer" : undefined}
-            className="block"
+            className="block w-full"
           >
-            <div className="aspect-3/2 w-full overflow-hidden">
+            <div className="w-full flex items-center justify-center bg-muted/30 overflow-hidden">
               <img
                 src={image}
                 alt={title || "Project image"}
-                className="w-full h-full object-cover"
-                style={{ overflowClipMargin: "unset" }}
+                className="w-full h-auto max-h-64 object-contain"
                 loading="lazy"
               />
             </div>

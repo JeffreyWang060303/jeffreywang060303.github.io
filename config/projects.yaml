@@ -15,9 +15,9 @@
 
 projects:
   items:
-    - id: "example-project" # name of your GitHub repository (from: github.com/<your-username>/<repo-name>)
-      displayName: "[Project Name]" # name that will be displayed on the website
-      previewImage: https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg
+    - id: "https://github.com/JeffreyWang060303/Sim2RealGen_Data_Preprocessing_Final" # name of your GitHub repository (from: github.com/<your-username>/<repo-name>)
+      displayName: "Sim2RealGen " # name that will be displayed on the website
+      previewImage: images/Stanford_Cardinal_logo.png
       featured: true
 
     - id: "showlit"

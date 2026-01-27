@@ -24,7 +24,6 @@ projects:
     duration: "Nov 2025 - Present"
     description: "Developing a generative framework for sim-to-real transfer to enhance robotic safety and manipulation. Working under PIs Fei-Fei Li and Jiajun Wu."
     tools: ["Python", "PyTorch", "Generative AI"]
-<<<<<<< HEAD
     github: "https://github.com/your-username/Sim2RealGen"
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
 
@@ -43,7 +42,3 @@ projects:
     tools: ["JavaScript"]
     github: null
     image: null
-=======
-    github: "https://github.com/example/sim2realgen"
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
->>>>>>> 84c17a2 (try)

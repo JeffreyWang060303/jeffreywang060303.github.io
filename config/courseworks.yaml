@@ -14,7 +14,7 @@
 
 courseworks:
   - title: "MIT 6.4212"
-    institution: "MIT"
+    institution: "MIT (Cross-Registration)"
     description: "Robotic Manipulation"
     term: "Fall 2025"
     subjects: ["CS", "Robotics", "ML", "AI"]

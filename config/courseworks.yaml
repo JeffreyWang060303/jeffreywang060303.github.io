@@ -13,11 +13,18 @@
 # =====================================================
 
 courseworks:
+
+  - title: "MIT 2.12"
+    institution: "MIT (Cross-Registration)"
+    description: "Introduction to Robotics"
+    term: "Spring 2026"
+    subjects: ["CS", "Robotics"]
+
   - title: "MIT 6.4212"
     institution: "MIT (Cross-Registration)"
     description: "Robotic Manipulation"
     term: "Fall 2025"
-    subjects: ["CS", "Robotics", "ML", "AI"]
+    subjects: ["CS", "Robotics", "ML", "AI"] 
 
   - title: "COMPSCI 1820"
     institution: "Harvard University"

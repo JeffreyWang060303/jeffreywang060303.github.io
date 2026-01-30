@@ -20,6 +20,12 @@ courseworks:
     term: "Spring 2026"
     subjects: ["CS", "Robotics"]
 
+  - title: "COMPSCI 1440R"
+    institution: "Harvard University"
+    description: "Networks Design Projects"
+    term: "Spring 2026"
+    subjects: ["CS", "ML", "AI"]
+
   - title: "MIT 6.4212"
     institution: "MIT (Cross-Registration)"
     description: "Robotic Manipulation"
@@ -30,7 +36,7 @@ courseworks:
     institution: "Harvard University"
     description: "Planning and Learning Methods for AI"
     term: "Fall 2025"
-    subjects: ["CS", "AI", "ML"]
+    subjects: ["CS", "Robotics", "AI", "ML"]
 
   - title: "ES 30"
     institution: "Harvard University"

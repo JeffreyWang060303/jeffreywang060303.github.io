@@ -31,14 +31,14 @@ profile:
         name: "FaGoogleScholar"
         package: "react-icons/fa6"
 
-    - name: "Résumé"
-      url: ""
+    - name: "Resume"
+      url: "pdf/2:1:2026_Resume.pdf"
       icon:
         name: "FaRegIdBadge"
         package: "react-icons/fa6"
 
     - name: "CV"
-      url: ""
+      url: "pdf/2:1:2026_CV.pdf"
       icon:
         name: "FaFileLines"
         package: "react-icons/fa6"

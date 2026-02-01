@@ -3,11 +3,10 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
-import site from "./src/data/generated/site.json";
-
 // https://vite.dev/config/
+// base is "/" for GitHub User Page (https://username.github.io/).
 export default defineConfig({
-  base: site.base,
+  base: "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

@@ -37,6 +37,12 @@ profile:
         name: "FaRegIdBadge"
         package: "react-icons/fa6"
 
+    - name: "CV"
+      url: ""
+      icon:
+        name: "FaFileLines"
+        package: "react-icons/fa6"
+
     - name: "Github"
       url: "https://github.com/JeffreyWang060303"
       icon:
@@ -46,9 +52,8 @@ profile:
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
     Hi! I'm <strong>Jeffrey Wang</strong>, currently a Visiting Undergraduate Student at <strong>Harvard College</strong>, originally from
-    <strong>Cornell University</strong>, passionate about <em>Robotics learning, control, and Artificial Intelligence in general</em>. 
-    Currently, I work as a <em>Research Intern</em> at the <strong>CogAI Lab</strong> under <strong>Stanford Aritficial 
-    Intelligence Laboratory</strong>, fortunately advised by <strong>Raven Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li</strong>,
+    <strong>Cornell University</strong>, passionate about <em>Robotics and Artificial Intelligence in general</em>. 
+    Currently, I work as a <em>Research Intern</em> at the <strong>Stanford Vision and Learning Lab</strong>, fortunately advised by <strong>Raven Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li</strong>,
     and <strong>Harvard Edge Computing Lab</strong>, fortunately advised by <strong>Jason Jabbour and Prof. Vijay Janapa Reddi</strong>.
     <div class="my-2"></div>
     <u>Research Interests:</u>

@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGoogleScholar, FaRegIdBadge, FaGithub, FaSquareFacebook } from "react-icons/fa6";
+import { FaLinkedin, FaGoogleScholar, FaRegIdBadge, FaFileLines, FaGithub, FaSquareFacebook } from "react-icons/fa6";
 
 export const profile = {
   name: `[Your Name]`,
@@ -21,6 +21,11 @@ export const profile = {
       name: `Résumé`,
       url: `/showlit/pdf/sample-resume.pdf`,
       icon: FaRegIdBadge,
+    },
+    {
+      name: `CV`,
+      url: ``,
+      icon: FaFileLines,
     },
     {
       name: `Github`,

@@ -48,27 +48,37 @@ function ProfileCard() {
         )}
         <TooltipProvider delayDuration={100}>
           <div className="flex flex-row flex-wrap justify-center gap-y-2 gap-x-4 py-2 text-foreground max-w-64">
-            {profile.links.map((item, index) => (
-              <a
-                key={index}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shrink-0"
-              >
-                <Tooltip>
-                  <TooltipTrigger>
-                    <item.icon
-                      className="w-8 h-8 cursor-pointer opacity-80 hover:opacity-100 transition-opacity duration-50"
-                      aria-label={item.name}
-                    />
-                  </TooltipTrigger>
-                  <TooltipContent side="bottom">
-                    <p>{item.name}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </a>
-            ))}
+            {profile.links.map((item, index) => {
+              const Wrapper = item.url ? "a" : "span";
+              const wrapperProps = item.url
+                ? { href: item.url, target: "_blank", rel: "noopener noreferrer" }
+                : {};
+              return (
+                <Wrapper
+                  key={index}
+                  {...wrapperProps}
+                  className="shrink-0 inline-flex"
+                >
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <span
+                        className={
+                          item.url
+                            ? "inline-flex cursor-pointer opacity-80 hover:opacity-100 transition-opacity duration-50"
+                            : "inline-flex cursor-default opacity-80"
+                        }
+                        aria-label={item.name}
+                      >
+                        <item.icon className="w-8 h-8" />
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent side="bottom">
+                      <p>{item.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </Wrapper>
+              );
+            })}
           </div>
         </TooltipProvider>
       </div>

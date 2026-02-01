@@ -150,7 +150,11 @@ function ProjectCard({
           <div className="flex flex-row items-center justify-end gap-2 text-muted-foreground mt-auto pt-2">
             {paper && (
               <a
-                href={paper.startsWith("http") ? paper : `/${paper}`}
+                href={
+                paper.startsWith("http")
+                  ? paper
+                  : "/" + paper.split("/").map(encodeURIComponent).join("/")
+              }
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Paper"

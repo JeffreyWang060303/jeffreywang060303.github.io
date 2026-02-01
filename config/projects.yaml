@@ -58,7 +58,7 @@ projects:
     tools: ["Robotics", "Vision", "ML"]
     advisors: "Prof. Tomás Lozano-Pérez"
     github: null
-    paper: "https://github.com/JeffreyWang060303/Jeffrey-Personal-Website/blob/main/public/Wang%20%26%20Zhang%206.4212%20Final%20Paper.pdf"
+    paper: "pdf/Wang & Zhang 6.4212 Final Paper.pdf"
     image: "images/6.4212.jpg"
     featured: true
 

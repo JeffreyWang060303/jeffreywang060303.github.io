@@ -53,9 +53,9 @@ profile:
     <div class="my-2"></div>
     <u>Research Interests:</u>
     <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem; padding-left: 1.5rem; list-style-color: black;">
-      <li style="color: black;">Robotic learning, manipulation, and control</li>
-      <li style="color: black;">Machine Learning</li>
-      <li style="color: black;">AI-based System Optimization</li>
+      <li style="color: black;">Robotic learning, perception, and control</li>
+      <li style="color: black;">Embodied AI</li>
+      <li style="color: black;">System Optimization</li>
     </ul>
     Outside of work, I enjoy <em>playing basketball, ice hockey, squash, and traveling</em>, which inspire creativity 
     and keep me energized. Feel free to connect to me for any potential opportunities or chatting!
@@ -172,7 +172,7 @@ skills:
     - name: "Deep Learning Specialization"
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"
       proficiency: Certified by DeepLearning.AI
-      description: "December 2023"
+      description: "January 2024"
 
     - name: "Machine Learning Specialization"
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OOjs_UI_icon_academic-progressive.svg/200px-OOjs_UI_icon_academic-progressive.svg.png"

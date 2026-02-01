@@ -1,0 +1,1 @@
+import{j as e}from"./index-B764h0LH.js";import{u as i}from"./use-pagetitle-Bkf39jSx.js";import{T as a}from"./teaching-BOFSUKmy.js";import"./table-CJs0GrNv.js";function l(){return i("Teaching Experience"),e.jsx("div",{className:"flex flex-1 flex-col items-center gap-10",children:e.jsx("div",{className:"w-full max-w-5xl px-2 md:px-8",children:e.jsx(a,{})})})}export{l as default};

@@ -14,6 +14,18 @@
 
 courseworks:
 
+  - title: "INFO 2450"
+    institution: "Cornell University"
+    description: "Technology and Communication"
+    term: "Summer 2026"
+    subjects: ["CS", "AI"]
+
+  - title: "AEM 1200"
+    institution: "Cornell University"
+    description: "Introduction to Business Management"
+    term: "Summer 2026"
+    subjects: ["Entrepreneurship"]
+
   - title: "MIT 2.12"
     institution: "MIT (Cross-Registration)"
     description: "Introduction to Robotics"

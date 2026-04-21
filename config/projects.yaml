@@ -44,7 +44,7 @@ projects:
     role: "Harvard Edge Computing Lab, Harvard University"
     duration: "Jan 2026 - May 2026"
     description: "To address the data movement bottleneck in robotic systems, we propose LatentROS, a middleware compression framework that reduces message transport latency by over 7x and significantly improves the real-world safety and performance of autonomous agents."
-    tools: ["Robotics", "ML"]
+    tools: ["Robotics", "Vision","ML"]
     advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
     github: ""
     paper: ""

@@ -21,12 +21,27 @@ publications:
   authorName: "Youhui Wang" # Your name here (to highlight your name in publications)
 
   items:
+        - title: "LatentROS: Accelerated Robotic Middleware
+Communication through Learned Latent Vectors"
+      authors: "Jason Jabbour, Ankit Kumar, Youhui Wang, Yichong Zhang, Zishen Wan, Vijay Janapa Reddi"
+      year: "2027"
+      venue: "ASPLOS 2027 (Under Review)"
+      link: ""
+      featured: true
+
     - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"
       authors: "Jason Jabbour, Dong-Ki Kim, Max Smith, Jay Patrikar, Radhika Ghosal, Youhui Wang, Ali Agha, Vijay Janapa Reddi, Shayegan Omidshafiei"
       year: "2026"
-      venue: "ICML (Under Review)"
+      venue: "ICML 2026 (Under Review)"
       link: "https://arxiv.org/abs/2510.08464"
       featured: true
+
+  - title: "Feedback Control of Redox Conditions in Bioretention Systems Enhances Biological Co-Treatment of Nitrogen and Phosphorus"
+        authors: "Zihao Zhang, Peisheng He, Lily DuPlooy, Youhui Wang, Mathew Baldwin, Michael Vega, April Gu, Matthew C. Reid"
+        year: "2026"
+        venue: "Environment Science and Engineering 2026 (under review)"
+        link: ""
+        featured: true
 
     - title: "Co-Treatment of Nitrogen and Phosphorus in Stormwater Runoff through Sensor Feedback Control of Redox Conditions in Biofilter Media"
       authors: "Zihao Zhang, Lily DuPlooy, Youhui Wang, Peisheng He, April Gu, Matthew Charles Reid"

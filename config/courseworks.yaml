@@ -13,18 +13,54 @@
 # =====================================================
 
 courseworks:
+  - title: "CS 4750"
+    institution: "Cornell University"
+    description: "Foundations of Robotic"
+    term: "Fall 2026"
+    subjects: ["AI", "Robotics", "CS", "ML"]
 
+  - title: "CS 4789"
+    institution: "Cornell University"
+    description: "Introduction to Reinforcement Learning"
+    term: "Fall 2026"
+    subjects: ["AI", "Robotics", "CS", "ML"]
+
+  - title: "CS 3700"
+    institution: "Cornell University"
+    description: "AI Reasoning/Decision-Making"
+    term: "Fall 2026"
+    subjects: ["AI", "CS", "ML"]
+
+  - title: "INFO 3450"
+    institution: "Cornell University"
+    description: "Human-Computer Interaction"
+    term: "Fall 2026"
+    subjects: ["AI", "CS"]
+
+  - title: "INFO 3160"
+    institution: "Cornell University"
+    description: "AI-Assisted Programming"
+    term: "Fall 2026"
+    subjects: ["AI", "ML", "CS"]
+
+  - title: "AEM 3330"
+    institution: "Cornell University"
+    description: "Startup & Venture Capital"
+    term: "Fall 2026"
+    subjects: ["Entrepreneurship"]
+
+  
   - title: "INFO 2450"
     institution: "Cornell University"
     description: "Technology and Communication"
     term: "Summer 2026"
     subjects: ["CS", "AI"]
 
-  - title: "AEM 1200"
+  - title: "INFO 2950"
     institution: "Cornell University"
-    description: "Introduction to Business Management"
+    description: "Introduction to Data Science"
     term: "Summer 2026"
-    subjects: ["Entrepreneurship"]
+    subjects: ["CS", "AI", "ML"]
 
   - title: "MIT 2.12"
     institution: "MIT (Cross-Registration)"

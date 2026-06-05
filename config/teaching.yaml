@@ -14,6 +14,12 @@
 
 teaching:
   items:
+
+    - courseNumber: "CS 2850/INFO 2850"
+      courseTitle: "Networks"
+      term: "Fall 2026"
+      university: "Cornell University"
+
     - courseNumber: "INFO 1260 / CS 1340"
       courseTitle: "Choices and Consequences in Computing"
       term: "Spring 2025"

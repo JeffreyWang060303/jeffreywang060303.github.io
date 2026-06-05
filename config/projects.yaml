@@ -47,7 +47,7 @@ projects:
     advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
     github: ""
     paper: ""
-    image: "images/edge_computing.png"
+    image: "images/latetros.jpg"
     featured: true
 
   - title: "GLUESTICK (2026 CoRL under review)"

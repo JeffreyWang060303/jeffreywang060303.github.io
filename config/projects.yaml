@@ -47,7 +47,7 @@ projects:
     advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
     github: ""
     paper: ""
-    image: "images/latetros.png"
+    image: "images/latentros.png"
     featured: true
 
   - title: "GLUESTICK (2026 CoRL under review)"

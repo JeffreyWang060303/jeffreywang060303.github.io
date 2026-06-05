@@ -27,14 +27,12 @@
 # =====================================================
 
 projects:
-  - title: "Sim2RealGen"
+  - title: "Project for CoRL 2026 under review"
     role: "Stanford Vision and Learning Lab, Stanford University"
     duration: "Nov 2025 - Present"
-    description: "Developing Sim2RealGen, a video-based sim-to-real learning 
-    framework that enables robots to imagine and evaluate task-relevant scene 
-    variations offline via generated RGB–depth videos, improving real-world manipulation without physical trial-and-error"
-    tools: ["Vision", "Robotics", "ML"]
-    advisors: "Raven Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
+    description: "Coming Soon"
+    tools: ["Robotics", "Vision", "Sim2Real"]
+    advisors: "Dr. Huang Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
     github: null
     paper: null
     image: "images/sail.jpg"

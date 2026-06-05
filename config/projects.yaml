@@ -50,7 +50,7 @@ projects:
     image: "images/edge_computing.png"
     featured: true
 
-  - title: "GLUESTICK (2026 ICML under review)"
+  - title: "GLUESTICK (2026 CoRL under review)"
     role: "Harvard Edge Computing Lab, Harvard University"
     duration: "Aug 2025 - Jan 2026"
     description: "Developed GLUSTICK, a post-pruning recovery method for VLA models that restores robotic safety and performance without retraining by combining model compression, SVD-based correction, and efficient deployment on edge hardware"

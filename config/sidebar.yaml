@@ -21,12 +21,6 @@ sidebar:
         name: LuWrench
         package: "react-icons/lu"
 
-    - title: Publications
-      url: "publications"
-      icon:
-        name: LuLibraryBig
-        package: "react-icons/lu"
-    
     - title: Skills
       url: "skills"
       icon:

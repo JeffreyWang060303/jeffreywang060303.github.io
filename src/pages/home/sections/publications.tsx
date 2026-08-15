@@ -81,7 +81,7 @@ export default function PublicationsSection() {
             size="sm"
             className="gap-1 text-muted-foreground"
           >
-            <Link to="/publications">
+            <Link to="/projects">
               View all
               <FaArrowRight className="w-4 h-4" />
             </Link>

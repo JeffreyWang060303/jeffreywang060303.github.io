@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router";
 
 import Layout from "@/layout";
 import { loadLazy } from "@/lib/loadComponent";
@@ -10,7 +10,6 @@ const HomePage = loadLazy(() => import("@/pages/home"));
 const MoviesPage = loadLazy(() => import("@/pages/movies"));
 const MusicPage = loadLazy(() => import("@/pages/music"));
 const ProjectsPage = loadLazy(() => import("@/pages/projects"));
-const PublicationsPage = loadLazy(() => import("@/pages/publications"));
 const SkillsPage = loadLazy(() => import("@/pages/skills"));
 const TeachingPage = loadLazy(() => import("@/pages/teaching"));
 const CourseworksPage = loadLazy(() => import("@/pages/courseworks"));
@@ -31,7 +30,10 @@ export default function App() {
             <Route path="movies" element={<MoviesPage />} />
             <Route path="music" element={<MusicPage />} />
             <Route path="projects" element={<ProjectsPage />} />
-            <Route path="publications" element={<PublicationsPage />} />
+            <Route
+              path="publications"
+              element={<Navigate to="/projects" replace />}
+            />
             <Route path="skills" element={<SkillsPage />} />
             <Route path="teaching" element={<TeachingPage />} />
             <Route path="courseworks" element={<CourseworksPage />} />

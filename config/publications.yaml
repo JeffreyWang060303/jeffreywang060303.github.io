@@ -31,8 +31,8 @@ publications:
     - title: "Can LLMs Test Their Own Code? Cross-Model Property-Based Testing of Code"
       authors: "Tyler Holloway, Youhui Wang, Simon Henniger, Nada Amin"
       year: "2026"
-      venue: "ICML 2026 Workshop on Failure Modes in Agentic AI (Under Review)"
-      link: ""
+      venue: "FAGEN Workshop, AAAI 2027 (Under Review)"
+      link: "https://openreview.net/pdf?id=BnzYjFS6O2"
       featured: true
 
     - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"

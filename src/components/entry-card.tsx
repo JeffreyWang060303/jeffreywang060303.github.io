@@ -1,11 +1,16 @@
 import { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
+import {
+  FaChevronDown,
+  FaChevronUp,
+  FaFileLines,
+  FaGithub,
+  FaArrowUpRightFromSquare,
+} from "react-icons/fa6";
 import { IoLibrary } from "react-icons/io5";
+import type { IconType } from "react-icons";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { ImageViewer } from "@/components/image-viewer";
 
 import { publications } from "@/data/publications";
@@ -15,6 +20,12 @@ import type { Publication } from "@/types/publications";
 export type Entry =
   | { kind: "project"; year: number; project: ProjectProps }
   | { kind: "publication"; year: number; publication: Publication };
+
+const LINK_ICONS: Record<string, IconType> = {
+  Paper: FaFileLines,
+  Code: FaGithub,
+  Website: FaArrowUpRightFromSquare,
+};
 
 function extractYear(value: string | number): number {
   if (typeof value === "number") return value;
@@ -76,17 +87,20 @@ export function EntryCard({ entry }: { entry: Entry }) {
     links.push({ label: "Paper", href: entry.publication.link });
   }
 
+  const showDescription =
+    isProject && !entry.project.paper && entry.project.description;
+
   return (
     <>
       <Card className="rounded-md overflow-hidden gap-0 py-0 w-full">
         <div className="flex flex-col lg:flex-row">
           <div
             onClick={() => image && setIsImageViewerOpen(true)}
-            className={`block w-full lg:w-75 lg:flex-shrink-0 ${
+            className={`w-full lg:w-75 lg:flex-shrink-0 ${
               image ? "cursor-pointer hover:opacity-90 transition-opacity" : ""
             }`}
           >
-            <div className="w-full h-40 lg:w-75 lg:h-50 flex items-center justify-center bg-muted/30 overflow-hidden">
+            <div className="w-full h-40 lg:h-full min-h-40 flex items-center justify-center bg-muted/30 overflow-hidden">
               {image ? (
                 <img
                   src={image}
@@ -100,100 +114,92 @@ export function EntryCard({ entry }: { entry: Entry }) {
             </div>
           </div>
           <div className="w-full border-t block lg:hidden" />
-          <div className="h-full border-l hidden lg:block" />
+          <div className="border-l hidden lg:block" />
 
-          <div className="flex flex-col p-4 lg:py-2.5 lg:px-5 flex-1 lg:h-50">
-            <ScrollArea className="flex-1 min-h-0">
-              <div className="flex flex-col gap-y-2">
-                <div className="flex flex-row items-center gap-2 flex-wrap">
-                  <span className="text-base font-semibold">{title}</span>
-                  <Badge
-                    variant="outline"
-                    className="text-[10px] uppercase tracking-wide text-muted-foreground"
-                  >
-                    {isProject ? "Project" : "Publication"}
-                  </Badge>
-                </div>
+          <div className="flex flex-col gap-y-2 p-4 lg:py-3 lg:px-5 flex-1">
+            <span className="text-base font-semibold">{title}</span>
 
-                <p className="text-sm italic leading-4.5 text-muted-foreground">
-                  {metaLine}
+            <p className="text-sm italic leading-4.5 text-muted-foreground">
+              {metaLine}
+            </p>
+
+            {isProject ? (
+              entry.project.advisors && (
+                <p className="text-sm text-muted-foreground">
+                  Advisors: {entry.project.advisors}
                 </p>
+              )
+            ) : (
+              <p className="text-sm leading-4.5 text-muted-foreground">
+                {entry.publication.authors.split(", ").map((author, i, arr) => (
+                  <span
+                    key={i}
+                    className={
+                      author === publications.authorName
+                        ? "font-semibold text-foreground"
+                        : ""
+                    }
+                  >
+                    {author}
+                    {i < arr.length - 1 && ", "}
+                  </span>
+                ))}
+              </p>
+            )}
 
-                {isProject ? (
-                  entry.project.advisors && (
-                    <p className="text-sm text-muted-foreground">
-                      Advisors: {entry.project.advisors}
-                    </p>
-                  )
-                ) : (
-                  <p className="text-sm leading-4.5 text-muted-foreground">
-                    {entry.publication.authors.split(", ").map((author, i, arr) => (
-                      <span
-                        key={i}
-                        className={
-                          author === publications.authorName
-                            ? "font-semibold text-foreground"
-                            : ""
-                        }
-                      >
-                        {author}
-                        {i < arr.length - 1 && ", "}
-                      </span>
-                    ))}
-                  </p>
-                )}
-
-                {isProject && entry.project.description && (
-                  <div className="flex items-start gap-2">
-                    <p
-                      className={`text-sm text-muted-foreground flex-1 ${!isExpanded ? "line-clamp-2" : ""}`}
-                    >
-                      {entry.project.description}
-                    </p>
-                    <button
-                      onClick={() => setIsExpanded(!isExpanded)}
-                      className="flex-shrink-0 mt-0.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
-                      aria-label={isExpanded ? "Collapse description" : "Expand description"}
-                    >
-                      {isExpanded ? (
-                        <FaChevronUp className="w-3 h-3" />
-                      ) : (
-                        <FaChevronDown className="w-3 h-3" />
-                      )}
-                    </button>
-                  </div>
-                )}
-
-                {isProject && entry.project.tools?.length ? (
-                  <div className="flex flex-wrap gap-1.5">
-                    {entry.project.tools.map((tool) => (
-                      <Button
-                        key={tool}
-                        variant="secondary"
-                        size="sm"
-                        className="rounded-sm font-normal px-2 h-7 text-sm"
-                      >
-                        {tool}
-                      </Button>
-                    ))}
-                  </div>
-                ) : null}
+            {showDescription && (
+              <div className="flex items-start gap-2">
+                <p
+                  className={`text-sm text-muted-foreground flex-1 ${!isExpanded ? "line-clamp-2" : ""}`}
+                >
+                  {entry.project.description}
+                </p>
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="flex-shrink-0 mt-0.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label={isExpanded ? "Collapse description" : "Expand description"}
+                >
+                  {isExpanded ? (
+                    <FaChevronUp className="w-3 h-3" />
+                  ) : (
+                    <FaChevronDown className="w-3 h-3" />
+                  )}
+                </button>
               </div>
-            </ScrollArea>
+            )}
+
+            {isProject && entry.project.tools?.length ? (
+              <div className="flex flex-wrap gap-1.5">
+                {entry.project.tools.map((tool) => (
+                  <Button
+                    key={tool}
+                    variant="secondary"
+                    size="sm"
+                    className="rounded-sm font-normal px-2 h-7 text-sm"
+                  >
+                    {tool}
+                  </Button>
+                ))}
+              </div>
+            ) : null}
 
             {links.length > 0 && (
-              <div className="flex flex-row flex-wrap items-center gap-x-3 gap-y-1 pt-2 text-sm">
-                {links.map((l) => (
-                  <a
-                    key={l.label}
-                    href={l.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline underline-offset-4"
-                  >
-                    [{l.label}]
-                  </a>
-                ))}
+              <div className="flex flex-row flex-wrap items-center gap-2 pt-1 mt-auto">
+                {links.map((l) => {
+                  const Icon = LINK_ICONS[l.label];
+                  return (
+                    <a
+                      key={l.label}
+                      href={l.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/40 px-3 py-1 text-xs font-medium text-foreground/80 transition-colors hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
+                    >
+                      {Icon && <Icon className="w-3 h-3" />}
+                      {l.label}
+                    </a>
+                  );
+                })}
               </div>
             )}
           </div>

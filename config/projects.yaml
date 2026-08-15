@@ -21,9 +21,9 @@
 #
 # ✔ The `image` field is the preview image URL for the project.
 #
-# ✔ The `featured` field controls whether the project appears on the homepage.
-#    - featured: true  → shown on the homepage
-#    - featured: false → shown only on the Projects page
+# ✔ The `featured` field controls whether the project appears in the "Selected" view.
+#    - featured: true  → shown by default in the "Selected" view
+#    - featured: false → shown only in the "All" view
 # =====================================================
 
 projects:
@@ -50,7 +50,7 @@ projects:
     image: "images/latentros.png"
     featured: true
 
-  - title: "GLUESTICK (2026 CoRL under review)"
+  - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"
     role: "Harvard Edge Computing Lab, Harvard University"
     duration: "Aug 2025 - Jan 2026"
     description: "Developed GLUSTICK, a post-pruning recovery method for VLA models that restores robotic safety and performance without retraining by combining model compression, SVD-based correction, and efficient deployment on edge hardware"
@@ -92,7 +92,7 @@ projects:
     advisors: "Ofek Peretz, Prof. Robert Shepherd"
     github: null
     image: "images/orl.jpg"
-    featured: false
+    featured: true
 
   - title: "Real-Time Decision-Making Framework for Stormwater Bioreactor Optimization"
     role: "Reid's Laboratory, Cornell University"

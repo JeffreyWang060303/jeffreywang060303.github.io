@@ -13,9 +13,15 @@
 # =====================================================
 
 courseworks:
-  - title: "CS 4750"
+  - title: "INFO 4940"
     institution: "Cornell University"
-    description: "Foundations of Robotic"
+    description: "Human-AI Interaction Design Research"
+    term: "Fall 2026"
+    subjects: ["AI", "CS"]
+
+  - title: "CS 6758"
+    institution: "Cornell University"
+    description: "Deep Learning for Robotics"
     term: "Fall 2026"
     subjects: ["AI", "Robotics", "CS", "ML"]
 
@@ -27,29 +33,23 @@ courseworks:
 
   - title: "CS 3700"
     institution: "Cornell University"
-    description: "AI Reasoning/Decision-Making"
+    description: "Foundations of AI Reasoning and Decision-Making"
     term: "Fall 2026"
     subjects: ["AI", "CS", "ML"]
 
   - title: "INFO 3450"
     institution: "Cornell University"
-    description: "Human-Computer Interaction"
+    description: "Human-Computer Interaction Design"
     term: "Fall 2026"
     subjects: ["AI", "CS"]
 
   - title: "INFO 3160"
     institution: "Cornell University"
-    description: "AI-Assisted Programming"
+    description: "AI-Assisted Programming Design"
     term: "Fall 2026"
     subjects: ["AI", "ML", "CS"]
 
-  - title: "AEM 3330"
-    institution: "Cornell University"
-    description: "Startup & Venture Capital"
-    term: "Fall 2026"
-    subjects: ["Entrepreneurship"]
 
-  
   - title: "INFO 2450"
     institution: "Cornell University"
     description: "Technology and Communication"

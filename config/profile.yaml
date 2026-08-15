@@ -54,10 +54,10 @@ profile:
     Hi! I'm <strong>Jeffrey Wang</strong>, currently an Undergraduate Student at <strong>Cornell University</strong>, previously a visiting undergraduate scholar at <strong>Harvard College</strong>, passionate about <em>Robotics and Artificial Intelligence in general</em>. Currently, I work as a <em>Research Intern</em> at the <strong>Stanford Vision and Learning Lab</strong>, fortunately advised by <strong>Dr. Huang Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li</strong>, and <strong>Harvard Edge Computing Lab</strong>, fortunately advised by <strong>Jason Jabbour and Prof. Vijay Janapa Reddi</strong>.
     <div class="my-2"></div>
     <u>Research Interests:</u>
-    <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem; padding-left: 1.5rem; list-style-color: black;">
-      <li style="color: black;">Robotic learning, perception, and control</li>
-      <li style="color: black;">Embodied AI</li>
-      <li style="color: black;">System Optimization</li>
+    <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem; padding-left: 1.5rem;">
+      <li>Robotic learning, perception, and control</li>
+      <li>Embodied AI</li>
+      <li>System Optimization</li>
     </ul>
     Outside of work, I enjoy <em>playing basketball, tennis, golf, ice hockey, squash, and traveling</em>, which inspire creativity and keep me energized. Feel free to connect to me for any potential opportunities or chatting!
 # # =====================================================
@@ -69,11 +69,13 @@ education:
     school: "Harvard College"
     years: "2025 - 2026"
     logo: "images/harvard.png"
+    logoDark: ""
 
   - degree: "B.S. in Information Science (Minors in Robotics and AI)"
     school: "Cornell University"
     years: "2023 - 2026"
     logo: "images/Cornell.png"
+    logoDark: ""
 
 # # =====================================================
 # # 💼 Work Experience Section
@@ -84,17 +86,20 @@ workExperience:
     company: "Stanford Vision and Learning Lab, Stanford University"
     years: "Nov 2025 - Present"
     logo: "images/Stanford_Cardinal_logo.png"
+    logoDark: ""
 
   - title: "Research Intern"
     company: "Institute for AI Industry Research (AIR), Tsinghua University"
     years: "May 2025 - August 2025"
     logo: "images/Tsinghua_University_Logo.png"
+    logoDark: "images/Tsinghua_University_Logo-dark.png"
 
   - title: "Research Intern"
     company: "Charles Research Group, College of Engineering, Cornell University"
     years: "May 2024 - August 2024"
     logo: "images/cornelleng1.png"
-    
+    logoDark: "images/cornelleng1-dark.png"
+
 
 # # =====================================================
 # # 🛠️ Skills Section

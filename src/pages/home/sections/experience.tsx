@@ -6,6 +6,44 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { education } from "@/data/education";
 import { workExperience } from "@/data/workExperience";
 
+function LogoImage({
+  logo,
+  logoDark,
+  alt,
+}: {
+  logo: string;
+  logoDark?: string;
+  alt: string;
+}) {
+  if (!logoDark) {
+    return (
+      <img
+        src={logo}
+        alt={alt}
+        className="w-12 h-12 object-contain rounded"
+        loading="lazy"
+      />
+    );
+  }
+
+  return (
+    <>
+      <img
+        src={logo}
+        alt={alt}
+        className="w-12 h-12 object-contain rounded dark:hidden"
+        loading="lazy"
+      />
+      <img
+        src={logoDark}
+        alt={alt}
+        className="w-12 h-12 object-contain rounded hidden dark:block"
+        loading="lazy"
+      />
+    </>
+  );
+}
+
 export default function ExperienceSection() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -20,11 +58,10 @@ export default function ExperienceSection() {
           <CardContent className="space-y-4">
             {education.map((edu, index) => (
               <div key={index} className="flex items-center gap-4">
-                <img
-                  src={edu.logo}
+                <LogoImage
+                  logo={edu.logo}
+                  logoDark={edu.logoDark}
                   alt={`${edu.school} logo`}
-                  className="w-12 h-12 object-contain rounded"
-                  loading="lazy"
                 />
                 <div>
                   <div className="font-semibold">{edu.school}</div>
@@ -50,11 +87,10 @@ export default function ExperienceSection() {
           <CardContent className="space-y-4">
             {workExperience.map((job, index) => (
               <div key={index} className="flex items-center gap-4">
-                <img
-                  src={job.logo}
+                <LogoImage
+                  logo={job.logo}
+                  logoDark={job.logoDark}
                   alt={`${job.company} logo`}
-                  className="w-12 h-12 object-contain rounded"
-                  loading="lazy"
                 />
                 <div>
                   <div className="font-semibold">{job.company}</div>

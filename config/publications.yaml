@@ -31,7 +31,7 @@ publications:
     - title: "Can LLMs Test Their Own Code? Cross-Model Property-Based Testing of Code"
       authors: "Tyler Holloway, Youhui Wang, Simon Henniger, Nada Amin"
       year: "2026"
-      venue: "FAGEN Workshop, AAAI 2027 (Under Review)"
+      venue: "ICML 2026 FAGEN Workshop; AAAI 2027 (Under Review)"
       link: "https://openreview.net/pdf?id=BnzYjFS6O2"
       featured: true
 

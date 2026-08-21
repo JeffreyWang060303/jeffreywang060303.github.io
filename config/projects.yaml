@@ -29,10 +29,10 @@
 projects:
   - title: "Project for CoRL 2026 under review"
     role: "Stanford Vision and Learning Lab, Stanford University"
-    duration: "Nov 2025 - Present"
+    # duration: "Nov 2025 - Present"
     description: "Coming Soon!"
     tools: ["Robotics", "Vision", "Sim2Real"]
-    advisors: "Dr. Huang Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
+    # advisors: "Dr. Huang Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
     github: null
     paper: null
     image: "images/sail.jpg"
@@ -40,11 +40,11 @@ projects:
 
   - title: "Project for ASPLOS 2027 under review"
     role: "Harvard Edge Computing Lab, Harvard University"
-    duration: "Jan 2026 - May 2026"
+    # duration: "Jan 2026 - May 2026"
     description: "Coming Soon!"
     # description: "To address the data movement bottleneck in robotic systems, we propose LatentROS, a middleware compression framework that reduces message transport latency by over 7x and significantly improves the real-world safety and performance of autonomous agents."
     tools: ["Robotics", "Vision","ML"]
-    advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
+    # advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
     github: ""
     paper: ""
     image: "images/latentros.png"

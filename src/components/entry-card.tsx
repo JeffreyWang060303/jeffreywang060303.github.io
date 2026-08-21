@@ -98,7 +98,7 @@ export function EntryCard({ entry }: { entry: Entry }) {
                 <img
                   src={image}
                   alt={title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   loading="lazy"
                 />
               ) : (
@@ -112,25 +112,19 @@ export function EntryCard({ entry }: { entry: Entry }) {
           <div className="flex flex-col gap-y-2 p-4 lg:py-3 lg:px-5 flex-1">
             <span className="text-base font-semibold">{title}</span>
 
-            <p className="text-sm italic leading-4.5 text-muted-foreground">
-              {metaLine}
-            </p>
-
             {isProject ? (
               entry.project.advisors && (
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-foreground">
                   Advisors: {entry.project.advisors}
                 </p>
               )
             ) : (
-              <p className="text-sm leading-4.5 text-muted-foreground">
+              <p className="text-sm leading-4.5 text-foreground">
                 {entry.publication.authors.split(", ").map((author, i, arr) => (
                   <span
                     key={i}
                     className={
-                      author === publications.authorName
-                        ? "font-semibold text-foreground"
-                        : ""
+                      author === publications.authorName ? "font-semibold" : ""
                     }
                   >
                     {author}
@@ -140,8 +134,12 @@ export function EntryCard({ entry }: { entry: Entry }) {
               </p>
             )}
 
+            <p className="text-sm italic leading-4.5 text-foreground">
+              {metaLine}
+            </p>
+
             {showDescription && (
-              <p className="text-sm text-muted-foreground line-clamp-2">
+              <p className="text-sm text-foreground line-clamp-2">
                 {entry.project.description}
               </p>
             )}
@@ -171,7 +169,7 @@ export function EntryCard({ entry }: { entry: Entry }) {
                       href={l.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/40 px-3 py-1 text-xs font-medium text-foreground/80 transition-colors hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/40 px-3 py-1 text-xs font-medium text-foreground transition-colors hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
                     >
                       {Icon && <Icon className="w-3 h-3" />}
                       {l.label}

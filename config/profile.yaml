@@ -51,7 +51,9 @@ profile:
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi! I'm <strong>Jeffrey Wang</strong>, currently an Undergraduate Student at <strong>Cornell University</strong>, previously a visiting undergraduate scholar at <strong>Harvard College</strong>, passionate about <em>Robotics and Artificial Intelligence in general</em>. Currently, I work as a <em>Research Intern</em> at the <strong>Stanford Vision and Learning Lab</strong>, fortunately advised by <strong>Dr. Huang Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li</strong>, and <strong>Harvard Edge Computing Lab</strong>, fortunately advised by <strong>Jason Jabbour and Prof. Vijay Janapa Reddi</strong>.
+    Hi! I'm <strong>Jeffrey Wang</strong>, currently an Undergraduate Student at <strong>Cornell University</strong>, previously a visiting undergraduate scholar at <strong>Harvard College</strong>, passionate about <em>Robotics and Artificial Intelligence in general</em>.
+    <div class="my-2"></div>
+    Currently, I work as a <em>Research Intern</em> at the <strong>Stanford Vision and Learning Lab</strong>, fortunately advised by <strong>Dr. Huang Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li</strong>, and <strong>Harvard Edge Computing Lab</strong>, fortunately advised by <strong>Jason Jabbour and Prof. Vijay Janapa Reddi</strong>.
     <div class="my-2"></div>
     <u>Research Interests:</u>
     <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem; padding-left: 1.5rem;">

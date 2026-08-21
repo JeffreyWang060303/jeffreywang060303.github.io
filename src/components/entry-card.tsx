@@ -1,11 +1,5 @@
 import { useState } from "react";
-import {
-  FaChevronDown,
-  FaChevronUp,
-  FaFileLines,
-  FaGithub,
-  FaArrowUpRightFromSquare,
-} from "react-icons/fa6";
+import { FaFileLines, FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { IoLibrary } from "react-icons/io5";
 import type { IconType } from "react-icons";
 
@@ -61,7 +55,6 @@ function resolveLocalLink(url: string): string {
 }
 
 export function EntryCard({ entry }: { entry: Entry }) {
-  const [isExpanded, setIsExpanded] = useState(false);
   const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
 
   const isProject = entry.kind === "project";
@@ -105,7 +98,7 @@ export function EntryCard({ entry }: { entry: Entry }) {
                 <img
                   src={image}
                   alt={title}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                 />
               ) : (
@@ -148,24 +141,9 @@ export function EntryCard({ entry }: { entry: Entry }) {
             )}
 
             {showDescription && (
-              <div className="flex items-start gap-2">
-                <p
-                  className={`text-sm text-muted-foreground flex-1 ${!isExpanded ? "line-clamp-2" : ""}`}
-                >
-                  {entry.project.description}
-                </p>
-                <button
-                  onClick={() => setIsExpanded(!isExpanded)}
-                  className="flex-shrink-0 mt-0.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label={isExpanded ? "Collapse description" : "Expand description"}
-                >
-                  {isExpanded ? (
-                    <FaChevronUp className="w-3 h-3" />
-                  ) : (
-                    <FaChevronDown className="w-3 h-3" />
-                  )}
-                </button>
-              </div>
+              <p className="text-sm text-muted-foreground line-clamp-2">
+                {entry.project.description}
+              </p>
             )}
 
             {isProject && entry.project.tools?.length ? (

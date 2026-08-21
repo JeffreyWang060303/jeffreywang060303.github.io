@@ -40,7 +40,7 @@ projects:
 
   - title: "Project for ASPLOS 2027 under review"
     role: "Harvard Edge Computing Lab, Harvard University"
-    # duration: "Jan 2026 - May 2026"
+    duration: "Jan 2026 - May 2026"
     description: "Coming Soon!"
     # description: "To address the data movement bottleneck in robotic systems, we propose LatentROS, a middleware compression framework that reduces message transport latency by over 7x and significantly improves the real-world safety and performance of autonomous agents."
     tools: ["Robotics", "Vision","ML"]

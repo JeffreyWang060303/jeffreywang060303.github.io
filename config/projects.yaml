@@ -29,7 +29,7 @@
 projects:
   - title: "Project for CoRL 2026 under review"
     role: "Stanford Vision and Learning Lab, Stanford University"
-    # duration: "Nov 2025 - Present"
+    duration: "Nov 2025 - Present"
     description: "Coming Soon!"
     tools: ["Robotics", "Vision", "Sim2Real"]
     # advisors: "Dr. Huang Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"

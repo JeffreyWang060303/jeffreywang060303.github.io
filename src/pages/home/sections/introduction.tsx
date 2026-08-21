@@ -25,7 +25,7 @@ function ProfileCard() {
       <img
         src={profile.profileImage}
         alt="Profile"
-        className="w-60 h-auto rounded-lg object-cover"
+        className="w-60 h-80 rounded-lg object-cover"
         loading="lazy"
       />
       <div className="flex flex-col items-center gap-y-2">

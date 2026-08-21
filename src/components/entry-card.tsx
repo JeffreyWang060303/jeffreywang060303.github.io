@@ -89,11 +89,11 @@ export function EntryCard({ entry }: { entry: Entry }) {
         <div className="flex flex-col lg:flex-row">
           <div
             onClick={() => image && setIsImageViewerOpen(true)}
-            className={`w-full lg:w-75 lg:flex-shrink-0 ${
+            className={`w-full h-40 lg:w-75 lg:h-50 lg:flex-shrink-0 ${
               image ? "cursor-pointer hover:opacity-90 transition-opacity" : ""
             }`}
           >
-            <div className="w-full h-40 lg:h-full min-h-40 flex items-center justify-center bg-muted/30 overflow-hidden">
+            <div className="w-full h-full flex items-center justify-center bg-muted/30 overflow-hidden">
               {image ? (
                 <img
                   src={image}

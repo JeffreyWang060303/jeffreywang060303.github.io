@@ -24,7 +24,7 @@ function resolveLocalLink(url: string): string {
 export function EntryCard({ entry }: { entry: ProjectProps }) {
   const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
 
-  const { title, image, description, authorNotes } = entry;
+  const { title, image, description, authorNotes, venue } = entry;
   const authorsText = entry.authors ?? entry.advisors;
 
   const links: { label: string; href: string }[] = [];
@@ -83,6 +83,10 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
 
             {authorNotes && (
               <p className="text-xs text-foreground/70">{authorNotes}</p>
+            )}
+
+            {venue && (
+              <p className="text-sm italic leading-4.5 text-foreground">{venue}</p>
             )}
 
             {description && (

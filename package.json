@@ -20,7 +20,6 @@
     "build:article-index": "node scripts/build-article-index.js",
     "build:site-json": "node scripts/generate-site-json.js config/site.yaml",
     "convert:config:profile": "node scripts/yaml-to-ts.js config/profile.yaml",
-    "convert:config:pubs": "node scripts/yaml-to-ts.js config/publications.yaml",
     "convert:config:giscus": "node scripts/yaml-to-ts.js config/giscus.yaml",
     "convert:config:sidebar": "node scripts/yaml-to-ts.js config/sidebar.yaml",
     "convert:config:movie": "node scripts/yaml-to-ts.js config/movie.yaml",

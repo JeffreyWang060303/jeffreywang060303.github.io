@@ -5,7 +5,6 @@ import yaml from "js-yaml";
 import { ensureDirExists, addBasePathIfAbsolute } from "./utils.js";
 
 const TYPE_MAP = {
-  publications: "PublicationsType",
   giscus: "GiscusProps",
 };
 

@@ -4,16 +4,10 @@ import { IoLibrary } from "react-icons/io5";
 import type { IconType } from "react-icons";
 
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { ImageViewer } from "@/components/image-viewer";
 
-import { publications } from "@/data/publications";
+import { authorName } from "@/data/repos";
 import type { ProjectProps } from "@/types/repo";
-import type { Publication } from "@/types/publications";
-
-export type Entry =
-  | { kind: "project"; year: number; project: ProjectProps }
-  | { kind: "publication"; year: number; publication: Publication };
 
 const LINK_ICONS: Record<string, IconType> = {
   Paper: FaFileLines,
@@ -21,67 +15,28 @@ const LINK_ICONS: Record<string, IconType> = {
   Website: FaArrowUpRightFromSquare,
 };
 
-function extractYear(value: string | number): number {
-  if (typeof value === "number") return value;
-  if (/present/i.test(value)) return new Date().getFullYear();
-  const matches = value.match(/20\d{2}/g);
-  if (!matches) return 0;
-  return Math.max(...matches.map(Number));
-}
-
-export function buildEntries(
-  projectsList: ProjectProps[],
-  publicationsList: Publication[],
-): Entry[] {
-  const projectEntries: Entry[] = projectsList.map((project) => ({
-    kind: "project",
-    year: extractYear(project.duration),
-    project,
-  }));
-
-  const publicationEntries: Entry[] = publicationsList.map((publication) => ({
-    kind: "publication",
-    year: extractYear(publication.year),
-    publication,
-  }));
-
-  return [...projectEntries, ...publicationEntries].sort((a, b) => b.year - a.year);
-}
-
 function resolveLocalLink(url: string): string {
   return url.startsWith("http")
     ? url
     : "/" + url.split("/").map(encodeURIComponent).join("/");
 }
 
-export function EntryCard({ entry }: { entry: Entry }) {
+export function EntryCard({ entry }: { entry: ProjectProps }) {
   const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
 
-  const isProject = entry.kind === "project";
-  const title = isProject ? entry.project.title : entry.publication.title;
-  const image = isProject ? entry.project.image : null;
-
-  const metaLine = isProject
-    ? `${entry.project.role} · ${entry.project.duration}`
-    : entry.publication.venue;
+  const { title, image, description, authorNotes } = entry;
+  const authorsText = entry.authors ?? entry.advisors;
 
   const links: { label: string; href: string }[] = [];
-  if (isProject) {
-    if (entry.project.paper) {
-      links.push({ label: "Paper", href: resolveLocalLink(entry.project.paper) });
-    }
-    if (entry.project.github) {
-      links.push({
-        label: entry.project.github.includes("github.com") ? "Code" : "Website",
-        href: entry.project.github,
-      });
-    }
-  } else if (entry.publication.link) {
-    links.push({ label: "Paper", href: entry.publication.link });
+  if (entry.paper) {
+    links.push({ label: "Paper", href: resolveLocalLink(entry.paper) });
   }
-
-  const showDescription =
-    isProject && !entry.project.paper && entry.project.description;
+  if (entry.github) {
+    links.push({ label: "Code", href: entry.github });
+  }
+  if (entry.website) {
+    links.push({ label: "Website", href: entry.website });
+  }
 
   return (
     <>
@@ -112,20 +67,12 @@ export function EntryCard({ entry }: { entry: Entry }) {
           <div className="flex flex-col gap-y-2 p-4 lg:py-3 lg:px-5 flex-1">
             <span className="text-base font-semibold">{title}</span>
 
-            {isProject ? (
-              entry.project.advisors && (
-                <p className="text-sm text-foreground">
-                  Advisors: {entry.project.advisors}
-                </p>
-              )
-            ) : (
+            {authorsText && (
               <p className="text-sm leading-4.5 text-foreground">
-                {entry.publication.authors.split(", ").map((author, i, arr) => (
+                {authorsText.split(", ").map((author, i, arr) => (
                   <span
                     key={i}
-                    className={
-                      author === publications.authorName ? "font-semibold" : ""
-                    }
+                    className={author === authorName ? "font-semibold" : ""}
                   >
                     {author}
                     {i < arr.length - 1 && ", "}
@@ -134,30 +81,13 @@ export function EntryCard({ entry }: { entry: Entry }) {
               </p>
             )}
 
-            <p className="text-sm italic leading-4.5 text-foreground">
-              {metaLine}
-            </p>
-
-            {showDescription && (
-              <p className="text-sm text-foreground line-clamp-2">
-                {entry.project.description}
-              </p>
+            {authorNotes && (
+              <p className="text-xs text-foreground/70">{authorNotes}</p>
             )}
 
-            {isProject && entry.project.tools?.length ? (
-              <div className="flex flex-wrap gap-1.5">
-                {entry.project.tools.map((tool) => (
-                  <Button
-                    key={tool}
-                    variant="secondary"
-                    size="sm"
-                    className="rounded-sm font-normal px-2 h-7 text-sm"
-                  >
-                    {tool}
-                  </Button>
-                ))}
-              </div>
-            ) : null}
+            {description && (
+              <p className="text-sm text-foreground">{description}</p>
+            )}
 
             {links.length > 0 && (
               <div className="flex flex-row flex-wrap items-center gap-2 pt-1 mt-auto">

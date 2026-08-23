@@ -1,125 +1,150 @@
 # =====================================================
-# Project data displayed on the Projects page.
+# Projects & Publications data displayed on the Projects page.
 #
-# This section defines projects to be displayed on the website.
+# One unified list — projects and publications are entries in the same
+# array, in the same file, so you control the exact display order by
+# reordering entries here (no automatic sorting by date).
 #
-# ✔ The `title` field is the project name displayed on the website.
+# ✔ `authorName`: your name exactly as it appears in author lists — it gets
+#    bolded automatically wherever it shows up.
 #
-# ✔ The `role` field describes your role in the project.
-#
-# ✔ The `duration` field shows the time period of the project.
-#
-# ✔ The `description` field provides details about the project.
-#
-# ✔ The `tools` field is an array of technologies/tools used.
-#
-# ✔ The `advisors` field is optional and lists advisors/supervisors for the project.
-#
-# ✔ The `github` field is optional and links to the GitHub repository.
-#
-# ✔ The `paper` field is optional and links to the paper/publication.
-#
-# ✔ The `image` field is the preview image URL for the project.
-#
-# ✔ The `featured` field controls whether the project appears in the "Selected" view.
-#    - featured: true  → shown by default in the "Selected" view
-#    - featured: false → shown only in the "All" view
+# Each entry supports:
+#   - `title` (required): the name shown on the website.
+#   - `authors`: full author list for a paper, comma-separated. Add a trailing
+#      marker like "*" or "†" to a name and use `authorNotes` to explain it
+#      (e.g. "* Equal contribution"). Shown in place of `advisors` when set.
+#   - `authorNotes`: footnote explaining any markers used in `authors`.
+#   - `advisors`: supervisors/advisors, comma-separated. Shown only when
+#      `authors` is not set.
+#   - `role`: your role / the lab or institution (optional, for your own reference).
+#   - `duration` / `year`: time period or publication year (optional, for your
+#      own reference — no longer used to sort the list).
+#   - `venue`: conference or journal name (optional, for your own reference).
+#   - `description`: shown under the authors line if present.
+#   - `tools`: array of technologies/tools used (optional, for your own reference).
+#   - `github`: link to a code repository, if any.
+#   - `paper`: link to the paper/PDF, if any.
+#   - `website`: link to a project website (when it's not a code repo), if any.
+#   - `image`: preview image path (from /public/images/), if any.
+#   - `featured`:
+#       true  → shown by default in the "Selected" view
+#       false → shown only in the "All" view
 # =====================================================
 
 projects:
-  - title: "Project for CoRL 2026 under review"
-    role: "Stanford Vision and Learning Lab, Stanford University"
-    duration: "Nov 2025 - Present"
-    description: "Coming Soon!"
-    tools: ["Robotics", "Vision", "Sim2Real"]
-    # advisors: "Dr. Huang Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
-    github: null
-    paper: null
-    image: "images/sail.jpg"
-    featured: true
+  authorName: "Youhui Wang"
 
-  - title: "Project for ASPLOS 2027 under review"
-    role: "Harvard Edge Computing Lab, Harvard University"
-    duration: "Jan 2026 - May 2026"
-    description: "Coming Soon!"
-    # description: "To address the data movement bottleneck in robotic systems, we propose LatentROS, a middleware compression framework that reduces message transport latency by over 7x and significantly improves the real-world safety and performance of autonomous agents."
-    tools: ["Robotics", "Vision","ML"]
-    # advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
-    github: ""
-    paper: ""
-    image: "images/latentros.png"
-    featured: true
+  items:
+    - title: "Project for CoRL 2026 under review"
+      role: "Stanford Vision and Learning Lab, Stanford University"
+      duration: "Nov 2025 - Present"
+      description: "Coming Soon!"
+      tools: ["Robotics", "Vision", "Sim2Real"]
+      # advisors: "Dr. Huang Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
+      github: null
+      paper: null
+      image: "images/sail.jpg"
+      featured: true
 
-  - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"
-    role: "Harvard Edge Computing Lab, Harvard University"
-    duration: "Aug 2025 - Jan 2026"
-    description: "Developed GLUSTICK, a post-pruning recovery method for VLA models that restores robotic safety and performance without retraining by combining model compression, SVD-based correction, and efficient deployment on edge hardware"
-    tools: ["VLA", "Robotics", "ML"]
-    advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
-    github: "https://gluestick-vla.github.io/"
-    paper: "https://arxiv.org/abs/2510.08464"
-    image: "images/gluestick.jpg"
-    featured: true
+    - title: "Project for ASPLOS 2027 under review"
+      role: "Harvard Edge Computing Lab, Harvard University"
+      duration: "Jan 2026 - May 2026"
+      description: "Coming Soon!"
+      # description: "To address the data movement bottleneck in robotic systems, we propose LatentROS, a middleware compression framework that reduces message transport latency by over 7x and significantly improves the real-world safety and performance of autonomous agents."
+      tools: ["Robotics", "Vision", "ML"]
+      # advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
+      github: null
+      paper: null
+      image: "images/latentros.png"
+      featured: true
 
-  - title: "Vision-Guided Robotic Folding of Deformable Garments Using Model-Based Planning and Control"
-    role: "MIT 6.4212 Final Project"
-    duration: "Sep 2025 - Dec 2025"
-    description: "Developed an interpretable square fabric folding system integrating geometric vision, deformable modeling, motion planning, and impedance control, achieving up to 90% success across varying fabric sizes"
-    tools: ["Robotics", "Vision", "ML"]
-    advisors: "Prof. Tomás Lozano-Pérez"
-    github: null
-    paper: "pdf/Wang_Zhang_6.4212_Final_Paper.pdf"
-    image: "images/6.4212.jpg"
-    featured: true
+    - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"
+      role: "Harvard Edge Computing Lab, Harvard University"
+      duration: "Aug 2025 - Jan 2026"
+      description: "Developed GLUSTICK, a post-pruning recovery method for VLA models that restores robotic safety and performance without retraining by combining model compression, SVD-based correction, and efficient deployment on edge hardware"
+      tools: ["VLA", "Robotics", "ML"]
+      authors: "Jason Jabbour, Dong-Ki Kim, Max Smith, Jay Patrikar, Radhika Ghosal, Youhui Wang, Ali Agha, Vijay Janapa Reddi, Shayegan Omidshafiei"
+      advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
+      venue: "CoRL 2026 (Under Review)"
+      website: "https://gluestick-vla.github.io/"
+      paper: "https://arxiv.org/abs/2510.08464"
+      image: "images/gluestick.jpg"
+      featured: true
 
-  - title: "FISOR + TELS"
-    role: "AIR-DREAM Lab at the Institute for AI Industry Research (AIR) at Tsinghua University"
-    duration: "May 2025 - Aug 2025"
-    description: "Developed an offline RL model combining FISOR (Feasibility-guided Safe Offline RL) 
-    and TELS (T-symmetry Enforced Latent State-Stitching) frameworks to enhance safe learning and optimize
-     national data center cooling under limited, low-quality data using PyTorch"
-    tools: ["Offline RL", "ML"]
-    advisors: "Peng Cheng, Prof. Xianyuan Zhan"
-    github: null
-    image: "images/fisortels.png"
-    featured: true
+    - title: "Can LLMs Test Their Own Code? Cross-Model Property-Based Testing of Code"
+      authors: "Tyler Holloway, Youhui Wang, Simon Henniger, Nada Amin"
+      year: "2026"
+      venue: "ICML 2026 FAGEN Workshop; AAAI 2027 (Under Review)"
+      paper: "https://openreview.net/pdf?id=BnzYjFS6O2"
+      image: "images/pbt.png"
+      featured: true
 
-  - title: "Robotic Fish Deploying Wave Energy Harvester (DEEP Prize by U.S. Department of Energy)"
-    role: "Organic Robotics Lab, Cornell University"
-    duration: "Aug 2024 - Sep 2025"
-    description: "Developed energy-aware control strategies for a bio-inspired robotic fish, integrating an origami wave-energy harvester with closed-loop locomotion control to extend mission duration by 70%+"
-    tools: ["Robotics", "Energy", "Design"]
-    advisors: "Ofek Peretz, Prof. Robert Shepherd"
-    github: null
-    image: "images/orl.jpg"
-    featured: true
+    - title: "AI-Based Network Analysis and Design of Complex Technological Systems"
+      role: "Charles Research Group, Cornell University"
+      duration: "Aug 2023 - Present"
+      description: "Applied AI-driven network modeling in Python/Julia to simulate 50 ecological and engineered systems, using representation learning–inspired dimensionality reduction (PCA) and objective analysis to optimize system performance and design"
+      tools: ["ML", "Optimization", "Data Science"]
+      advisors: "Prof. Michael Charles"
+      github: null
+      image: "images/charles.jpg"
+      featured: true
 
-  - title: "Real-Time Decision-Making Framework for Stormwater Bioreactor Optimization"
-    role: "Reid's Laboratory, Cornell University"
-    duration: "Aug 2024 - Sep 2025"
-    description: "Developed a Markovian decision-making control framework for stormwater bioreactors, modeling system dynamics as state transitions and leveraging real-time redox observations to optimize nutrient removal performance over 30 days"
-    tools: ["Markov Decision Process", "Optimization", "Sustainability"]
-    advisors: "Zihao Zhang, Prof. Matthew Reid"
-    github: null
-    image: "images/reid.png"
-    featured: false
+    - title: "Vision-Guided Robotic Folding of Deformable Garments Using Model-Based Planning and Control"
+      role: "MIT 6.4212 Final Project"
+      duration: "Sep 2025 - Dec 2025"
+      description: "Developed an interpretable square fabric folding system integrating geometric vision, deformable modeling, motion planning, and impedance control, achieving up to 90% success across varying fabric sizes"
+      tools: ["Robotics", "Vision", "ML"]
+      authors: "Youhui Wang*, Hangxing Zhang*, Tomás Lozano-Pérez"
+      authorNotes: "* Equal contribution"
+      advisors: "Prof. Tomás Lozano-Pérez"
+      github: null
+      paper: "pdf/Wang_Zhang_6.4212_Final_Paper.pdf"
+      image: "images/6.4212.jpg"
+      featured: true
 
-  - title: "AI-Based Network Analysis and Design of Complex Technological Systems"
-    role: "Charles Research Group, Cornell University"
-    duration: "Aug 2023 - Present"
-    description: "Applied AI-driven network modeling in Python/Julia to simulate 50 ecological and engineered systems, using representation learning–inspired dimensionality reduction (PCA) and objective analysis to optimize system performance and design"
-    tools: ["ML", "Optimization", "Data Science"]
-    advisors: "Prof. Michael Charles"
-    github: null
-    image: "images/charles.jpg"
-    featured: true
-
-    
+    - title: "FISOR + TELS"
+      role: "AIR-DREAM Lab at the Institute for AI Industry Research (AIR) at Tsinghua University"
+      duration: "May 2025 - Aug 2025"
+      description: "Developed an offline RL model combining FISOR (Feasibility-guided Safe Offline RL)
+      and TELS (T-symmetry Enforced Latent State-Stitching) frameworks to enhance safe learning and optimize
+       national data center cooling under limited, low-quality data using PyTorch"
+      tools: ["Offline RL", "ML"]
+      advisors: "Peng Cheng, Prof. Xianyuan Zhan"
+      github: null
+      image: "images/fisortels.png"
+      featured: true
 
 
+    - title: "Feedback Control of Redox Conditions in Bioretention Systems Enhances Biological Co-Treatment of Nitrogen and Phosphorus"
+      authors: "Zihao Zhang, Peisheng He, Lily DuPlooy, Youhui Wang, Mathew Baldwin, Michael Vega, April Gu, Matthew C. Reid"
+      year: "2026"
+      venue: "Environment Science and Engineering 2026 (under review)"
+      paper: null
+      featured: false
 
+    - title: "Robotic Fish Deploying Wave Energy Harvester (DEEP Prize by U.S. Department of Energy)"
+      role: "Organic Robotics Lab, Cornell University"
+      duration: "Aug 2024 - Sep 2025"
+      description: "Developed energy-aware control strategies for a bio-inspired robotic fish, integrating an origami wave-energy harvester with closed-loop locomotion control to extend mission duration by 70%+"
+      tools: ["Robotics", "Energy", "Design"]
+      advisors: "Ofek Peretz, Prof. Robert Shepherd"
+      github: null
+      image: "images/orl.jpg"
+      featured: true
 
+    - title: "Real-Time Decision-Making Framework for Stormwater Bioreactor Optimization"
+      role: "Reid's Laboratory, Cornell University"
+      duration: "Aug 2024 - Sep 2025"
+      description: "Developed a Markovian decision-making control framework for stormwater bioreactors, modeling system dynamics as state transitions and leveraging real-time redox observations to optimize nutrient removal performance over 30 days"
+      tools: ["Markov Decision Process", "Optimization", "Sustainability"]
+      advisors: "Zihao Zhang, Prof. Matthew Reid"
+      github: null
+      image: "images/reid.png"
+      featured: false
 
-  
-
-
+    - title: "Co-Treatment of Nitrogen and Phosphorus in Stormwater Runoff through Sensor Feedback Control of Redox Conditions in Biofilter Media"
+      authors: "Zihao Zhang, Lily DuPlooy, Youhui Wang, Peisheng He, April Gu, Matthew Charles Reid"
+      year: "2025"
+      venue: "CANVAS 2025"
+      paper: "https://scisoc.confex.com/scisoc/2025am/meetingapp.cgi/Paper/168877"
+      featured: false

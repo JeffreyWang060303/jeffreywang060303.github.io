@@ -1,10 +1,9 @@
 import { useState } from "react";
 
 import { cn } from "@/lib/utils";
-import { EntryCard, buildEntries } from "@/components/entry-card";
+import { EntryCard } from "@/components/entry-card";
 
 import { projects, featuredReposArray } from "@/data/repos";
-import { publications } from "@/data/publications";
 
 const TABS = [
   { key: "selected", label: "Selected" },
@@ -16,13 +15,7 @@ type Tab = (typeof TABS)[number]["key"];
 export function ProjectsList() {
   const [tab, setTab] = useState<Tab>("selected");
 
-  const entries =
-    tab === "selected"
-      ? buildEntries(
-          featuredReposArray,
-          publications.items.filter((pub) => pub.featured),
-        )
-      : buildEntries(projects, publications.items);
+  const entries = tab === "selected" ? featuredReposArray : projects;
 
   return (
     <div className="space-y-6">

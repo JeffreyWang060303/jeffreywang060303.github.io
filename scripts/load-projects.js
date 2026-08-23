@@ -16,44 +16,41 @@ function loadProjectsFromYaml() {
   const raw = fs.readFileSync(projectsYamlPath, "utf-8");
   const data = yaml.load(raw);
 
-  const projects = data?.projects ?? [];
+  // Support both the current nested shape ({ authorName, items }) and the
+  // legacy flat array shape for backward compatibility.
+  const authorName = data?.projects?.authorName ?? "";
+  const items = Array.isArray(data?.projects?.items)
+    ? data.projects.items
+    : Array.isArray(data?.projects)
+      ? data.projects
+      : [];
 
-  // Validate that projects is an array
-  if (!Array.isArray(projects)) {
-    throw new Error("Projects must be an array in the YAML file");
+  // Validate that items is an array
+  if (!Array.isArray(items)) {
+    throw new Error("projects.items must be an array in the YAML file");
   }
 
-  // Validate each project has required fields
-  projects.forEach((project, index) => {
-    if (!project.title) {
-      throw new Error(`Project at index ${index} is missing required field: title`);
+  // Validate each entry has the one truly required field
+  items.forEach((item, index) => {
+    if (!item.title) {
+      throw new Error(`Entry at index ${index} is missing required field: title`);
     }
-    if (!project.role) {
-      throw new Error(`Project at index ${index} is missing required field: role`);
-    }
-    if (!project.duration) {
-      throw new Error(`Project at index ${index} is missing required field: duration`);
-    }
-    if (!project.description) {
-      throw new Error(`Project at index ${index} is missing required field: description`);
-    }
-    if (!Array.isArray(project.tools)) {
-      throw new Error(`Project at index ${index} must have tools as an array`);
+    if ("tools" in item && item.tools != null && !Array.isArray(item.tools)) {
+      throw new Error(`Entry at index ${index} must have tools as an array`);
     }
   });
 
-  return projects;
+  return { authorName, items };
 }
 
 function saveProjects() {
   try {
-    const projects = loadProjectsFromYaml();
+    const { authorName, items } = loadProjectsFromYaml();
 
     ensureDirExists(outputPath);
-    // Save as array
-    fs.writeFileSync(outputPath, JSON.stringify(projects, null, 2));
+    fs.writeFileSync(outputPath, JSON.stringify({ authorName, items }, null, 2));
 
-    console.log(`✅ Projects written to ${outputPath} (${projects.length} projects)`);
+    console.log(`✅ Projects written to ${outputPath} (${items.length} entries)`);
   } catch (error) {
     console.error("❌ Failed to load projects:", error.message);
     process.exit(1);

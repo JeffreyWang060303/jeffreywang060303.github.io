@@ -73,10 +73,10 @@ projects:
     - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"
       role: "Harvard Edge Computing Lab, Harvard University"
       duration: "Aug 2025 - Jan 2026"
-      description: "Developed GLUSTICK, a post-pruning recovery method for VLA models that restores robotic safety and performance without retraining by combining model compression, SVD-based correction, and efficient deployment on edge hardware"
+      # description: "Developed GLUSTICK, a post-pruning recovery method for VLA models that restores robotic safety and performance without retraining by combining model compression, SVD-based correction, and efficient deployment on edge hardware"
       tools: ["VLA", "Robotics", "ML"]
       authors: "Jason Jabbour, Dong-Ki Kim, Max Smith, Jay Patrikar, Radhika Ghosal, Youhui Wang, Ali Agha, Vijay Janapa Reddi, Shayegan Omidshafiei"
-      advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
+      # advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
       venue: "CoRL 2026 (Under Review)"
       website: "https://gluestick-vla.github.io/"
       paper: "https://arxiv.org/abs/2510.08464"
@@ -93,10 +93,12 @@ projects:
 
     - title: "AI-Based Network Analysis and Design of Complex Technological Systems"
       role: "Charles Research Group, Cornell University"
+      authors: "Youhui Wang, Michael Charles"
+      venue: "Industrial Ecology (Under Review)"
       duration: "Aug 2023 - Present"
       description: "Applied AI-driven network modeling in Python/Julia to simulate 50 ecological and engineered systems, using representation learning–inspired dimensionality reduction (PCA) and objective analysis to optimize system performance and design"
       tools: ["ML", "Optimization", "Data Science"]
-      advisors: "Prof. Michael Charles"
+      # advisors: "Prof. Michael Charles"
       github: null
       image: "images/charles.jpg"
       featured: true
@@ -104,17 +106,18 @@ projects:
     - title: "Vision-Guided Robotic Folding of Deformable Garments Using Model-Based Planning and Control"
       role: "MIT 6.4212 Final Project"
       duration: "Sep 2025 - Dec 2025"
-      description: "Developed an interpretable square fabric folding system integrating geometric vision, deformable modeling, motion planning, and impedance control, achieving up to 90% success across varying fabric sizes"
+      # description: "Developed an interpretable square fabric folding system integrating geometric vision, deformable modeling, motion planning, and impedance control, achieving up to 90% success across varying fabric sizes"
       tools: ["Robotics", "Vision", "ML"]
       authors: "Youhui Wang*, Hangxing Zhang*, Tomás Lozano-Pérez"
       authorNotes: "* Equal contribution"
-      advisors: "Prof. Tomás Lozano-Pérez"
+      venue: "MIT 6.4212 Final Project"
+      # advisors: "Prof. Tomás Lozano-Pérez"
       github: null
       paper: "pdf/Wang_Zhang_6.4212_Final_Paper.pdf"
       image: "images/6.4212.jpg"
       featured: true
 
-    - title: "FISOR + TELS"
+    - title: "Safe Offline Reinforcement Learning for Data Center Cooling Optimization"
       role: "AIR-DREAM Lab at the Institute for AI Industry Research (AIR) at Tsinghua University"
       duration: "May 2025 - Aug 2025"
       description: "Developed an offline RL model combining FISOR (Feasibility-guided Safe Offline RL)

@@ -24,8 +24,7 @@ function resolveLocalLink(url: string): string {
 export function EntryCard({ entry }: { entry: ProjectProps }) {
   const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
 
-  const { title, image, description, authorNotes, venue } = entry;
-  const authorsText = entry.authors ?? entry.advisors;
+  const { title, image, description, authorNotes, venue, authors, advisors } = entry;
 
   const links: { label: string; href: string }[] = [];
   if (entry.paper) {
@@ -67,9 +66,9 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
           <div className="flex flex-col gap-y-2 p-4 lg:py-3 lg:px-5 flex-1">
             <span className="text-base font-semibold">{title}</span>
 
-            {authorsText && (
+            {authors ? (
               <p className="text-sm leading-4.5 text-foreground">
-                {authorsText.split(", ").map((author, i, arr) => (
+                {authors.split(", ").map((author, i, arr) => (
                   <span
                     key={i}
                     className={author === authorName ? "font-semibold" : ""}
@@ -79,6 +78,12 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
                   </span>
                 ))}
               </p>
+            ) : (
+              advisors && (
+                <p className="text-sm leading-4.5 text-foreground">
+                  Advisors: {advisors}
+                </p>
+              )
             )}
 
             {authorNotes && (

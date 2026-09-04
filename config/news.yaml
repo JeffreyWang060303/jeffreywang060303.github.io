@@ -1,0 +1,13 @@
+# =====================================================
+# News items displayed on the Home (About Me) page.
+#
+# - Put the newest entry at the top; order here is the display order.
+# - `text` supports basic HTML (e.g. <strong>, <em>, <a>).
+# =====================================================
+
+news:
+  items:
+
+    - date: "Sep 2026"
+      text: |
+        Our paper <strong>"Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"</strong> (GLUESTICK) was accepted to <strong>CoRL 2026</strong>! Thanks to all the amazing co-authors.

@@ -25,6 +25,7 @@
     "convert:config:movie": "node scripts/yaml-to-ts.js config/movie.yaml",
     "convert:config:music": "node scripts/yaml-to-ts.js config/music.yaml",
     "convert:config:homepage": "node scripts/yaml-to-ts.js config/homepage.yaml",
+    "convert:config:news": "node scripts/yaml-to-ts.js config/news.yaml",
     "convert:config:courseworks": "node scripts/yaml-to-ts.js config/courseworks.yaml",
     "convert:config:teaching": "node scripts/yaml-to-ts.js config/teaching.yaml",
     "convert:config": "npm-run-all convert:config:*"

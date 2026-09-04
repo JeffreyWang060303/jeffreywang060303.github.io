@@ -2,6 +2,7 @@ import { usePageTitle } from "@/hooks/use-pagetitle";
 
 import IntroductionSection from "./sections/introduction";
 import ExperienceSection from "./sections/experience";
+import NewsSection from "./sections/news";
 import ProjectsSection from "./sections/projects";
 import TalksSection from "./sections/talks";
 import ServicesSection from "./sections/services";
@@ -18,6 +19,7 @@ interface SectionProps {
 const sectionComponents: Record<string, React.ComponentType<SectionProps>> = {
   Introduction: IntroductionSection,
   Experience: ExperienceSection,
+  News: NewsSection,
   Projects: ProjectsSection,
   Talks: TalksSection,
   Services: ServicesSection,

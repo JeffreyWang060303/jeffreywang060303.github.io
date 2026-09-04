@@ -16,6 +16,10 @@ homepage:
       variant: default
       enabled: true
 
+    - name: News
+      variant: default
+      enabled: true
+
     - name: Projects
       variant: default
       enabled: true

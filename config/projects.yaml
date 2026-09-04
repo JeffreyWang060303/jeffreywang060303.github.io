@@ -36,39 +36,40 @@ projects:
 
   items:
 
-    - title: "Project for ICRA 2027 under review"
-      role: "Stanford Vision and Learning Lab, Stanford University"
-      duration: "Nov 2025 - Present"
-      description: "Coming Soon!"
-      tools: ["Robotics", "Vision", "Sim2Real"]
-      # advisors: "Dr. Huang Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
-      github: null
-      paper: null
-      image: "images/sail.jpg"
-      featured: true
+    # --- Coming soon: uncomment to show once there's something to share ---
+    # - title: "Project for ICRA 2027 under review"
+    #   role: "Stanford Vision and Learning Lab, Stanford University"
+    #   duration: "Nov 2025 - Present"
+    #   description: "Coming Soon!"
+    #   tools: ["Robotics", "Vision", "Sim2Real"]
+    #   # advisors: "Dr. Huang Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
+    #   github: null
+    #   paper: null
+    #   image: "images/sail.jpg"
+    #   featured: true
 
-    - title: "Project for CoRL 2026 under review"
-      role: "Stanford Vision and Learning Lab, Stanford University"
-      duration: "Nov 2025 - Present"
-      description: "Coming Soon!"
-      tools: ["Robotics", "Vision", "Sim2Real"]
-      # advisors: "Dr. Huang Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
-      github: null
-      paper: null
-      image: "images/sail.jpg"
-      featured: true
+    # - title: "Project for CoRL 2026 under review"
+    #   role: "Stanford Vision and Learning Lab, Stanford University"
+    #   duration: "Nov 2025 - Present"
+    #   description: "Coming Soon!"
+    #   tools: ["Robotics", "Vision", "Sim2Real"]
+    #   # advisors: "Dr. Huang Huang, Prof. Jiajun Wu, Prof. Fei-Fei Li"
+    #   github: null
+    #   paper: null
+    #   image: "images/sail.jpg"
+    #   featured: true
 
-    - title: "Project for ASPLOS 2027 under review"
-      role: "Harvard Edge Computing Lab, Harvard University"
-      duration: "Jan 2026 - May 2026"
-      description: "Coming Soon!"
-      # description: "To address the data movement bottleneck in robotic systems, we propose LatentROS, a middleware compression framework that reduces message transport latency by over 7x and significantly improves the real-world safety and performance of autonomous agents."
-      tools: ["Robotics", "Vision", "ML"]
-      # advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
-      github: null
-      paper: null
-      image: "images/latentros.png"
-      featured: true
+    # - title: "Project for ASPLOS 2027 under review"
+    #   role: "Harvard Edge Computing Lab, Harvard University"
+    #   duration: "Jan 2026 - May 2026"
+    #   description: "Coming Soon!"
+    #   tools: ["Robotics", "Vision", "ML"]
+    #   # advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
+    #   github: null
+    #   paper: null
+    #   image: "images/latentros.png"
+    #   featured: true
+    # --- end coming soon ---
 
     - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"
       role: "Harvard Edge Computing Lab, Harvard University"
@@ -77,7 +78,7 @@ projects:
       tools: ["VLA", "Robotics", "ML"]
       authors: "Jason Jabbour, Dong-Ki Kim, Max Smith, Jay Patrikar, Radhika Ghosal, Youhui Wang, Ali Agha, Vijay Janapa Reddi, Shayegan Omidshafiei"
       # advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
-      venue: "CoRL 2026 (Under Review)"
+      venue: "CoRL 2026"
       website: "https://gluestick-vla.github.io/"
       paper: "https://arxiv.org/abs/2510.08464"
       image: "images/gluestick.jpg"
@@ -86,7 +87,7 @@ projects:
     - title: "Can LLMs Test Their Own Code? Cross-Model Property-Based Testing of Code"
       authors: "Tyler Holloway, Youhui Wang, Simon Henniger, Nada Amin"
       year: "2026"
-      venue: "ICML 2026 FAGEN Workshop; AAAI 2027 (Under Review)"
+      venue: "ICML 2026 FAGEN Workshop"
       paper: "https://openreview.net/pdf?id=BnzYjFS6O2"
       image: "images/pbt.png"
       featured: true
@@ -94,7 +95,7 @@ projects:
     - title: "AI-Based Network Analysis and Design of Complex Technological Systems"
       role: "Charles Research Group, Cornell University"
       authors: "Youhui Wang, Michael Charles"
-      venue: "Industrial Ecology (Under Review)"
+      venue: "Industrial Ecology"
       duration: "Aug 2023 - Present"
       description: "Applied AI-driven network modeling in Python/Julia to simulate 50 ecological and engineered systems, using representation learning–inspired dimensionality reduction (PCA) and objective analysis to optimize system performance and design"
       tools: ["ML", "Optimization", "Data Science"]
@@ -133,7 +134,7 @@ projects:
     - title: "Feedback Control of Redox Conditions in Bioretention Systems Enhances Biological Co-Treatment of Nitrogen and Phosphorus"
       authors: "Zihao Zhang, Peisheng He, Lily DuPlooy, Youhui Wang, Mathew Baldwin, Michael Vega, April Gu, Matthew C. Reid"
       year: "2026"
-      venue: "Environment Science and Engineering 2026 (under review)"
+      venue: "Environment Science and Engineering 2026"
       paper: null
       featured: false
 

@@ -7,7 +7,27 @@ export const news: { items: NewsProps[] } = {
   items: [
     {
       date: `Sep 2026`,
-      text: `Our paper <strong>"Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"</strong> (GLUESTICK) was accepted to <strong>CoRL 2026</strong>! Thanks to all the amazing co-authors.\n`,
+      text: `Paper <strong>"Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"</strong> (GLUESTICK) accepted to <strong>CoRL 2026</strong>!\n`,
+    },
+    {
+      date: `May 2026`,
+      text: `Paper <strong>"Can LLMs Test Their Own Code?"</strong> accepted to the <strong>ICML 2026 FAGEN Workshop</strong>!\n`,
+    },
+    {
+      date: `Nov 2025`,
+      text: `Started as a <strong>Research Intern</strong> at the <strong>Stanford Vision and Learning Lab</strong>, advised by <strong>Dr. Huang Huang, Prof. Jiajun Wu, and Prof. Fei-Fei Li</strong>.\n`,
+    },
+    {
+      date: `Jun 2025`,
+      text: `Accepted to the <strong>Visiting Undergraduate Scholar Program</strong> at <strong>Harvard University</strong> (Fall 2025 - Spring 2026).\n`,
+    },
+    {
+      date: `Feb 2025`,
+      text: `Won the <strong>DEEP Prize</strong> (U.S. Department of Energy) for <strong>Robotic Fish Deploying Wave Energy Harvester</strong>.\n`,
+    },
+    {
+      date: `Apr 2024`,
+      text: `Received the <strong>Cornell Engineering Office of Inclusive Excellence Student Grant</strong> (Top 5%).\n`,
     },
   ],
 };

@@ -78,7 +78,7 @@ projects:
       tools: ["VLA", "Robotics", "ML"]
       authors: "Jason Jabbour, Dong-Ki Kim, Max Smith, Jay Patrikar, Radhika Ghosal, Youhui Wang, Ali Agha, Vijay Janapa Reddi, Shayegan Omidshafiei"
       # advisors: "Jason Jabbour, Prof. Vijay Janapa Reddi"
-      venue: "CoRL 2026"
+      venue: "The Conference on Robot Learning (CoRL) 2026"
       website: "https://gluestick-vla.github.io/"
       paper: "https://arxiv.org/abs/2510.08464"
       image: "images/gluestick.jpg"
@@ -95,7 +95,7 @@ projects:
     - title: "AI-Based Network Analysis and Design of Complex Technological Systems"
       role: "Charles Research Group, Cornell University"
       authors: "Youhui Wang, Michael Charles"
-      venue: "Industrial Ecology"
+      # venue: "Industrial Ecology"
       duration: "Aug 2023 - Present"
       description: "Applied AI-driven network modeling in Python/Julia to simulate 50 ecological and engineered systems, using representation learning–inspired dimensionality reduction (PCA) and objective analysis to optimize system performance and design"
       tools: ["ML", "Optimization", "Data Science"]

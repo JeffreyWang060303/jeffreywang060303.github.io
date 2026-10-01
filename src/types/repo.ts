@@ -1,3 +1,9 @@
+export interface PublicationEntry {
+  title: string;
+  authors?: string | null;
+  venue?: string | null;
+}
+
 export interface ProjectProps {
   title: string;
   role?: string | null;
@@ -13,6 +19,7 @@ export interface ProjectProps {
   paper?: string | null;
   website?: string | null;
   tldr?: string | null;
+  publications?: PublicationEntry[] | null;
   image?: string | null;
   featured?: boolean;
 }

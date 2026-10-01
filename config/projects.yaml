@@ -26,6 +26,9 @@
 #   - `paper`: link to the paper/PDF, if any.
 #   - `website`: link to a project website (when it's not a code repo), if any.
 #   - `tldr`: link to a TL;DR post (e.g. on X), if any.
+#   - `publications`: list of papers (each with `title`, `authors`, `venue`) to
+#      show as "Publication 1", "Publication 2", ... in a single card, in place
+#      of the card's own title/authors/venue.
 #   - `image`: preview image path (from /public/images/), if any.
 #   - `featured`:
 #       true  → shown by default in the "Selected" view
@@ -146,13 +149,6 @@ projects:
       featured: false
 
 
-    - title: "Feedback Control of Redox Conditions in Bioretention Systems Enhances Biological Co-Treatment of Nitrogen and Phosphorus"
-      authors: "Zihao Zhang, Peisheng He, Lily DuPlooy, Youhui Wang, Mathew Baldwin, Michael Vega, April Gu, Matthew C. Reid"
-      year: "2026"
-      venue: "Environment Science and Engineering 2026"
-      paper: null
-      featured: false
-
     - title: "Robotic Fish Deploying Wave Energy Harvester (DEEP Prize by U.S. Department of Energy)"
       role: "Organic Robotics Lab, Cornell University"
       duration: "Aug 2024 - Sep 2025"
@@ -166,16 +162,14 @@ projects:
     - title: "Real-Time Decision-Making Framework for Stormwater Bioreactor Optimization"
       role: "Reid's Laboratory, Cornell University"
       duration: "Aug 2024 - Sep 2025"
-      description: "Developed a Markovian decision-making control framework for stormwater bioreactors, modeling system dynamics as state transitions and leveraging real-time redox observations to optimize nutrient removal performance over 30 days"
       tools: ["Markov Decision Process", "Optimization", "Sustainability"]
-      advisors: "Zihao Zhang, Prof. Matthew Reid"
-      github: null
-      image: "images/reid.png"
-      featured: false
-
-    - title: "Co-Treatment of Nitrogen and Phosphorus in Stormwater Runoff through Sensor Feedback Control of Redox Conditions in Biofilter Media"
-      authors: "Zihao Zhang, Lily DuPlooy, Youhui Wang, Peisheng He, April Gu, Matthew Charles Reid"
-      year: "2025"
-      venue: "CANVAS 2025"
+      publications:
+        - title: "Feedback Control of Redox Conditions in Bioretention Systems Enhances Biological Co-Treatment of Nitrogen and Phosphorus"
+          authors: "Zihao Zhang, Peisheng He, Lily DuPlooy, Youhui Wang, Mathew Baldwin, Michael Vega, April Gu, Matthew C. Reid"
+          venue: "Environment Science and Engineering 2026"
+        - title: "Co-Treatment of Nitrogen and Phosphorus in Stormwater Runoff through Sensor Feedback Control of Redox Conditions in Biofilter Media"
+          authors: "Zihao Zhang, Lily DuPlooy, Youhui Wang, Peisheng He, April Gu, Matthew Charles Reid"
+          venue: "CANVAS 2025"
       paper: "https://scisoc.confex.com/scisoc/2025am/meetingapp.cgi/Paper/168877"
+      image: "images/reid.png"
       featured: false

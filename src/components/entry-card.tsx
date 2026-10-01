@@ -25,7 +25,7 @@ function resolveLocalLink(url: string): string {
 export function EntryCard({ entry }: { entry: ProjectProps }) {
   const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
 
-  const { title, image, description, authorNotes, venue, authors, advisors } = entry;
+  const { title, image, description, authorNotes, venue, authors, advisors, publications } = entry;
 
   const links: { label: string; href: string }[] = [];
   if (entry.paper) {
@@ -68,39 +68,40 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
           <div className="border-l hidden lg:block" />
 
           <div className="flex flex-col gap-y-2 p-4 lg:py-3 lg:px-5 flex-1">
-            <span className="text-base font-semibold">{title}</span>
-
-            {authors ? (
-              <p className="text-sm leading-4.5 text-foreground">
-                {authors.split(", ").map((author, i, arr) => {
-                  // Split trailing markers (e.g. "*", "†") off the name so they render as superscripts
-                  const [, name, marker] = author.match(/^(.*?)([*†‡§]*)$/)!;
-                  return (
-                    <span
-                      key={i}
-                      className={name === authorName ? "font-semibold" : ""}
-                    >
-                      {name}
-                      {marker && <sup>{marker}</sup>}
-                      {i < arr.length - 1 && ", "}
-                    </span>
-                  );
-                })}
-              </p>
+            {publications?.length ? (
+              publications.map((pub, i) => (
+                <div key={i} className={`flex flex-col gap-y-2 ${i > 0 ? "pt-2" : ""}`}>
+                  <span className="text-base font-semibold">
+                    Publication {i + 1}: {pub.title}
+                  </span>
+                  {pub.authors && <AuthorList authors={pub.authors} />}
+                  {pub.venue && (
+                    <p className="text-sm italic leading-4.5 text-foreground">{pub.venue}</p>
+                  )}
+                </div>
+              ))
             ) : (
-              advisors && (
-                <p className="text-sm leading-4.5 text-foreground">
-                  Advisors: {advisors}
-                </p>
-              )
-            )}
+              <>
+                <span className="text-base font-semibold">{title}</span>
 
-            {authorNotes && (
-              <p className="text-xs text-foreground/70">{authorNotes}</p>
-            )}
+                {authors ? (
+                  <AuthorList authors={authors} />
+                ) : (
+                  advisors && (
+                    <p className="text-sm leading-4.5 text-foreground">
+                      Advisors: {advisors}
+                    </p>
+                  )
+                )}
 
-            {venue && (
-              <p className="text-sm italic leading-4.5 text-foreground">{venue}</p>
+                {authorNotes && (
+                  <p className="text-xs text-foreground/70">{authorNotes}</p>
+                )}
+
+                {venue && (
+                  <p className="text-sm italic leading-4.5 text-foreground">{venue}</p>
+                )}
+              </>
             )}
 
             {description && (
@@ -138,5 +139,26 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
         />
       )}
     </>
+  );
+}
+
+function AuthorList({ authors }: { authors: string }) {
+  return (
+    <p className="text-sm leading-4.5 text-foreground">
+      {authors.split(", ").map((author, i, arr) => {
+        // Split trailing markers (e.g. "*", "†") off the name so they render as superscripts
+        const [, name, marker] = author.match(/^(.*?)([*†‡§]*)$/)!;
+        return (
+          <span
+            key={i}
+            className={name === authorName ? "font-semibold" : ""}
+          >
+            {name}
+            {marker && <sup>{marker}</sup>}
+            {i < arr.length - 1 && ", "}
+          </span>
+        );
+      })}
+    </p>
   );
 }

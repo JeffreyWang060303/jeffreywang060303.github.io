@@ -102,7 +102,7 @@ projects:
     - title: "Can LLMs Test Their Own Code? Cross-Model Property-Based Testing of Code"
       authors: "Tyler Holloway, Youhui Wang, Simon Henniger, Nada Amin"
       year: "2026"
-      venue: "ICML 2026 FAGEN Workshop"
+      venue: "ICML 2026 Failure Modes in Agentic AI (FAGEN) Workshop"
       paper: "https://openreview.net/pdf?id=BnzYjFS6O2"
       image: "images/pbt.png"
       featured: true

@@ -25,6 +25,7 @@
 #   - `github`: link to a code repository, if any.
 #   - `paper`: link to the paper/PDF, if any.
 #   - `website`: link to a project website (when it's not a code repo), if any.
+#   - `tldr`: link to a TL;DR post (e.g. on X), if any.
 #   - `image`: preview image path (from /public/images/), if any.
 #   - `featured`:
 #       true  → shown by default in the "Selected" view
@@ -70,6 +71,19 @@ projects:
     #   image: "images/latentros.png"
     #   featured: true
     # --- end coming soon ---
+
+    - title: "DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library"
+      role: "Stanford Vision and Learning Lab, Stanford University"
+      duration: "Nov 2025 - Sep 2026"
+      tools: ["Dexterous Manipulation", "Agents", "Sim2Real"]
+      authors: "Youhui Wang, Yunzhu Li, Li Fei-Fei, Jiajun Wu, Huang Huang"
+      year: "2026"
+      venue: "arXiv preprint"
+      website: "https://dexagent1.github.io/#"
+      paper: "https://arxiv.org/abs/2609.35318"
+      tldr: "https://x.com/jwang633/status/2105012942601367940"
+      image: "images/sail.jpg"
+      featured: true
 
     - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"
       role: "Harvard Edge Computing Lab, Harvard University"

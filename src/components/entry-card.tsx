@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaFileLines, FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaFileLines, FaGithub, FaArrowUpRightFromSquare, FaXTwitter } from "react-icons/fa6";
 import { IoLibrary } from "react-icons/io5";
 import type { IconType } from "react-icons";
 
@@ -13,6 +13,7 @@ const LINK_ICONS: Record<string, IconType> = {
   Paper: FaFileLines,
   Code: FaGithub,
   Website: FaArrowUpRightFromSquare,
+  "TL;DR": FaXTwitter,
 };
 
 function resolveLocalLink(url: string): string {
@@ -35,6 +36,9 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
   }
   if (entry.website) {
     links.push({ label: "Website", href: entry.website });
+  }
+  if (entry.tldr) {
+    links.push({ label: "TL;DR", href: entry.tldr });
   }
 
   return (

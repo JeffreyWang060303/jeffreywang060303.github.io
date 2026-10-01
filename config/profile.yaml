@@ -31,6 +31,12 @@ profile:
         name: "FaGoogleScholar"
         package: "react-icons/fa6"
 
+    - name: "X"
+      url: "https://x.com/jwang633"
+      icon:
+        name: "FaXTwitter"
+        package: "react-icons/fa6"
+
     - name: "Resume"
       url: "pdf/2:1:2026_Resume.pdf"
       icon:

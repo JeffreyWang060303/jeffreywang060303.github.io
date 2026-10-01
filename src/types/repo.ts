@@ -12,6 +12,7 @@ export interface ProjectProps {
   github?: string | null;
   paper?: string | null;
   website?: string | null;
+  tldr?: string | null;
   image?: string | null;
   featured?: boolean;
 }

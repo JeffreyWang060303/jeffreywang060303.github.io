@@ -49,6 +49,11 @@ courseworks:
     term: "Fall 2026"
     subjects: ["AI", "ML", "CS"]
 
+  - title: "AEM 3330"
+    institution: "Cornell University"
+    description: "The Startup and Venture Capital Experience"
+    term: "Fall 2026"
+    subjects: ["Entrepreneurship"]
 
   - title: "INFO 2450"
     institution: "Cornell University"

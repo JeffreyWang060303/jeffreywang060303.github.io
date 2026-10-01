@@ -126,7 +126,7 @@ projects:
       tools: ["Robotics", "Vision", "ML"]
       authors: "Youhui Wang*, Hangxing Zhang*, Tomás Lozano-Pérez"
       authorNotes: "* Equal contribution"
-      venue: "MIT 6.4212 Final Project"
+      venue: "MIT 6.4212 Final Project (Fall 2025)"
       # advisors: "Prof. Tomás Lozano-Pérez"
       github: null
       paper: "pdf/Wang_Zhang_6.4212_Final_Paper.pdf"

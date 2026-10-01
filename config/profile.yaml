@@ -57,17 +57,19 @@ profile:
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi! I'm <strong>Jeffrey Wang</strong>, currently an Undergraduate Student at <strong>Cornell University</strong>, previously a visiting undergraduate scholar at <strong>Harvard College</strong>, passionate about <em>Robotics and Artificial Intelligence in general</em>.
+    Hi! I'm <strong>Jeffrey (Youhui) Wang</strong>, currently an undergraduate student at <strong>Cornell University</strong>, previously a visiting undergraduate scholar at <strong>Harvard College</strong>.
     <div class="my-2"></div>
-    Currently, I work as a <em>Research Intern</em> at the <strong>Stanford Vision and Learning Lab</strong>, fortunately advised by <strong>Dr. Huang Huang, Prof. Jiajun Wu, and Prof. Fei-fei Li</strong>, and <strong>Harvard Edge Computing Lab</strong>, fortunately advised by <strong>Jason Jabbour and Prof. Vijay Janapa Reddi</strong>.
+    Currently, I work as a researcher at the <strong>Stanford Vision and Learning Lab</strong>, fortunately advised by Dr. Huang Huang, Prof. Jiajun Wu, and Prof. Fei-Fei Li, and at the <strong>Harvard Edge Computing Lab</strong>, fortunately advised by Jason Jabbour and Prof. Vijay Janapa Reddi. At Cornell, I also collaborate closely with Prof. Kuan Fang.
     <div class="my-2"></div>
-    <u>Research Interests:</u>
+    Currently, my research focuses on:
     <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem; padding-left: 1.5rem;">
-      <li>Robotic learning, perception, and control</li>
-      <li>Embodied AI</li>
-      <li>System Optimization</li>
+      <li><strong>Agentic Robotics and Frameworks</strong></li>
+      <li><strong>Robot Learning, Perception, and Control</strong></li>
+      <li><strong>Robot Data Generation</strong></li>
     </ul>
-    Outside of work, I enjoy <em>playing basketball, tennis, golf, ice hockey, squash, and traveling</em>, which inspire creativity and keep me energized. Feel free to connect to me for any potential opportunities or chatting!
+    My broader goal is to build <strong>generalist robots</strong> capable of learning and performing a wide range of real-world tasks.
+    <div class="my-2"></div>
+    Outside of work, I enjoy playing basketball, tennis, golf, ice hockey, squash, and traveling. Feel free to reach out for research opportunities, collaborations, or just a chat!
 # # =====================================================
 # # 🎓 Education Section
 # # =====================================================

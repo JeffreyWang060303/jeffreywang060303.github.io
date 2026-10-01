@@ -178,6 +178,16 @@ skills:
       proficiency: Advanced
       description: "MIT 6.4212: Robotic Manipulation"
 
+    - name: "Isaac Sim"
+      logo: "images/nvidia_logo.webp"
+      proficiency: Proficient
+      description: null
+
+    - name: "MuJoCo"
+      logo: "images/mujoco.png"
+      proficiency: Proficient
+      description: null
+
     - name: "SOLIDWORKS"
       logo: "images/solidworks.png"
       proficiency: Advanced

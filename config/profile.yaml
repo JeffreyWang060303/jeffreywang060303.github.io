@@ -58,17 +58,17 @@ profile:
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
     Hi! I'm <strong>Jeffrey (Youhui) Wang</strong>, currently an undergraduate student at <strong>Cornell University</strong>, previously a visiting undergraduate scholar at <strong>Harvard College</strong>.
-    <div class="my-2"></div>
+    <div style="height: 1rem;"></div>
     Currently, I work as a researcher at the <strong>Stanford Vision and Learning Lab</strong>, fortunately advised by Dr. Huang Huang, Prof. Jiajun Wu, and Prof. Fei-Fei Li, and at the <strong>Harvard Edge Computing Lab</strong>, fortunately advised by Jason Jabbour and Prof. Vijay Janapa Reddi. At Cornell, I also collaborate closely with Prof. Kuan Fang.
-    <div class="my-2"></div>
+    <div style="height: 1rem;"></div>
     Currently, my research focuses on:
-    <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem; padding-left: 1.5rem;">
+    <ul style="margin-top: 0.5rem; margin-bottom: 1rem; padding-left: 1.5rem;">
       <li><strong>Agentic Robotics and Frameworks</strong></li>
       <li><strong>Robot Learning, Perception, and Control</strong></li>
       <li><strong>Robot Data Generation</strong></li>
     </ul>
     My broader goal is to build <strong>generalist robots</strong> capable of learning and performing a wide range of real-world tasks.
-    <div class="my-2"></div>
+    <div style="height: 1rem;"></div>
     Outside of work, I enjoy playing basketball, tennis, golf, ice hockey, squash, and traveling. Feel free to reach out for research opportunities, collaborations, or just a chat!
 # # =====================================================
 # # 🎓 Education Section

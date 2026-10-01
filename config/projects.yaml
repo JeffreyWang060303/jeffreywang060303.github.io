@@ -26,7 +26,8 @@
 #   - `paper`: link to the paper/PDF, if any.
 #   - `website`: link to a project website (when it's not a code repo), if any.
 #   - `tldr`: link to a TL;DR post (e.g. on X), if any.
-#   - `publications`: list of papers (each with `title`, `authors`, `venue`) to
+#   - `publications`: list of papers (each with `title`, `authors`, `venue`,
+#      optional `paper`) to
 #      show as "Publication 1", "Publication 2", ... in a single card, in place
 #      of the card's own title/authors/venue.
 #   - `image`: preview image path (from /public/images/), if any.
@@ -170,6 +171,6 @@ projects:
         - title: "Co-Treatment of Nitrogen and Phosphorus in Stormwater Runoff through Sensor Feedback Control of Redox Conditions in Biofilter Media"
           authors: "Zihao Zhang, Lily DuPlooy, Youhui Wang, Peisheng He, April Gu, Matthew Charles Reid"
           venue: "CANVAS 2025"
-      paper: "https://scisoc.confex.com/scisoc/2025am/meetingapp.cgi/Paper/168877"
+          paper: "https://scisoc.confex.com/scisoc/2025am/meetingapp.cgi/Paper/168877"
       image: "images/reid.png"
       featured: false

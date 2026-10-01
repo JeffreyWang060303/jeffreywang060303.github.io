@@ -2,6 +2,7 @@ export interface PublicationEntry {
   title: string;
   authors?: string | null;
   venue?: string | null;
+  paper?: string | null;
 }
 
 export interface ProjectProps {

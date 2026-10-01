@@ -70,14 +70,26 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
           <div className="flex flex-col gap-y-2 p-4 lg:py-3 lg:px-5 flex-1">
             {publications?.length ? (
               publications.map((pub, i) => (
-                <div key={i} className={`flex flex-col gap-y-2 ${i > 0 ? "pt-2" : ""}`}>
-                  <span className="text-base font-semibold">
-                    Publication {i + 1}: {pub.title}
-                  </span>
-                  {pub.authors && <AuthorList authors={pub.authors} />}
-                  {pub.venue && (
-                    <p className="text-sm italic leading-4.5 text-foreground">{pub.venue}</p>
-                  )}
+                <div key={i} className="flex flex-col gap-y-2">
+                  {i > 0 && <div className="border-t border-border/70" />}
+                  <div className="flex flex-col gap-y-1">
+                    <span className="text-[13px] font-semibold leading-snug">
+                      Publication {i + 1}: {pub.title}
+                    </span>
+                    {pub.authors && (
+                      <AuthorList authors={pub.authors} className="text-xs leading-4" />
+                    )}
+                    {(pub.venue || pub.paper) && (
+                      <div className="flex flex-row flex-wrap items-center gap-x-2 gap-y-1">
+                        {pub.venue && (
+                          <p className="text-xs italic leading-4 text-foreground">{pub.venue}</p>
+                        )}
+                        {pub.paper && (
+                          <LinkPill label="Paper" href={resolveLocalLink(pub.paper)} compact />
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </div>
               ))
             ) : (
@@ -110,21 +122,9 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
 
             {links.length > 0 && (
               <div className="flex flex-row flex-wrap items-center gap-2 pt-1 mt-auto">
-                {links.map((l) => {
-                  const Icon = LINK_ICONS[l.label];
-                  return (
-                    <a
-                      key={l.label}
-                      href={l.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/40 px-3 py-1 text-xs font-medium text-foreground transition-colors hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
-                    >
-                      {Icon && <Icon className="w-3 h-3" />}
-                      {l.label}
-                    </a>
-                  );
-                })}
+                {links.map((l) => (
+                  <LinkPill key={l.label} label={l.label} href={l.href} />
+                ))}
               </div>
             )}
           </div>
@@ -142,9 +142,15 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
   );
 }
 
-function AuthorList({ authors }: { authors: string }) {
+function AuthorList({
+  authors,
+  className = "text-sm leading-4.5",
+}: {
+  authors: string;
+  className?: string;
+}) {
   return (
-    <p className="text-sm leading-4.5 text-foreground">
+    <p className={`${className} text-foreground`}>
       {authors.split(", ").map((author, i, arr) => {
         // Split trailing markers (e.g. "*", "†") off the name so they render as superscripts
         const [, name, marker] = author.match(/^(.*?)([*†‡§]*)$/)!;
@@ -160,5 +166,30 @@ function AuthorList({ authors }: { authors: string }) {
         );
       })}
     </p>
+  );
+}
+
+function LinkPill({
+  label,
+  href,
+  compact = false,
+}: {
+  label: string;
+  href: string;
+  compact?: boolean;
+}) {
+  const Icon = LINK_ICONS[label];
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/40 text-xs font-medium text-foreground transition-colors hover:border-primary/40 hover:bg-primary/10 hover:text-primary ${
+        compact ? "px-2.5 py-0.5" : "px-3 py-1"
+      }`}
+    >
+      {Icon && <Icon className="w-3 h-3" />}
+      {label}
+    </a>
   );
 }

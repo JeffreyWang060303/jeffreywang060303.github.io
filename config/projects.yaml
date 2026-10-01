@@ -76,13 +76,14 @@ projects:
       role: "Stanford Vision and Learning Lab, Stanford University"
       duration: "Nov 2025 - Sep 2026"
       tools: ["Dexterous Manipulation", "Agents", "Sim2Real"]
-      authors: "Youhui Wang, Yunzhu Li, Li Fei-Fei, Jiajun Wu, Huang Huang"
+      authors: "Youhui Wang, Yunzhu Li, Li Fei-Fei, Jiajun Wu†, Huang Huang†"
+      authorNotes: "† Equal advising"
       year: "2026"
       venue: "arXiv preprint"
       website: "https://dexagent1.github.io/#"
       paper: "https://arxiv.org/abs/2609.35318"
       tldr: "https://x.com/jwang633/status/2105012942601367940"
-      image: "images/sail.jpg"
+      image: "images/dexagent.png"
       featured: true
 
     - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"

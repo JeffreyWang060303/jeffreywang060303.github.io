@@ -72,15 +72,20 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
 
             {authors ? (
               <p className="text-sm leading-4.5 text-foreground">
-                {authors.split(", ").map((author, i, arr) => (
-                  <span
-                    key={i}
-                    className={author === authorName ? "font-semibold" : ""}
-                  >
-                    {author}
-                    {i < arr.length - 1 && ", "}
-                  </span>
-                ))}
+                {authors.split(", ").map((author, i, arr) => {
+                  // Split trailing markers (e.g. "*", "†") off the name so they render as superscripts
+                  const [, name, marker] = author.match(/^(.*?)([*†‡§]*)$/)!;
+                  return (
+                    <span
+                      key={i}
+                      className={name === authorName ? "font-semibold" : ""}
+                    >
+                      {name}
+                      {marker && <sup>{marker}</sup>}
+                      {i < arr.length - 1 && ", "}
+                    </span>
+                  );
+                })}
               </p>
             ) : (
               advisors && (

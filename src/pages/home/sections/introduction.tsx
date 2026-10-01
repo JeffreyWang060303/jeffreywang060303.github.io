@@ -47,7 +47,7 @@ function ProfileCard() {
           </p>
         )}
         <TooltipProvider delayDuration={100}>
-          <div className="flex flex-row flex-wrap justify-center gap-y-2 gap-x-4 py-2 text-foreground max-w-64">
+          <div className="flex flex-row flex-nowrap justify-center gap-x-3 py-2 text-foreground">
             {profile.links.map((item, index) => {
               const Wrapper = item.url ? "a" : "span";
               const wrapperProps = item.url

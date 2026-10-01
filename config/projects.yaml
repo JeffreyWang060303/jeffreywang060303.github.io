@@ -117,7 +117,7 @@ projects:
       # advisors: "Prof. Michael Charles"
       github: null
       image: "images/charles.jpg"
-      featured: true
+      featured: false
 
     - title: "Vision-Guided Robotic Folding of Deformable Garments Using Model-Based Planning and Control"
       role: "MIT 6.4212 Final Project"
@@ -143,7 +143,7 @@ projects:
       advisors: "Peng Cheng, Prof. Xianyuan Zhan"
       github: null
       image: "images/fisortels.png"
-      featured: true
+      featured: false
 
 
     - title: "Feedback Control of Redox Conditions in Bioretention Systems Enhances Biological Co-Treatment of Nitrogen and Phosphorus"
@@ -161,7 +161,7 @@ projects:
       advisors: "Ofek Peretz, Prof. Robert Shepherd"
       github: null
       image: "images/orl.jpg"
-      featured: true
+      featured: false
 
     - title: "Real-Time Decision-Making Framework for Stormwater Bioreactor Optimization"
       role: "Reid's Laboratory, Cornell University"

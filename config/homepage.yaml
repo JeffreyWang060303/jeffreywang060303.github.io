@@ -30,8 +30,8 @@ homepage:
 
     - name: Teaching
       variant: default
-      enabled: true
+      enabled: false
 
     - name: Courseworks
       variant: default
-      enabled: true
+      enabled: false

@@ -76,17 +76,6 @@ projects:
     #   featured: true
     # --- end coming soon ---
 
-    - title: "RoboRender: Robot-Oriented Video Generation for Visual Sim-to-Real Transfer"
-      role: "Stanford Vision and Learning Lab, Stanford University"
-      tools: ["Video Generation", "Sim2Real", "Robotics"]
-      authors: "Huang Huang, Wensi Ai, Ziyu Chen, Youhui Wang, Zijian Du, Yang Liu, Jiaolong Yang, Li Fei-Fei, Jiajun Wu"
-      year: "2026"
-      venue: "arXiv preprint 2026.10"
-      website: "https://robo-render.github.io/"
-      paper: "https://arxiv.org/abs/2610.09254"
-      image: "images/roborender.png"
-      featured: true
-
     - title: "DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library"
       role: "Stanford Vision and Learning Lab, Stanford University"
       duration: "Nov 2025 - Sep 2026"
@@ -94,11 +83,23 @@ projects:
       authors: "Youhui Wang, Yunzhu Li, Li Fei-Fei, Jiajun Wu†, Huang Huang†"
       authorNotes: "† Equal advising"
       year: "2026"
-      venue: "arXiv preprint 2026.9"
+      venue: "arXiv preprint 2026.10"
       website: "https://dexagent1.github.io/#"
       paper: "https://arxiv.org/abs/2609.35318"
       tldr: "https://x.com/jwang633/status/2105012942601367940"
       image: "images/dexagent.png"
+      featured: true
+
+    - title: "RoboRender: Robot-Oriented Video Generation for Visual Sim-to-Real Transfer"
+      role: "Stanford Vision and Learning Lab, Stanford University"
+      tools: ["Video Generation", "Sim2Real", "Robotics"]
+      authors: "Huang Huang*, Wensi Ai*, Ziyu Chen*, Youhui Wang*, Zijian Du, Yang Liu, Jiaolong Yang, Li Fei-Fei, Jiajun Wu"
+      authorNotes: "* Equal contribution"
+      year: "2026"
+      venue: "arXiv preprint 2026.10"
+      website: "https://robo-render.github.io/"
+      paper: "https://arxiv.org/abs/2610.09254"
+      image: "images/roborender.png"
       featured: true
 
     - title: "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"

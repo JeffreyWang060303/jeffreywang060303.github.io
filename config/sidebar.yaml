@@ -15,7 +15,7 @@ sidebar:
         name: LuUser
         package: "react-icons/lu"
 
-    - title: Projects
+    - title: Publications
       url: "projects"
       icon:
         name: LuWrench

@@ -20,6 +20,8 @@ export interface ProjectProps {
   paper?: string | null;
   website?: string | null;
   tldr?: string | null;
+  blog?: string | null;
+  blogLabel?: string | null;
   publications?: PublicationEntry[] | null;
   image?: string | null;
   featured?: boolean;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaFileLines, FaGithub, FaArrowUpRightFromSquare, FaXTwitter } from "react-icons/fa6";
+import { FaFileLines, FaGithub, FaArrowUpRightFromSquare, FaXTwitter, FaNewspaper } from "react-icons/fa6";
 import { IoLibrary } from "react-icons/io5";
 import type { IconType } from "react-icons";
 
@@ -14,6 +14,7 @@ const LINK_ICONS: Record<string, IconType> = {
   Code: FaGithub,
   Website: FaArrowUpRightFromSquare,
   "TL;DR": FaXTwitter,
+  Blog: FaNewspaper,
 };
 
 function resolveLocalLink(url: string): string {
@@ -27,7 +28,7 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
 
   const { title, image, description, authorNotes, venue, authors, advisors, publications } = entry;
 
-  const links: { label: string; href: string }[] = [];
+  const links: { label: string; href: string; icon?: string }[] = [];
   if (entry.paper) {
     links.push({ label: "Paper", href: resolveLocalLink(entry.paper) });
   }
@@ -39,6 +40,9 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
   }
   if (entry.tldr) {
     links.push({ label: "TL;DR", href: entry.tldr });
+  }
+  if (entry.blog) {
+    links.push({ label: entry.blogLabel || "Blog", href: entry.blog, icon: "Blog" });
   }
 
   return (
@@ -123,7 +127,7 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
             {links.length > 0 && (
               <div className="flex flex-row flex-wrap items-center gap-2 pt-1 mt-auto">
                 {links.map((l) => (
-                  <LinkPill key={l.label} label={l.label} href={l.href} />
+                  <LinkPill key={l.label} label={l.label} href={l.href} icon={l.icon} />
                 ))}
               </div>
             )}
@@ -172,13 +176,15 @@ function AuthorList({
 function LinkPill({
   label,
   href,
+  icon,
   compact = false,
 }: {
   label: string;
   href: string;
+  icon?: string;
   compact?: boolean;
 }) {
-  const Icon = LINK_ICONS[label];
+  const Icon = LINK_ICONS[icon ?? label];
   return (
     <a
       href={href}

@@ -7,7 +7,7 @@ export default function ProjectsSection() {
     <div className="space-y-6">
       <div className="flex flex-row justify-center items-center gap-2 text-plus font-semibold">
         <FaWrench />
-        Projects
+        Publications
       </div>
 
       <ProjectsList />

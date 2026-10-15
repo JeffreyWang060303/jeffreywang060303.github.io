@@ -18,8 +18,8 @@ sidebar:
     - title: Publications
       url: "projects"
       icon:
-        name: LuWrench
-        package: "react-icons/lu"
+        name: FaFileLines
+        package: "react-icons/fa6"
 
     - title: Skills
       url: "skills"

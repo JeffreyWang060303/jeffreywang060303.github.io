@@ -2,7 +2,7 @@ import { FaLinkedin, FaGoogleScholar, FaRegIdBadge, FaFileLines, FaGithub, FaSqu
 
 export const profile = {
   name: `[Your Name]`,
-  headline: `Student @ [Your University]`,
+  headline: `Undergraduate Student @ Cornell University | Harvard College`,
   email: `your-email@gmail.com`,
   location: null,
   profileImage: `https://github.com/pm25.png`,

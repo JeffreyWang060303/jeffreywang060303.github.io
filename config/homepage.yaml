@@ -26,7 +26,7 @@ homepage:
 
     - name: Skills
       variant: default
-      enabled: true
+      enabled: false
 
     - name: Teaching
       variant: default

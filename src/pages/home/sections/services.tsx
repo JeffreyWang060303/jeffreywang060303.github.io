@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaUserCheck, FaRegCalendar, FaRegImage } from "react-icons/fa6";
+import { FaRegCalendar, FaRegImage } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 import { Button } from "@/components/ui/button";
@@ -20,7 +20,6 @@ export default function ServicesSection({
       <Card className="rounded-md md:px-2">
         <CardHeader>
           <CardTitle className="flex flex-row justify-center items-center gap-2 text-plus font-semibold">
-            <FaUserCheck />
             {TITLE}
           </CardTitle>
         </CardHeader>
@@ -34,7 +33,6 @@ export default function ServicesSection({
   return (
     <div className="space-y-6">
       <div className="flex flex-row justify-center items-center gap-2 text-plus font-semibold">
-        <FaUserCheck />
         {TITLE}
       </div>
       <ServicesContent />

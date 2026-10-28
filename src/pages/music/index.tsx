@@ -1,5 +1,3 @@
-import { FaMusic } from "react-icons/fa6";
-
 import { useTheme } from "@/components/theme-provider";
 import { usePageTitle } from "@/hooks/use-pagetitle";
 import { spotify } from "@/data/spotify";
@@ -12,7 +10,6 @@ export default function MusicPage() {
       <div className="w-full max-w-4xl space-y-10">
         <div className="space-y-4">
           <div className="flex flex-row justify-center items-center gap-4 text-4xl font-semibold">
-            <FaMusic />
             Music
           </div>
 

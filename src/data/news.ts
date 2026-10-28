@@ -6,6 +6,10 @@ export interface NewsProps {
 export const news: { items: NewsProps[] } = {
   items: [
     {
+      date: `Oct 2026`,
+      text: `Paper <strong>"DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library"</strong> accepted to <strong>CoRL 2026 Bimanual Dexterous Tool Use (BiDexTool) Workshop</strong>!\n`,
+    },
+    {
       date: `Sep 2026`,
       text: `Paper <strong>"Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered"</strong> (GLUESTICK) accepted to <strong>CoRL 2026</strong>!\n`,
     },

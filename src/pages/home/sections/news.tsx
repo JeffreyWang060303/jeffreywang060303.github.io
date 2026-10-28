@@ -1,13 +1,10 @@
-import { FaBullhorn } from "react-icons/fa6";
-
 import { news } from "@/data/news";
 
 export default function NewsSection() {
   return (
     <div className="space-y-6">
       <div className="flex flex-row justify-center items-center gap-2 text-plus font-semibold">
-        <FaBullhorn />
-        News
+        Updates
       </div>
 
       <div className="flex flex-col gap-5">

@@ -1,5 +1,3 @@
-import { FaFilm } from "react-icons/fa6";
-
 import { usePageTitle } from "@/hooks/use-pagetitle";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { movies } from "@/data/movies";
@@ -12,7 +10,6 @@ export default function MoviesPage() {
       <div className="w-full max-w-6xl space-y-10">
         <div className="space-y-4">
           <div className="flex flex-row justify-center items-center gap-4 text-4xl font-semibold">
-            <FaFilm />
             Movies
           </div>
 

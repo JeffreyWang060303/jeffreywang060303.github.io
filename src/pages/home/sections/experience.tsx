@@ -1,5 +1,3 @@
-import { FaGraduationCap, FaBriefcase } from "react-icons/fa6";
-
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -50,7 +48,6 @@ export default function ExperienceSection() {
       <Card className="rounded-md md:px-2">
         <CardHeader>
           <CardTitle className="flex flex-row justify-center items-center gap-2 text-plus">
-            <FaGraduationCap />
             Education
           </CardTitle>
         </CardHeader>
@@ -79,7 +76,6 @@ export default function ExperienceSection() {
       <Card className="rounded-md md:px-2">
         <CardHeader>
           <CardTitle className="flex flex-row justify-center items-center gap-2 text-plus">
-            <FaBriefcase />
             Work Experiences
           </CardTitle>
         </CardHeader>

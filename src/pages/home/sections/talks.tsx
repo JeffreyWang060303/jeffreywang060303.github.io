@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { MdCoPresent } from "react-icons/md";
 import { FaRegCalendar, FaRegImage } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -21,7 +20,6 @@ export default function TalksSection({
       <Card className="rounded-md md:px-2">
         <CardHeader>
           <CardTitle className="flex flex-row justify-center items-center gap-2 text-plus font-semibold">
-            <MdCoPresent />
             {TITLE}
           </CardTitle>
         </CardHeader>
@@ -35,7 +33,6 @@ export default function TalksSection({
   return (
     <div className="space-y-6">
       <div className="flex flex-row justify-center items-center gap-2 text-plus font-semibold">
-        <MdCoPresent />
         {TITLE}
       </div>
       <TalksContent />

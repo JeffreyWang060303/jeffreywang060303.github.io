@@ -1,5 +1,4 @@
 import { useState, useMemo } from "react";
-import { FaBook } from "react-icons/fa6";
 
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -57,7 +56,6 @@ export default function CourseworksSection() {
   return (
     <div className="space-y-6">
       <div className="flex flex-row justify-center items-center gap-2 text-2xl font-semibold">
-        <FaBook className="text-primary" />
         {TITLE}
       </div>
 

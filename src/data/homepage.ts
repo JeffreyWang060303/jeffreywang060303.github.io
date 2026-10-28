@@ -11,7 +11,7 @@ export const homepage = {
       enabled: true,
     },
     {
-      name: `Publications`,
+      name: `News`,
       variant: `default`,
       enabled: true,
     },
@@ -23,17 +23,17 @@ export const homepage = {
     {
       name: `Skills`,
       variant: `default`,
-      enabled: true,
+      enabled: false,
     },
     {
-      name: `Talks`,
+      name: `Teaching`,
       variant: `default`,
-      enabled: true,
+      enabled: false,
     },
     {
-      name: `Services`,
+      name: `Courseworks`,
       variant: `default`,
-      enabled: true,
+      enabled: false,
     },
   ],
 };

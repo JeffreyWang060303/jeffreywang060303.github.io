@@ -10,11 +10,11 @@ news:
 
     - date: "Oct 2026"
       text: |
-        Paper <strong>"DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library"</strong> accepted to <strong>CoRL 2026 Dexterous Manipulation Workshop (Spotlight Oral)</strong>!
+        Paper <strong>"DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library"</strong> accepted to <strong>CoRL 2026 Dexterous Manipulation Workshop <u>(Spotlight Oral)</u></strong>!
 
     - date: "Oct 2026"
       text: |
-        Paper <strong>"DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library"</strong> accepted to <strong>CoRL 2026 Bimanual Dexterous Tool Use (BiDexTool) Workshop (Spotlight Oral)</strong>!
+        Paper <strong>"DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library"</strong> accepted to <strong>CoRL 2026 Bimanual Dexterous Tool Use (BiDexTool) Workshop <u>(Spotlight Oral)</u></strong>!
 
     - date: "Sep 2026"
       text: |

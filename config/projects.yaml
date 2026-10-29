@@ -86,8 +86,8 @@ projects:
       authorNotes: "† Equal advising"
       year: "2026"
       venue:
-        - "CoRL 2026 Bimanual Dexterous Tool Use (BiDexTool) Workshop <strong>(Spotlight Oral)</strong>"
-        - "CoRL 2026 Dexterous Manipulation Workshop <strong>(Spotlight Oral)</strong>"
+        - "CoRL 2026 Bimanual Dexterous Tool Use (BiDexTool) Workshop <strong><u>(Spotlight Oral)</u></strong>"
+        - "CoRL 2026 Dexterous Manipulation Workshop <strong><u>(Spotlight Oral)</u></strong>"
       website: "https://dexagent1.github.io/#"
       paper: "https://arxiv.org/abs/2609.35318"
       tldr: "https://x.com/jwang633/status/2105012942601367940"

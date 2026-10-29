@@ -19,7 +19,8 @@
 #   - `role`: your role / the lab or institution (optional, for your own reference).
 #   - `duration` / `year`: time period or publication year (optional, for your
 #      own reference — no longer used to sort the list).
-#   - `venue`: conference or journal name (optional, for your own reference).
+#   - `venue`: conference or journal name. Use a list for several venues (one
+#      line each); basic HTML like <strong> is allowed.
 #   - `description`: shown under the authors line if present.
 #   - `tools`: array of technologies/tools used (optional, for your own reference).
 #   - `github`: link to a code repository, if any.
@@ -84,7 +85,9 @@ projects:
       authors: "Youhui Wang, Yunzhu Li, Li Fei-Fei, Jiajun Wu†, Huang Huang†"
       authorNotes: "† Equal advising"
       year: "2026"
-      venue: "CoRL 2026 Bimanual Dexterous Tool Use (BiDexTool) Workshop"
+      venue:
+        - "CoRL 2026 Bimanual Dexterous Tool Use (BiDexTool) Workshop <strong>(Spotlight Oral)</strong>"
+        - "CoRL 2026 Dexterous Manipulation Workshop <strong>(Spotlight Oral)</strong>"
       website: "https://dexagent1.github.io/#"
       paper: "https://arxiv.org/abs/2609.35318"
       tldr: "https://x.com/jwang633/status/2105012942601367940"

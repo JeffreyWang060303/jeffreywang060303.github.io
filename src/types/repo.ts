@@ -10,7 +10,7 @@ export interface ProjectProps {
   role?: string | null;
   duration?: string | null;
   year?: number | string | null;
-  venue?: string | null;
+  venue?: string | string[] | null;
   description?: string | null;
   tools?: string[] | null;
   authors?: string | null;

@@ -114,9 +114,7 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
                   <p className="text-xs text-foreground/70">{authorNotes}</p>
                 )}
 
-                {venue && (
-                  <p className="text-sm italic leading-4.5 text-foreground">{venue}</p>
-                )}
+                {venue && <VenueLines venue={venue} className="text-sm leading-4.5" />}
               </>
             )}
 
@@ -197,5 +195,21 @@ function LinkPill({
       {Icon && <Icon className="w-3 h-3" />}
       {label}
     </a>
+  );
+}
+
+// Venue may be a single string or a list (one line each); basic HTML such as <strong> is allowed
+function VenueLines({ venue, className }: { venue: string | string[]; className: string }) {
+  const lines = Array.isArray(venue) ? venue : [venue];
+  return (
+    <>
+      {lines.map((line, i) => (
+        <p
+          key={i}
+          className={`${className} italic text-foreground`}
+          dangerouslySetInnerHTML={{ __html: line }}
+        />
+      ))}
+    </>
   );
 }

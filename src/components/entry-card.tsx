@@ -51,11 +51,12 @@ export function EntryCard({ entry }: { entry: ProjectProps }) {
         <div className="flex flex-col lg:flex-row">
           <div
             onClick={() => image && setIsImageViewerOpen(true)}
-            className={`w-full h-40 lg:w-75 lg:h-50 lg:flex-shrink-0 ${
+            className={`relative w-full h-40 lg:w-75 lg:h-auto lg:min-h-50 lg:flex-shrink-0 ${
               image ? "cursor-pointer hover:opacity-90 transition-opacity" : ""
             }`}
           >
-            <div className="w-full h-full flex items-center justify-center bg-muted/30 overflow-hidden">
+            {/* Absolutely positioned so the image never sets the card height; it stays centered when the text column is taller */}
+            <div className="absolute inset-0 flex items-center justify-center bg-muted/30 overflow-hidden">
               {image ? (
                 <img
                   src={image}

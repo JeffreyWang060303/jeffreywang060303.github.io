@@ -10,15 +10,15 @@ news:
 
     - date: "Nov 2026"
       text: |
-        Paper <strong>"RoboRender: Robot-Oriented Video Generation for Visual Sim-to-Real Transfer"</strong> accepted to <strong>CoRL 2026 Sim2RealBench Workshop</strong> and <strong>CoRL 2026 TAG (The Action Gap: Large Generative Models Learn Rich Knowledge) Workshop</strong>!
-
-    - date: "Nov 2026"
-      text: |
         Paper <strong>"DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library"</strong> accepted to <strong>CoRL 2026 Late Breaking Results</strong>!
 
     - date: "Oct 2026"
       text: |
         Paper <strong>"DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library"</strong> accepted to <strong>CoRL 2026 Dexterous Manipulation Workshop <u>(Spotlight Oral)</u></strong> and <strong>CoRL 2026 Bimanual Dexterous Tool Use (BiDexTool) Workshop <u>(Spotlight Oral)</u></strong>!
+
+    - date: "Oct 2026"
+      text: |
+        Paper <strong>"RoboRender: Robot-Oriented Video Generation for Visual Sim-to-Real Transfer"</strong> accepted to <strong>CoRL 2026 Sim2RealBench Workshop</strong> and <strong>CoRL 2026 TAG (The Action Gap: Large Generative Models Learn Rich Knowledge) Workshop</strong>!
 
     - date: "Sep 2026"
       text: |

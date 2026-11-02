@@ -103,7 +103,9 @@ projects:
       authors: "Huang Huang*, Wensi Ai*, Ziyu Chen*, Youhui Wang*, Zijian Du, Yang Liu, Jiaolong Yang, Li Fei-Fei, Jiajun Wu"
       authorNotes: "* Equal contribution"
       year: "2026"
-      venue: "arXiv preprint 2026.10"
+      venue:
+        - "CoRL 2026 Sim2RealBench Workshop"
+        - "CoRL 2026 TAG (The Action Gap: Large Generative Models Learn Rich Knowledge) Workshop"
       website: "https://robo-render.github.io/"
       paper: "https://arxiv.org/abs/2610.09254"
       tldr: "https://x.com/jwang633/status/2108310460449898697"

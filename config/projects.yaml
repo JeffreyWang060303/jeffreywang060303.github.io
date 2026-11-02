@@ -86,6 +86,7 @@ projects:
       authorNotes: "† Equal advising"
       year: "2026"
       venue:
+        - "CoRL 2026 Late Breaking Results"
         - "CoRL 2026 Bimanual Dexterous Tool Use (BiDexTool) Workshop <strong><u>(Spotlight Oral)</u></strong>"
         - "CoRL 2026 Dexterous Manipulation Workshop <strong><u>(Spotlight Oral)</u></strong>"
       website: "https://dexagent1.github.io/#"

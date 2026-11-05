@@ -86,6 +86,7 @@ projects:
       authorNotes: "† Equal advising"
       year: "2026"
       venue:
+        - "Under Review"
         - "CoRL 2026 Late Breaking Results"
         - "CoRL 2026 Bimanual Dexterous Tool Use (BiDexTool) Workshop <strong><u>(Spotlight Oral)</u></strong>"
         - "CoRL 2026 Dexterous Manipulation Workshop <strong><u>(Spotlight Oral)</u></strong>"
@@ -104,6 +105,7 @@ projects:
       authorNotes: "* Equal contribution"
       year: "2026"
       venue:
+        - "Under Review"
         - "CoRL 2026 Sim2RealBench Workshop"
         - "CoRL 2026 TAG (The Action Gap: Large Generative Models Learn Rich Knowledge) Workshop"
       website: "https://robo-render.github.io/"
